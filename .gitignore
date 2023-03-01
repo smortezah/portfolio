@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# specific to this project
+tutorial/
+.DS_Store
+hymenoptera_data/
+*.pt
+**/media/*.mov
+computer-vision/image-classification/ants-bees/media/sample.png
+computer-vision/image-classification/ants-bees/media/screenshot.png
