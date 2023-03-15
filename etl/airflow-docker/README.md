@@ -1,24 +1,26 @@
 # ETL pipeline with Airflow
 
-This repository includes implementation of an ETL pipeline with Airflow and Docker. The pipeline is used to automatize the process of extracting data from various sources, transforming them, and loading the transformed data into a PostgreSQL database.
+This repository includes implementation of an ETL pipeline with Airflow and Docker.
 
-Links: [Medium article](https://medium.com/@morihosseini/)
+Links: [Medium article](https://morihosseini.medium.com/fastest-way-of-implementing-an-etl-pipeline-3e87351265b5)
 
-## Installation
+## Requirements
 
 Install and run [Docker](https://www.docker.com/).
 
 ## Usage
 
-Run the following to start Airflow and Postgres containers.
+Run the following to start microservices including Airflow and PostgreSQL:
 
 ```bash
-docker compose up
+docker compose up -d
 ```
 
 Then, go to http://localhost:8080/ to access the Airflow UI.
 
-### DAGs
+![airflow](media/airflow.gif)
+
+## DAGs
 
 The following DAGs are included in this repository:
 
