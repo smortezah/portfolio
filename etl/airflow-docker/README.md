@@ -1,6 +1,6 @@
 # ETL pipeline with Airflow
 
-This repository includes implementation of an ETL pipeline with Airflow and Docker.
+This repository includes implementation of an ETL pipeline with Airflow and Docker. The pipelines are used to automatize the process of extracting data from various sources, transforming them, and loading the transformed data into a destination.
 
 Links: [Medium article](https://morihosseini.medium.com/fastest-way-of-implementing-an-etl-pipeline-3e87351265b5)
 

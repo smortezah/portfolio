@@ -128,7 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-
 # specific to this project
 tutorial/
 .DS_Store
