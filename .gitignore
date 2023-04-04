@@ -136,3 +136,5 @@ hymenoptera_data/
 **/media/*.mov
 computer-vision/image-classification/ants-bees/media/sample.png
 computer-vision/image-classification/ants-bees/media/screenshot.png
+ab-test/t-test/media/errorbar.png
+ab-test/t-test/media/histogram.png
