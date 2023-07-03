@@ -13,3 +13,7 @@ This repository includes my side projects on various applications of data scienc
 ## A/B Testing
 
 - [T-test](ab-test/t-test): testing the effectiveness of a new feature in a web application
+
+## GitHub commit automation
+
+- [Auto commit](auto-commit): automating the process of committing and pushing changes to GitHub
