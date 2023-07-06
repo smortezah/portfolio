@@ -20,4 +20,4 @@ This repository includes my side projects on various applications of data scienc
 
 ## Web scraping
 
-- [Scrape](scrape): scraping data from websites using Python
+- [jobinventory](scrape/jobinventory.com): scraping job listings from jobinventory.com using Python
