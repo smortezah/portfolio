@@ -17,3 +17,7 @@ This repository includes my side projects on various applications of data scienc
 ## GitHub commit automation
 
 - [Auto commit](auto-commit): automating the process of committing and pushing changes to GitHub
+
+## Web scraping
+
+- [Scrape](scrape): scraping data from websites using Python
