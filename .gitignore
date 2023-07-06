@@ -132,8 +132,11 @@ dmypy.json
 tutorial/
 .DS_Store
 hymenoptera_data/
+
 *.pt
+
 **/media/*.mov
 computer-vision/image-classification/ants-bees/media/sample.png
 computer-vision/image-classification/ants-bees/media/screenshot.png
 ab-test/t-test/media/*
+scrape/media/*
