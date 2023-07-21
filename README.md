@@ -2,6 +2,10 @@
 
 This repository includes my side projects on various applications of data science and machine learning.
 
+## Data visualization
+
+- [lets-plot](data-visualization/lets-plot): plotting with [lets-plot](https://lets-plot.org/index.html), a Python port of the R's [ggplot2](https://ggplot2.tidyverse.org/) library
+
 ## Computer Vision (CV)
 
 - [Image classification](computer-vision/image-classification/): building apps for classification of images, employing deep learning models
@@ -21,3 +25,7 @@ This repository includes my side projects on various applications of data scienc
 ## Web scraping
 
 - [jobinventory](scrape/jobinventory.com): scraping job listings from jobinventory.com using Python
+
+## Medium articles
+
+- My articles on Medium can be found [here](https://medium.com/@morihosseini/).
