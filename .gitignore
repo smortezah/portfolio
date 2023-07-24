@@ -129,7 +129,6 @@ dmypy.json
 .pyre/
 
 # specific to this project
-tutorial/
 .DS_Store
 hymenoptera_data/
 
@@ -140,3 +139,4 @@ computer-vision/image-classification/ants-bees/media/sample.png
 computer-vision/image-classification/ants-bees/media/screenshot.png
 ab-test/t-test/media/*
 scrape/jobinventory.com/media/*
+data-visualization/lets-plot/medium/*
