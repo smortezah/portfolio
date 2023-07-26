@@ -26,6 +26,10 @@ This repository includes my side projects on various applications of data scienc
 
 - [jobinventory](scrape/jobinventory.com): scraping job listings from jobinventory.com using Python
 
+## Miscellaneous
+
+- [Handling missing data](misc/missing-data.ipynb): various methods for handling missing data in a dataset
+
 ## Medium articles
 
 - My articles on Medium can be found [here](https://medium.com/@morihosseini/).
