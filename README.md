@@ -29,6 +29,7 @@ This repository includes my side projects on various applications of data scienc
 ## Miscellaneous
 
 - [Handling missing data](misc/missing-data.ipynb): various methods for handling missing data in a dataset
+- [Finding best threshold for logistic regression](misc/threshold-logistic-regression.ipynb): different methods to find the optimal threshold for logistic regression
 
 ## Medium articles
 
