@@ -14,6 +14,10 @@ This repository includes my side projects on various applications of data scienc
 
 - [ETL pipeline with Airflow and Docker](etl/airflow-docker): automatization of extracting data from various sources, transforming them, and loading the transformed data into a database
 
+## Synthetic data generation
+
+- [Introduction](synthetic-data/intro.ipynb): generating synthetic data using Python and also, considerations for using synthetic data
+
 ## A/B Testing
 
 - [T-test](ab-test/t-test): testing the effectiveness of a new feature in a web application
