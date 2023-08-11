@@ -30,6 +30,10 @@ This repository includes my side projects on various applications of data scienc
 
 - [jobinventory](scrape/jobinventory.com): scraping job listings from jobinventory.com using Python
 
+## Explainable AI (XAI)
+
+- [Introduction](xai/intro.ipynb): introduction to explainable AI and its importance
+
 ## Miscellaneous
 
 - [Handling missing data](misc/missing-data.ipynb): various methods for handling missing data in a dataset
