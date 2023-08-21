@@ -8,7 +8,7 @@ This repository includes my side projects on various applications of data scienc
 
 ## Computer Vision (CV)
 
-- [Image classification](computer-vision/image-classification/): building apps for classification of images, employing deep learning models
+- [Ants vs bees image classification](computer-vision/ants-bees-classification/image-classification.ipynb): an app for classification of images, employing deep learning models
 
 ## ETL
 
