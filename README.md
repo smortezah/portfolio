@@ -24,7 +24,7 @@ This repository includes my side projects on various applications of data scienc
 
 ## Web scraping
 
-- [jobinventory](scrape/jobinventory.com): scraping job listings from jobinventory.com using Python
+- [jobinventory](scrape/jobinventory.com/tutorial.ipynb): scraping job listings from jobinventory.com using Python
 
 ## Explainable AI (XAI)
 
