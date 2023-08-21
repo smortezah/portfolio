@@ -35,7 +35,7 @@ This repository includes my side projects on various applications of data scienc
 - [Handling missing data](misc/missing-data.ipynb): various methods for handling missing data in a dataset
 - [Finding best threshold for logistic regression](misc/threshold-logistic-regression.ipynb): different methods to find the optimal threshold for logistic regression
 - [Data balancing](misc/data-balancing.ipynb): different methods for balancing imbalanced datasets
-- [Auto commit](auto-commit): automating the process of committing and pushing changes to GitHub
+- [Auto commit](misc/auto-commit): automating the process of committing and pushing changes to GitHub
 - [Rich](formatting/rich/rich.ipynb): formatting text in the terminal using [Rich](https://github.com/Textualize/rich) library
 
 ## Medium articles
