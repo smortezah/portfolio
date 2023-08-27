@@ -22,6 +22,10 @@ This repository includes my side projects on various applications of data scienc
 
 - [T-test](ab-test/t-test/test.ipynb): testing the effectiveness of a new feature in a web application
 
+## Anomaly detection
+
+- [Credit card fraud detection](anomaly-detection/fraud-detection.ipynb): detecting fraudulent transactions in a dataset using neural networks
+
 ## Web scraping
 
 - [jobinventory](scrape/jobinventory.com/tutorial.ipynb): scraping job listings from jobinventory.com using Python
