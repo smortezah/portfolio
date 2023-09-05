@@ -40,6 +40,7 @@ My published articles on the Medium platform can be found [here](https://medium.
 ## :chart_with_upwards_trend: Statistical analysis
 
 - [A/B testing](stats/ab-test.ipynb): testing the effectiveness of a new feature in a web application by A/B testing
+- [Hypothesis testing: p-values around 0.05](stats/pvalue-around-0.05.ipynb): should we reject the null hypothesis if the p-value is around 0.05?
 
 ## :bulb: Synthetic data generation
 
