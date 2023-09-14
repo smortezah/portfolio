@@ -17,6 +17,7 @@ My published articles on the Medium platform can be found [here](https://medium.
 ## :art: Data visualization
 
 - [lets-plot](data-visualization/lets-plot): plotting with [lets-plot](https://lets-plot.org/index.html), a Python port of the R's [ggplot2](https://ggplot2.tidyverse.org/) library
+- [Pitfalls](data-visualization/pitfalls.ipynb): common pitfalls in data visualization and how to avoid them
 
 ## :mag: EDA (Exploratory Data Analysis)
 
