@@ -23,6 +23,7 @@ My published articles on the Medium platform can be found [here](https://medium.
 
 - [Data balancing](eda/data-balancing.ipynb): balancing imbalanced datasets using different methods
 - [Handling missing data](eda/missing-data.ipynb): handling missing data in a dataset using various methods
+- [Polars](eda/polars.ipynb): using [polars](https://www.pola.rs) library for data manipulation and analysis
 
 ## :hammer_and_wrench: ETL (Extract, Transform, Load)
 
