@@ -38,6 +38,7 @@ My published articles on the Medium platform can be found [here](https://medium.
 - [Auto commit](misc/auto-commit): automating the process of committing and pushing changes to GitHub
 - [Finding best threshold for logistic regression](misc/threshold-logistic-regression.ipynb): different methods to find the optimal threshold for logistic regression
 - [Rich](misc/rich/rich.ipynb): formatting text in the terminal using [Rich](https://github.com/Textualize/rich) library
+- [QR code](misc/qrcode.ipynb): generating QR codes
 
 ## :chart_with_upwards_trend: Statistical analysis
 
