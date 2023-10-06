@@ -288,3 +288,11 @@ html[data-navbar="false"] .navbar {
 html[data-red-border] div#__docusaurus {
   border: red solid thick;
 }
+
+/* Center all images */
+img {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
