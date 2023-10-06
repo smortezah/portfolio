@@ -1,4 +1,5 @@
 ---
+title: Fraud Detection
 tags: [Machine Learning, Fraud Detection, Classification, Keras, Deep Learning]
 ---
 

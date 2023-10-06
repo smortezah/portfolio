@@ -1,4 +1,5 @@
 ---
+title: Polars
 tags: [Polars, Data Science, Dataframes, Fast, Python]
 ---
 
