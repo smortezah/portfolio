@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[276],{1755:s=>{s.exports=JSON.parse('{"label":"Fast","permalink":"/portfolio/docs/tags/fast","allTagsPath":"/portfolio/docs/tags","count":1,"items":[{"id":"eda/polars","title":"Data Mastery: Polars Unpacked","description":"Introduction","permalink":"/portfolio/docs/eda/polars"}]}')}}]);
