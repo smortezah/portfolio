@@ -2,9 +2,6 @@
 tags: [Machine Learning, Fraud Detection, Classification, Keras, Deep Learning]
 ---
 
-import Tabs from "@theme/Tabs";
-import TabItem from "@theme/TabItem";
-
 # Credit card fraud detection
 
 Welcome to this exciting journey into the world of credit card fraud detection using the power of machine learning and Python! In this article, I’m going to walk you through the entire process of building a robust fraud detection model using the [Keras](https://keras.io/) library. Strap in as we explore each step, from data preprocessing to model evaluation, all while sprinkling in handy code examples and tips to make your learning experience smooth and enjoyable.
@@ -15,7 +12,7 @@ Before we jump into the code, let’s take a moment to understand the dataset we
 
 Now, let’s dive into exploring structure and characteristics of the dataset.
 
-```bash title="Bash"
+```bash title="Shell"
 pip install -q scipy pandas scikit-learn tensorflow keras
 ```
 
