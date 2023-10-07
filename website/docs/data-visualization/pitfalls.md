@@ -23,7 +23,7 @@ pip install numpy pandas matplotlib
 
 And let’s import all the necessary libraries and set things up.
 
-```python showLineNumbers
+```python title="Python" showLineNumbers
 import string
 
 import numpy as np
@@ -52,7 +52,7 @@ For better readability and efficient information delivery, we can use a bar char
 
 :::
 
-```python showLineNumbers
+```python title="Python" showLineNumbers
 # Data
 np.random.seed(SEED)  # set random seed for reproducibility
 n_cat = 11  # number of categories
@@ -112,7 +112,7 @@ Ensure y-axis scaling accurately represents the data, avoiding exaggeration or u
 
 :::
 
-```python showLineNumbers
+```python title="Python" showLineNumbers
 # Data
 df = pd.DataFrame(
     {
@@ -169,7 +169,7 @@ Instead, we could settle for straightforward designs that are easy-to-follow, us
 
 :::
 
-```python showLineNumbers
+```python title="Python" showLineNumbers
 # Data
 np.random.seed(SEED)
 n_columns = 3
@@ -222,7 +222,7 @@ We might want to plot separate graphs or use secondary y-axis for variables with
 
 :::
 
-```python showLineNumbers
+```python title="Python" showLineNumbers
 # Data
 np.random.seed(SEED)
 n_points = 10
@@ -273,7 +273,7 @@ Instead, 2D scatter plots with color encoding for the 3rd dimension often work b
 
 :::
 
-```python showLineNumbers
+```python title="Python" showLineNumbers
 # Data
 np.random.seed(SEED)
 
@@ -318,7 +318,7 @@ We can use techniques like transparency, jitter, or even better, a 2D density pl
 
 :::
 
-```python showLineNumbers
+```python title="Python" showLineNumbers
 # Data
 np.random.seed(SEED)
 
@@ -361,7 +361,7 @@ The remedy here is to highlight what’s important.
 
 :::
 
-```python showLineNumbers
+```python title="Python" showLineNumbers
 # Data
 np.random.seed(SEED)
 
@@ -412,7 +412,7 @@ We replace line charts with bar charts which are efficient for comparative analy
 
 :::
 
-```python showLineNumbers
+```python title="Python" showLineNumbers
 # Data
 df = pd.DataFrame(
     {
@@ -472,7 +472,7 @@ Instead of plotting a line graph with six superposed lines, we can create six su
 
 :::
 
-```python showLineNumbers
+```python title="Python" showLineNumbers
 # Data
 np.random.seed(SEED)
 
@@ -534,7 +534,7 @@ Instead, smoothing the data can help to reveal important trends and remove rando
 
 :::
 
-```python showLineNumbers
+```python title="Python" showLineNumbers
 # Data
 np.random.seed(SEED)
 x = np.linspace(0, 10, 100)

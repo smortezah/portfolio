@@ -28,7 +28,7 @@ python-qrcode is a widely-used Python library for generating QR codes. It’s si
 
 - **Verification:** To ensure that python-qrcode is correctly installed, you can run a simple test by opening a Python interpreter (type `python` in your command line) and then entering the following commands:
 
-  ```python showLineNumbers
+  ```python title="Python" showLineNumbers
   import qrcode
   ```
 
@@ -62,7 +62,7 @@ In this section, we’ll dive into the fundamentals of generating QR codes using
 
 Let’s start by creating a basic QR code that contains a simple text message:
 
-```python showLineNumbers
+```python title="Python" showLineNumbers
 # Import the required module
 import qrcode
 
@@ -83,13 +83,13 @@ Now, let’s delve into advanced usage of python-qrcode. Here’s a step-by-step
 
 - **Import the Required Module:** To begin, import the `qrcode` module:
 
-  ```python showLineNumbers
+  ```python title="Python" showLineNumbers
   import qrcode
   ```
 
 - **Create a QR Code Object:** Next, create a QR code object by calling the `qrcode.QRCode()` constructor:
 
-  ```python showLineNumbers
+  ```python title="Python" showLineNumbers
   qr = qrcode.QRCode(
       # Version of the QR code (1 to 40, higher values for more data)
       version=1,
@@ -106,7 +106,7 @@ Now, let’s delve into advanced usage of python-qrcode. Here’s a step-by-step
 
 - **Add Data to the QR Code:** Now, let’s add the data you want to encode into the QR code. For a simple text message, use the `add_data()` method:
 
-  ```python showLineNumbers
+  ```python title="Python" showLineNumbers
   data = "An advanced QR Code!"
 
   qr.add_data(data)
@@ -114,7 +114,7 @@ Now, let’s delve into advanced usage of python-qrcode. Here’s a step-by-step
 
 - **Generate the QR Code:** Generate the QR code by calling the `make(fit=True)` method:
 
-  ```python showLineNumbers
+  ```python title="Python" showLineNumbers
   qr.make(fit=True)
   ```
 
@@ -122,7 +122,7 @@ Now, let’s delve into advanced usage of python-qrcode. Here’s a step-by-step
 
 - **Create an Image:** To visualize the QR code, we’ll create an image of it using the `make_image()` method and save it to a file:
 
-  ```python showLineNumbers
+  ```python title="Python" showLineNumbers
   img = qr.make_image(fill_color="black", back_color="white")
 
   img.save("advanced_qr.png")
@@ -146,7 +146,7 @@ One of the easiest ways to enhance the visual appeal of a QR code is by adding c
 
 Here’s an example of how to create a QR code with custom colors:
 
-```python showLineNumbers
+```python title="Python" showLineNumbers
 import qrcode
 
 # Create a QR code object
@@ -180,7 +180,7 @@ python-qrcode also allows you to customize the design of your QR code by adjusti
 
 For example, you can create a larger QR code with a smaller border like this:
 
-```python showLineNumbers
+```python title="Python" showLineNumbers
 import qrcode
 
 qr = qrcode.QRCode(
