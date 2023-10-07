@@ -7,7 +7,7 @@ tags: [Polars, Data Science, Dataframes, Fast, Python]
 
 ## Introduction
 
-Welcome to the realm of [Polars](https://www.pola.rs/) — a fast DataFrame library in Python designed for large datasets. Inspired by pandas, Polars takes it up a notch by offering a more memory-efficient and faster performance, thanks to its implementation in the Rust programming language.
+Welcome to the realm of [Polars](https://www.pola.rs/)&mdash;a fast DataFrame library in Python designed for large datasets. Inspired by pandas, Polars takes it up a notch by offering a more memory-efficient and faster performance, thanks to its implementation in the Rust programming language.
 
 Polars can handle large datasets effortlessly and delivers computations at a lightning-fast speed without the need to load everything in memory. Plus, leveraging [Apache Arrow](https://arrow.apache.org/) to execute vectorized operations gives it an extra edge for high performance.
 
