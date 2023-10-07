@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[7158],{4687:s=>{s.exports=JSON.parse('{"label":"Privacy","permalink":"/portfolio/docs/tags/privacy","allTagsPath":"/portfolio/docs/tags","count":1,"items":[{"id":"misc/ethics","title":"AI Ethics","description":"Bias and Fairness in AI","permalink":"/portfolio/docs/misc/ethics"}]}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[489],{691:o=>{o.exports=JSON.parse('{"label":"Polars","permalink":"/portfolio/docs/tags/polars","allTagsPath":"/portfolio/docs/tags","count":1,"items":[{"id":"eda/polars","title":"Polars","description":"Introduction","permalink":"/portfolio/docs/eda/polars"}]}')}}]);
