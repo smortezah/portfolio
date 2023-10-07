@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[37],{4304:t=>{t.exports=JSON.parse('{"label":"Spark","permalink":"/portfolio/docs/tags/spark","allTagsPath":"/portfolio/docs/tags","count":1,"items":[{"id":"data-format/parquet","title":"Parquet format","description":"Introduction","permalink":"/portfolio/docs/data-format/parquet"}]}')}}]);

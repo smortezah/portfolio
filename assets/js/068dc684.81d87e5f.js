@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[2940],{6999:t=>{t.exports=JSON.parse('{"label":"GPT-4","permalink":"/portfolio/docs/tags/gpt-4","allTagsPath":"/portfolio/docs/tags","count":1,"items":[{"id":"synthetic-data/intro","title":"Introduction","description":"Introduction","permalink":"/portfolio/docs/synthetic-data/intro"}]}')}}]);

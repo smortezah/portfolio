@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5384],{6877:e=>{e.exports=JSON.parse('{"label":"Programming","permalink":"/portfolio/docs/tags/programming","allTagsPath":"/portfolio/docs/tags","count":1,"items":[{"id":"misc/pep8","title":"PEP 8","description":"Introduction","permalink":"/portfolio/docs/misc/pep8"}]}')}}]);
