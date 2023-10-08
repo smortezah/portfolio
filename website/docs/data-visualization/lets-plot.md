@@ -222,9 +222,7 @@ p.show()
 Now, check out some complicated plots!
 
 :::note
-
 The datasets are available [here](https://github.com/smortezah/Portfolio/tree/main/data-visualization/lets-plot/data).
-
 :::
 
 ```python title="Python" showLineNumbers

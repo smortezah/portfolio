@@ -41,15 +41,11 @@ SEED = 7
 ## Pitfall 1: Inappropriate Use of Pie charts
 
 :::caution Pitfall
-
 A common error that many make is to use pie charts when there are too many categories. Pie charts work best when there’s only a few categories to compare. Otherwise, the chart looks cluttered and doesn’t vindicate the cause of visualisation.
-
 :::
 
 :::tip Fix
-
 For better readability and efficient information delivery, we can use a bar chart.
-
 :::
 
 ```python title="Python" showLineNumbers
@@ -101,15 +97,11 @@ There you have it! The right plot ensures there’s no straining of eyes or brow
 ## Pitfall 2: Misleading Y-axis
 
 :::caution Pitfall
-
 Manipulating the y-axis to emphasize a minor change is a common issue. This can mislead the viewer into assuming a greater difference than there actually is.
-
 :::
 
 :::tip Fix
-
 Ensure y-axis scaling accurately represents the data, avoiding exaggeration or understatement. Start from zero, if possible, for clarity.
-
 :::
 
 ```python title="Python" showLineNumbers
@@ -158,15 +150,11 @@ In the left plot above, the increase in revenue might seem significant due to th
 ## Pitfall 3: Overcomplication of Plot Designs
 
 :::caution Pitfall
-
 Sometimes, we try to create aesthetically striking visualizations and end up overcomplicating the design. This can result in the dampening of the information we were trying to convey.
-
 :::
 
 :::tip Fix
-
 Instead, we could settle for straightforward designs that are easy-to-follow, using neat colors.
-
 :::
 
 ```python title="Python" showLineNumbers
@@ -211,15 +199,11 @@ plt.show()
 ## Pitfall 4: Ignoring Scale Differences
 
 :::caution Pitfall
-
 We often overlook the scale of different variables while plotting them in the same graph, which can lead to the misrepresentation of data.
-
 :::
 
 :::tip Fix
-
 We might want to plot separate graphs or use secondary y-axis for variables with different scales.
-
 :::
 
 ```python title="Python" showLineNumbers
@@ -262,15 +246,11 @@ plt.show()
 ## Pitfall 5: Unconsidered use of 3D Plots
 
 :::caution Pitfall
-
 While 3D plots might seem like a good idea to represent a third variable, it often leads to misinterpretation and confusion. This is exacerbated if the view angle hides important details.
-
 :::
 
 :::tip Fix
-
 Instead, 2D scatter plots with color encoding for the 3rd dimension often work better.
-
 :::
 
 ```python title="Python" showLineNumbers
@@ -307,15 +287,11 @@ plt.show()
 ## Pitfall 6: Overplotting
 
 :::caution Pitfall
-
 While trying to visualize a large amount of data, we sometimes end with overplotting. This happens when data points overlap each other and obscure the view.
-
 :::
 
 :::tip Fix
-
 We can use techniques like transparency, jitter, or even better, a 2D density plot.
-
 :::
 
 ```python title="Python" showLineNumbers
@@ -350,15 +326,11 @@ plt.show()
 ## Pitfall 7: Not Emphasizing on What’s Important
 
 :::caution Pitfall
-
 A pitfall comes when visualizing everything but not emphasizing what is important. We always want to highlight the most important aspects of our visualizations.
-
 :::
 
 :::tip Fix
-
 The remedy here is to highlight what’s important.
-
 :::
 
 ```python title="Python" showLineNumbers
@@ -401,15 +373,11 @@ plt.show()
 ## Pitfall 8: Improper use of Line charts for Discrete Data
 
 :::caution Pitfall
-
 The line chart connects data points with a line implying a smooth continuity in the data which is often incorrect for _discrete_ categories.
-
 :::
 
 :::tip Fix
-
 We replace line charts with bar charts which are efficient for comparative analysis as well as presenting discrete data. It’s important to select the right chart type when visualizing data in order to accurately represent the data’s story.
-
 :::
 
 ```python title="Python" showLineNumbers
@@ -461,15 +429,11 @@ plt.show()
 ## Pitfall 9: Not Using Faceting for multidimensional data
 
 :::caution Pitfall
-
 Faceting is the act of breaking data variables up across multiple subplots, and combining those subplots into a single figure. Plotting multiple dimensions in a single graph can overwhelm viewers and obscure patterns.
-
 :::
 
 :::tip Fix
-
 Instead of plotting a line graph with six superposed lines, we can create six subplots with one subplot for each dimension.
-
 :::
 
 ```python title="Python" showLineNumbers
@@ -523,15 +487,11 @@ plt.show()
 ## Pitfall 10: Not Smoothing Noisy Data
 
 :::caution Pitfall
-
 Data often comes with noise. Yet bypassing the important step of smoothing noisy data before visualizing it can lead to an unclear and misleading interpretation.
-
 :::
 
 :::tip Fix
-
 Instead, smoothing the data can help to reveal important trends and remove random variation.
-
 :::
 
 ```python title="Python" showLineNumbers

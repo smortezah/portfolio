@@ -10,7 +10,5 @@ slug: /
 :link: By sharing these projects, I hope to contribute to the data science community and inspire others to learn and explore this exciting field.
 
 :::note
-
 My published articles on the Medium platform can be found [here](https://medium.com/@morihosseini/).
-
 :::

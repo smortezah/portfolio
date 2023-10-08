@@ -65,7 +65,6 @@ with open("data.csv", "r") as csv_file:
 ### CSV Magic Tips
 
 :::tip Dealing with Headers
-
 Headers can be magical blessings when they accompany your CSV files. They provide context and names to the columns, making your data quests much more enjoyable. When reading CSV files, you can access the headers separately using the `csv.DictReader` or `csv.reader` class.
 
 ```python title="Python" showLineNumbers
@@ -88,11 +87,9 @@ with open("data.csv", "r") as csv_file:
 ```
 ['Name', 'Age', 'Occupation']
 ```
-
 :::
 
 :::tip Befriending pandas
-
 Pandas, the chivalrous Python library, can effortlessly read and write CSV files, converting them into majestic DataFrames. DataFrames are like enchanted tables that empower you to perform extraordinary data manipulations with ease!
 
 ```python title="Python" showLineNumbers
@@ -104,7 +101,6 @@ df = pd.read_csv("data.csv")
 # Writing a DataFrame to a CSV file
 df.to_csv("new_data.csv", index=False)
 ```
-
 :::
 
 ### Additional Resources
@@ -152,7 +148,6 @@ with open("data.json", "r") as json_file:
 ### JSON Magic Tips
 
 :::tip Nested Magic
-
 JSON can store complex and nested data structures with ease. Imagine nesting magical creatures within magical creatures! Python lets you traverse the nested JSON using dictionaries and lists.
 
 ```python title="Python" showLineNumbers
@@ -180,11 +175,9 @@ print(data["students"][0]["name"])  # Output: "Harry"
 Hedwig
 Harry
 ```
-
 :::
 
 :::tip Encoding & Decoding Potions
-
 Python can conjure JSON from dictionaries and lists (encoding) and reverse the spell to create Python objects from JSON (decoding).
 
 ```python title="Python" showLineNumbers
@@ -205,7 +198,6 @@ print(decoded_data)
 {"name": "Gandalf", "age": 2019, "occupation": "Wizard"}
 {'name': 'Gandalf', 'age': 2019, 'occupation': 'Wizard'}
 ```
-
 :::
 
 ### Additional Resources
@@ -260,13 +252,10 @@ print(df_read)
 ### Parquet Magic Tips
 
 :::tip Fast as a Firebolt
-
 Parquet’s columnar storage shines when it comes to analytical queries that involve specific columns. It’s like having a library of spells to quickly access the data you need without loading everything else. Leverage Parquet’s speed to fly through your data exploration tasks!
-
 :::
 
 :::tip Compatibility Charms
-
 Parquet plays well with many programming languages, including Python, R, Java, and more. It’s the ultimate cross-language translator, allowing you to share data files across different magical realms.
 
 ```r title="R" showLineNumbers
@@ -292,7 +281,6 @@ print(df)
 0  Legolas  2931.0
 1  Boromir  3289.0
 ```
-
 :::
 
 ### Additional Resources
@@ -343,15 +331,11 @@ print(df_read)
 ### Feather Magic Tips
 
 :::tip Swift as a Phoenix
-
 Feather’s binary storage and efficient design enable quick reading and writing of data, making it an excellent choice for handling large datasets with ease.
-
 :::
 
 :::tip Perfect Companion for pandas
-
 Feather plays wonderfully well with `pandas`, one of Python’s most versatile data manipulation libraries. This synergy allows you to seamlessly store and share dataframes with other data sorcerers in your Python realm.
-
 :::
 
 ### Additional Resources
@@ -418,13 +402,10 @@ conn.close()
 ### SQL Magic Tips
 
 :::tip Readability and Simplicity
-
 SQL’s power lies in its simplicity and readability. Its human-readable syntax allows you to express complex data operations in just a few lines of code.
-
 :::
 
 :::tip Parameterized Queries for Security
-
 When crafting SQL spells, be mindful of SQL injection attacks. Always use parameterized queries to shield yourself from malicious entities attempting to tamper with your data.
 
 ```python title="Python" showLineNumbers
@@ -438,7 +419,6 @@ cursor.execute(safe_query, (name,))
 ```
 
 In this example, if the `name` value comes from user input and is not properly validated, an attacker can manipulate it to execute a dangerous command like dropping the entire `wizards` table, causing data loss. With parameterized queries, you separate the SQL code from the user-provided input. Instead of directly embedding the input into the query string, you use placeholders (often denoted by `?`) in the query. Then, you pass the actual input values separately.
-
 :::
 
 ### Additional Resources

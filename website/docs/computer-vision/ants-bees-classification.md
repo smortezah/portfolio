@@ -35,9 +35,7 @@ import zipfile
 We will download 120 training images&mdash;a subset of [ImageNet](https://www.image-net.org/)&mdash;for each of ants and bees and also, 75 validation images for each class. If we were going to do the classification from scratch, we would need to collect a lot more data, but since we are using transfer learning, we can get away with a small dataset.
 
 :::note
-
 The dataset requires 45.2 MB of disk space.
-
 :::
 
 ```python title="Python" showLineNumbers
@@ -275,9 +273,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
 Here, we freeze all the convolutional neural network (ConvNet) except the final fully connected layer.
 
 :::note
-
 the regnet_x_3_2gf model weights need 15.3 MB of disk space.
-
 :::
 
 ```python title="Python" showLineNumbers
