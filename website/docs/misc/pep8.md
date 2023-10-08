@@ -3,9 +3,7 @@ title: PEP 8
 tags: [Python, PEP8, Coding, Programming, Coding Style]
 ---
 
-# PEP 8: The Pythonic Path to Code Elegance
-
-## Introduction
+# PEP 8: The Path to Code Elegance
 
 Welcome, fellow Pythonistas, to another exciting dive into the world of Python best practices and coding style. In this blog post, we’ll embark on a journey to explore [PEP 8](https://www.python.org/dev/peps/pep-0008/), the official style guide for Python code. If you’ve ever wondered how to write clean, readable, and Pythonic code, you’ve come to the right place. So, grab your coding hats, fire up your Python interpreters, and let’s dive into the wonderful world of PEP 8!
 
@@ -25,8 +23,9 @@ PEP 8 covers various aspects of Python code style, including indentation, line l
 
 Just like aligning your furniture, consistent indentation is crucial for maintaining code structure. We use 4 spaces (no tabs!) for each indentation level. Remember, spaces are a programmer’s best friend!
 
-```python title="Python" showLineNumbers
-# Bad
+:::caution Bad
+
+```python showLineNumbers
 def process_data(data):
  for x in data:
   if x > 0:
@@ -35,10 +34,13 @@ def process_data(data):
         continue
 
  print('Complete!')
+```
 
-################################################################
+:::
 
-# Good
+:::tip Good
+
+```python showLineNumbers
 def process_data(data):
     # Loop over data
     for x in data:
@@ -52,12 +54,15 @@ def process_data(data):
     print('Complete!')
 ```
 
+:::
+
 ### Line Length
 
 Long lines of code can be a pain to read, especially when they extend beyond the standard 79 characters. Break lines using parentheses, backslashes, or even better, embrace the beauty of Python’s implicit line continuation.
 
-```python title="Python" showLineNumbers
-# Bad
+:::caution Bad
+
+```python showLineNumbers
 this_is_a_super_long_variable_name_spanning_over_hundred_characters_which_makes_it_hard_to_read = {
     'key1': 'long value here', 'key2': 'many long values that should be split across lines'
 }
@@ -66,10 +71,13 @@ print('This error message is super super long and verbose spanning multiple line
 
 if (long_condition_1 and long_condition_2 and long_condition_3 and long_condition_4):
     do_something()
+```
 
-################################################################
+:::
 
-# Good
+:::tip Good
+
+```python showLineNumbers
 long_variable_name = {
     'key1': 'long value here',
     'key2': 'other long value',
@@ -90,12 +98,15 @@ if (
     do_something()
 ```
 
+:::
+
 ### Naming Conventions
 
 Naming things is hard, but PEP 8 has got your back. From variable names to function names and everything in between, PEP 8 provides guidelines to help you name your entities with clarity and consistency.
 
-```python title="Python" showLineNumbers
-# Bad
+:::caution Bad
+
+```python showLineNumbers
 def getModelMetrics():
     pass
 
@@ -105,10 +116,13 @@ class myNetwork:
       self.fullName = Name
 
 max_epochs = 100
+```
 
-################################################################
+:::
 
-# Good
+:::tip Good
+
+```python showLineNumbers
 def get_model_metrics():
     pass
 
@@ -119,6 +133,8 @@ class MyNetwork:
 
 MAX_EPOCHS = 100
 ```
+
+:::
 
 The good examples above use:
 
@@ -135,8 +151,9 @@ Now that we’ve covered the basics, let’s put our coding hats on and dive int
 
 Organizing your imports can make a significant difference in code readability. Group related imports together, separate standard library imports from third-party imports, and keep them neatly organized at the top of your file.
 
-```python title="Python" showLineNumbers
-# Bad
+:::caution Bad
+
+```python showLineNumbers
 import numpy as np
 from utils import helper_function
 import os
@@ -145,10 +162,13 @@ import sys
 import pandas as pd
 
 ...
+```
 
-################################################################
+:::
 
-# Good
+:::tip Good
+
+```python showLineNumbers
 import os
 import sys
 
@@ -160,13 +180,16 @@ from utils import helper_function
 
 ...
 ```
+
+:::
 
 ### Whitespaces
 
 Don’t fear the white space! Use blank lines judiciously to separate logical sections of your code, making it more scannable and comprehensible.
 
-```python title="Python" showLineNumbers
-# Bad
+:::caution Bad
+
+```python showLineNumbers
 def calculate_average(numbers):
     # Let's calculate the average of a list of numbers
     total = 0
@@ -183,10 +206,13 @@ my_numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 result = calculate_average(my_numbers)
 # Print the result
 print("The average is:", result)
+```
 
-################################################################
+:::
 
-# Good
+:::tip Good
+
+```python showLineNumbers
 def calculate_average(numbers):
     # Let's calculate the average of a list of numbers
     total = 0
@@ -211,12 +237,15 @@ result = calculate_average(my_numbers)
 print("The average is:", result)
 ```
 
+:::
+
 ### Comments and Docstrings
 
 Your code should tell a story, and comments and docstrings are your narrators. Craft informative comments and docstrings to guide others (and your future self) through the intricacies of your code.
 
-```python title="Python" showLineNumbers
-# Bad
+:::caution Bad
+
+```python showLineNumbers
 def calculate_average(numbers):
     # Calculate average
     total = 0
@@ -229,10 +258,13 @@ def calculate_average(numbers):
     average = total / count
 
     return average
+```
 
-################################################################
+:::
 
-# Good
+:::tip Good
+
+```python showLineNumbers
 def calculate_average(numbers):
     """
     Calculate the average of a list of numbers.
@@ -254,6 +286,8 @@ def calculate_average(numbers):
 
     return average
 ```
+
+:::
 
 ## Tools and Resources
 
