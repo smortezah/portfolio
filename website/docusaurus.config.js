@@ -24,7 +24,7 @@ const config = {
   organizationName: "smortezah", // Usually your GitHub org/user name.
   projectName: "portfolio", // Usually your repo name.
 
-  onBrokenLinks: "warn",
+  onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -79,15 +79,10 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "Portfolio",
+        title: "Home",
         items: [
-          // {
-          //   label: "Tutorial",
-          //   type: "docSidebar",
-          //   sidebarId: "tutorialSidebar",
-          //   position: "left",
-          // },
-          // { to: "/blog", label: "Blog", position: "left" },
+          { to: "/docs", label: "Tutorials", position: "left" },
+          { to: "/blog", label: "Blog", position: "left" },
           {
             position: "right",
             href: "https://github.com/smortezah/portfolio",
