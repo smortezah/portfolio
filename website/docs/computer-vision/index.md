@@ -1,4 +1,4 @@
-# Anomaly Detection
+# Computer Vision
 
 ```mdx-code-block
 import DocCardList from '@theme/DocCardList';
