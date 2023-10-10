@@ -1,5 +1,6 @@
 ---
 title: Keras Core
+authors: [mori]
 tags: [Keras, PyTorch, Jax, Deep Learning, Machine Learning]
 ---
 
@@ -14,6 +15,8 @@ Exciting times lie ahead!
 But wait, why are they making Keras multi-backend again? Let’s take a quick trip down memory lane. Not too long ago, Keras had the ability to run on multiple backends like Theano, TensorFlow, CNTK, and even MXNet. However, in 2018, they decided to focus exclusively on TensorFlow as other backends discontinued development. But times have changed! Fast forward to 2023, and we see TensorFlow dominating the production ML space with a market share of 55% to 60%. On the other hand, PyTorch has captured the ML research realm with a market share of 40% to 45%. Meanwhile, JAX, although with a smaller market share, has gained recognition from leading players in generative AI. It’s clear that each framework has its strengths and user base. Keras Core enables the users to leverage the power of all three frameworks simultaneously.
 
 Say goodbye to framework silos and welcome the new era of multi-framework ML!
+
+<!--truncate-->
 
 ## Exploring the Main Features of Keras Core
 

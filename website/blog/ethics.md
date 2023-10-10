@@ -1,5 +1,6 @@
 ---
 title: AI Ethics
+authors: [mori]
 tags: [AI, Ethics, Bias, Transparency, Privacy]
 ---
 
@@ -12,6 +13,8 @@ In the realm of artificial intelligence, addressing the issue of bias and ensuri
 ### Q1: Why is addressing bias and ensuring fairness in AI essential, especially in real-world applications?
 
 Addressing bias and ensuring fairness in AI is of paramount importance in real-world applications because these technologies are increasingly integrated into _decision-making_ processes across various domains, from finance and healthcare to criminal justice. When AI models exhibit bias, they can perpetuate and even exacerbate _societal inequalities_. For example, biased algorithms in lending can lead to discrimination against marginalized groups, and biased facial recognition systems may lead to wrongful arrests. These issues not only _undermine trust in AI_ but also have real-life consequences for individuals and communities. Thus, addressing bias and ensuring fairness is an ethical imperative, promoting equity, and mitigating the harmful impact of AI on vulnerable populations.
+
+<!--truncate-->
 
 Additionally, from a business perspective, failing to address bias and fairness concerns can result in legal and reputational risks. Companies that deploy biased AI systems may face lawsuits and damage to their brand image. Therefore, it’s not only a moral obligation but also a strategic imperative for organizations to invest in addressing bias and ensuring fairness in their AI technologies. Ultimately, by actively working to eliminate bias and enhance fairness, we can harness the potential of AI for the betterment of society and avoid reinforcing existing inequalities.
 
