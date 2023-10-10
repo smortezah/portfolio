@@ -1,5 +1,5 @@
 ---
-title: ETL pipeline
+title: ETL Pipeline
 tags: [AirFlow, Docker, ETL, PostgreSQL, Data Engineering]
 ---
 
