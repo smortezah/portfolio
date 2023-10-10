@@ -1,5 +1,5 @@
 ---
-title: Visualization with lets-plot
+title: lets-plot
 tags: [Data Visualization, Python, GGPlot2, Charts, Visualization]
 ---
 
