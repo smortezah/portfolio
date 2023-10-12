@@ -1,5 +1,6 @@
 ---
-title: Venn Diagram
+title: "Venn Diagrams: Art & Pitfalls"
+authors: [mori]
 tags:
   [
     Data Science,
@@ -10,9 +11,9 @@ tags:
   ]
 ---
 
-# Venn Diagrams: Art & Pitfalls
-
 In the world of data visualization, few tools have gained as much recognition as Venn diagrams. These overlapping circles have become synonymous with illustrating set relationships, making complex data more accessible at a glance. Yet, while Venn diagrams are undeniably valuable, they also have a propensity to mislead. As a data scientist, I’ve encountered their allure and their limitations. In this article, we’ll delve into why Venn diagrams, despite their apparent simplicity, can be misleading if not used with caution. We’ll explore the intricacies that lie beneath those overlapping circles, shedding light on when and how to employ them effectively, and when to turn to alternative visualization methods for a more accurate representation of data.
+
+<!--truncate-->
 
 The followings are some reasons why Venn diagrams can sometimes be considered misleading.
 

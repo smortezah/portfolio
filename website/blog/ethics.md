@@ -1,10 +1,8 @@
 ---
-title: AI Ethics
+title: "Exploring AI Ethics: 15 Key Q&As"
 authors: [mori]
 tags: [AI, Ethics, Bias, Transparency, Privacy]
 ---
-
-# Exploring AI Ethics: 15 Key Q&As
 
 ## Bias and Fairness in AI
 

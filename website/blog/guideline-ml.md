@@ -1,10 +1,9 @@
 ---
-title: Guideline for ML
+title: Advanced Guidelines for ML Model Training
+authors: [mori]
 tags:
   [Machine Learning, Model Training, Guidelines, Data Science, Neural Networks]
 ---
-
-# Advanced Guidelines for Machine Learning Model Training
 
 ## Understanding Model Training
 
@@ -13,6 +12,8 @@ Welcome to the captivating realm of machine learning, where algorithms breathe l
 Imagine yourself as an artisan, crafting a masterpiece from raw materials. Just as a painter starts with a blank canvas, you begin with a dataset rich in information. This dataset is your palette, and your model is the brush that will paint the future. 🎨🤖
 
 Model training is the process of imbuing your creation with the ability to learn from data and make predictions. Just as a symphony conductor guides each musician to play in harmony, you guide your model through the data.
+
+<!--truncate-->
 
 ## Preparing your data
 

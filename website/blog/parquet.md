@@ -1,13 +1,14 @@
 ---
-title: Parquet format
+title: Why is Parquet format so popular?
+authors: [mori]
 tags: [Data Science, Parquet, Data Storage, Spark, Pandas Dataframe]
 ---
-
-# Why is Parquet format so popular?
 
 ## Introduction
 
 [Parquet](https://parquet.apache.org/) is a popular columnar storage format for big data processing. It’s widely used in the Hadoop ecosystem and provides several benefits over traditional row-based storage formats like CSV and JSON. In this article, we’ll take a closer look at why Parquet is so popular and how it can help improve the performance and efficiency of big data processing tasks. Also, we’ll compare it to the popular pandas DataFrame.
+
+<!--truncate-->
 
 ## History
 
