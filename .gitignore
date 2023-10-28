@@ -130,15 +130,13 @@ dmypy.json
 
 # specific to this project
 .DS_Store
-hymenoptera_data/
-
 *.pt
-
 **/media/*.mov
+anomaly-detection/credit_card.arff
+anomaly-detection/high-angle-lock-with-credit-cards-top-laptop.jpg
 computer-vision/image-classification/ants-bees/media/sample.png
 computer-vision/image-classification/ants-bees/media/screenshot.png
-ab-test/t-test/media/*
+visualization/lets-plot/medium/*
+hymenoptera_data/
+hypertune/search/
 scrape/jobinventory.com/media/*
-data-visualization/lets-plot/medium/*
-anomaly-detection/credit_card.arff
-hyper-optim/search
