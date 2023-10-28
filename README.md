@@ -2,7 +2,9 @@
 
 This repository includes my side projects on various applications of data science and machine learning.
 
-My published articles on the Medium platform can be found [here](https://medium.com/@morihosseini/).
+Check the documentaion [here](https://smortezah.github.io/portfolio/docs).
+
+Also, my articles on the Medium platform can be found [here](https://medium.com/@morihosseini/).
 
 **Note:** The following list is sorted alphabetically.
 
@@ -14,11 +16,6 @@ My published articles on the Medium platform can be found [here](https://medium.
 
 - [Ants vs bees image classification](computer-vision/ants-bees-classification/image-classification.ipynb): an app for classification of images, employing deep learning models
 
-## :art: Data visualization
-
-- [lets-plot](data-visualization/lets-plot): plotting with [lets-plot](https://lets-plot.org/index.html), a Python port of the R's [ggplot2](https://ggplot2.tidyverse.org/) library
-- [Pitfalls](data-visualization/pitfalls.ipynb): common pitfalls in data visualization and how to avoid them
-
 ## :mag: EDA (Exploratory Data Analysis)
 
 - [Data balancing](eda/data-balancing.ipynb): balancing imbalanced datasets using different methods
@@ -29,16 +26,14 @@ My published articles on the Medium platform can be found [here](https://medium.
 
 - [ETL pipeline with Airflow and Docker](etl/airflow-docker): automatization of extracting data from various sources, transforming them, and loading the transformed data into a database
 
-## :memo: Explainable AI (XAI)
+## :gear: Hyperparameter tuning
 
-- [Introduction](xai/intro.ipynb): introduction to explainable AI and its importance
+- [KerasTuner](hypertune/kerasTuner.ipynb): hyperparameter tuning using [KerasTuner](https://keras.io/keras_tuner/) library
 
 ## :package: Miscellaneous
 
 - [Auto commit](misc/auto-commit): automating the process of committing and pushing changes to GitHub
 - [Finding best threshold for logistic regression](misc/threshold-logistic-regression.ipynb): different methods to find the optimal threshold for logistic regression
-- [Rich](misc/rich/rich.ipynb): formatting text in the terminal using [Rich](https://github.com/Textualize/rich) library
-- [QR code](misc/qrcode.ipynb): generating QR codes
 
 ## :chart_with_upwards_trend: Statistical analysis
 
@@ -49,11 +44,25 @@ My published articles on the Medium platform can be found [here](https://medium.
 
 - [Introduction](synthetic-data/intro.ipynb): generating synthetic data using Python and also, considerations for using synthetic data
 
+## :desktop_computer: Terminal
+
+- [Rich](terminal/rich/rich.ipynb): formatting text in the terminal using [Rich](https://github.com/Textualize/rich) library
+
 ## :hourglass_flowing_sand: Time-series
 
 - [Prevent overfitting](time-series/prevent-overfitting.ipynb): preventing overfitting in time series forecasting using different techniques
 - [Forecasting with sktime](time-series/sktime.ipynb): time-series forecasting using [sktime](https://github.com/sktime/sktime) library
 
+## :art: Visualization
+
+- [lets-plot](visualization/lets-plot): plotting with [lets-plot](https://lets-plot.org/index.html), a Python port of the R's [ggplot2](https://ggplot2.tidyverse.org/) library
+- [Pitfalls](visualization/pitfalls.ipynb): common pitfalls in data visualization and how to avoid them
+- [QR code](visualization/qrcode.ipynb): generating QR codes
+
 ## :spider_web: Web scraping
 
 - [jobinventory](scrape/jobinventory.com/tutorial.ipynb): scraping job listings from jobinventory.com using Python
+
+## :memo: XAI (Explainable AI)
+
+- [Introduction](xai/intro.ipynb): an introduction to explainable AI and its importance
