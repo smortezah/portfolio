@@ -304,5 +304,3 @@ Popular text editors and IDEs like [Visual Studio Code](https://code.visualstudi
 ## Conclusion
 
 Congratulations, dear Pythonistas! You’ve taken a marvelous journey through the realms of PEP 8, the Pythonic path to code elegance. By embracing PEP 8, you’ve armed yourself with the knowledge and tools to write clean, readable, and Pythonic code. Remember, _style matters_, and your code should not only be correct but also beautiful. So go forth, code with flair, and let the Pythonic magic unfold!
-
-Until next time!
