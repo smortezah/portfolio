@@ -35,6 +35,10 @@ Also, my articles on the Medium platform can be found [here](https://medium.com/
 - [Auto commit](misc/auto-commit): automating the process of committing and pushing changes to GitHub
 - [Finding best threshold for logistic regression](misc/threshold-logistic-regression.ipynb): different methods to find the optimal threshold for logistic regression
 
+## :lock: Privacy
+
+- [Anonymization](privacy/anonymization.ipynb): an introduction to data anonymization and its applications
+
 ## :chart_with_upwards_trend: Statistical analysis
 
 - [A/B testing](stats/ab-test.ipynb): testing the effectiveness of a new feature in a web application by A/B testing
