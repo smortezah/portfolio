@@ -1,8 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const {themes} = require('prism-react-renderer');
+const lightTheme = themes.github;
+const darkTheme = themes.dracula;
 const math = require("remark-math");
 const katex = require("rehype-katex");
 
@@ -59,7 +60,7 @@ const config = {
 
   stylesheets: [
     {
-      href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+      href: "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",
       type: "text/css",
       integrity:
         "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
@@ -160,9 +161,9 @@ const config = {
         copyright: `Copyright &copy; ${new Date().getFullYear()} Morteza Hosseini`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-        additionalLanguages: ["bash", "rust", "docker", "r"],
+        theme: lightTheme,
+        darkTheme: darkTheme,
+        additionalLanguages: ["bash", "python", "docker", "r"],
       },
       mermaid: {
         theme: { light: "neutral", dark: "forest" },
