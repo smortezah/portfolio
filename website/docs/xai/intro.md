@@ -48,7 +48,7 @@ Here’s an example of how to use SHAP in Python:
 pip install shap scikit-learn
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 import shap
@@ -99,7 +99,7 @@ Decision trees are a model-specific technique that are inherently interpretable.
 pip install scikit-learn
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.datasets import load_iris
 from sklearn import tree
@@ -141,7 +141,7 @@ plt.show()
 
 Rule-based models are a model-specific technique that are similar to decision trees, but are based on a set of if-else statements. Each rule corresponds to a specific condition on the features, and the output is determined by the first rule that is satisfied.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Create rule-based model
 def rule_based_model(X):
     if X[2] <= 2.45:

@@ -23,9 +23,9 @@ PEP 8 covers various aspects of Python code style, including indentation, line l
 
 Just like aligning your furniture, consistent indentation is crucial for maintaining code structure. We use 4 spaces (no tabs!) for each indentation level. Remember, spaces are a programmer’s best friend!
 
-:::caution Bad
+:::caution[Bad]
 
-```python showLineNumbers
+```python
 def process_data(data):
  for x in data:
   if x > 0:
@@ -38,9 +38,9 @@ def process_data(data):
 
 :::
 
-:::tip Good
+:::tip[Good]
 
-```python showLineNumbers
+```python
 def process_data(data):
     # Loop over data
     for x in data:
@@ -60,9 +60,9 @@ def process_data(data):
 
 Long lines of code can be a pain to read, especially when they extend beyond the standard 79 characters. Break lines using parentheses, backslashes, or even better, embrace the beauty of Python’s implicit line continuation.
 
-:::caution Bad
+:::caution[Bad]
 
-```python showLineNumbers
+```python
 this_is_a_super_long_variable_name_spanning_over_hundred_characters_which_makes_it_hard_to_read = {
     'key1': 'long value here', 'key2': 'many long values that should be split across lines'
 }
@@ -75,9 +75,9 @@ if (long_condition_1 and long_condition_2 and long_condition_3 and long_conditio
 
 :::
 
-:::tip Good
+:::tip[Good]
 
-```python showLineNumbers
+```python
 long_variable_name = {
     'key1': 'long value here',
     'key2': 'other long value',
@@ -104,9 +104,9 @@ if (
 
 Naming things is hard, but PEP 8 has got your back. From variable names to function names and everything in between, PEP 8 provides guidelines to help you name your entities with clarity and consistency.
 
-:::caution Bad
+:::caution[Bad]
 
-```python showLineNumbers
+```python
 def getModelMetrics():
     pass
 
@@ -120,9 +120,9 @@ max_epochs = 100
 
 :::
 
-:::tip Good
+:::tip[Good]
 
-```python showLineNumbers
+```python
 def get_model_metrics():
     pass
 
@@ -151,9 +151,9 @@ Now that we’ve covered the basics, let’s put our coding hats on and dive int
 
 Organizing your imports can make a significant difference in code readability. Group related imports together, separate standard library imports from third-party imports, and keep them neatly organized at the top of your file.
 
-:::caution Bad
+:::caution[Bad]
 
-```python showLineNumbers
+```python
 import numpy as np
 from utils import helper_function
 import os
@@ -166,9 +166,9 @@ import pandas as pd
 
 :::
 
-:::tip Good
+:::tip[Good]
 
-```python showLineNumbers
+```python
 import os
 import sys
 
@@ -187,9 +187,9 @@ from utils import helper_function
 
 Don’t fear the white space! Use blank lines judiciously to separate logical sections of your code, making it more scannable and comprehensible.
 
-:::caution Bad
+:::caution[Bad]
 
-```python showLineNumbers
+```python
 def calculate_average(numbers):
     # Let's calculate the average of a list of numbers
     total = 0
@@ -210,9 +210,9 @@ print("The average is:", result)
 
 :::
 
-:::tip Good
+:::tip[Good]
 
-```python showLineNumbers
+```python
 def calculate_average(numbers):
     # Let's calculate the average of a list of numbers
     total = 0
@@ -243,9 +243,9 @@ print("The average is:", result)
 
 Your code should tell a story, and comments and docstrings are your narrators. Craft informative comments and docstrings to guide others (and your future self) through the intricacies of your code.
 
-:::caution Bad
+:::caution[Bad]
 
-```python showLineNumbers
+```python
 def calculate_average(numbers):
     # Calculate average
     total = 0
@@ -262,9 +262,9 @@ def calculate_average(numbers):
 
 :::
 
-:::tip Good
+:::tip[Good]
 
-```python showLineNumbers
+```python
 def calculate_average(numbers):
     """
     Calculate the average of a list of numbers.

@@ -19,7 +19,7 @@ Before we don our data superhero capes, let’s take a moment to understand the 
 
 Now that we’re familiar with the missing data breeds, it’s time to put on our detective hats and find those gaps in our dataset. Our Python magnifying glass and trusty pandas library will come to the rescue:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import pandas as pd
 
 # Load your dataset
@@ -46,7 +46,7 @@ Original dataset:
 3  4.0  NaN  11.0  15
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Check for missing values in the entire dataset
 print("\nMissing values in the entire dataset:")
 print(data.isnull().sum())
@@ -76,7 +76,7 @@ The `isnull().sum()` command gives us the number of missing values in each colum
 
 Missing data can leave unsightly holes in our analysis, but fear not, for we shall artfully fill in these gaps with imputation techniques. One popular method is mean imputation:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Print the original column A
 print("\nOriginal column A:")
 print(data["A"])
@@ -109,7 +109,7 @@ Name: A, dtype: float64
 
 For sequential data, such as time-series, we can employ forward-fill or backward-fill techniques to propagate the last observed value:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Print the original column B
 print("\nOriginal column B:")
 print(data["B"])
@@ -156,7 +156,7 @@ Name: B, dtype: float64
 
 For a touch of magic, we can use machine learning models to predict missing values based on other features:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sklearn.ensemble import RandomForestRegressor
 
 
@@ -219,7 +219,7 @@ After imputing column C:
 
 Let’s embrace the spirit of camaraderie and let our friendly neighbors help us fill in the missing values:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sklearn.impute import KNNImputer
 
 # Create KNN imputer
@@ -262,7 +262,7 @@ Now that we’ve sprinkled Python magic and conquered missing data, it’s time 
 
 Let’s verify if our imputation methods left any missing values lurking:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Verify if any missing values remain
 print(data_imputed.isnull().sum())
 ```
@@ -279,7 +279,7 @@ dtype: int64
 
 For the imputed columns, compare the original and imputed distributions to ensure they’re not drastically altered:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Visualize the distribution of the original and imputed data
 data.plot(
     kind="density", title="Original data", ylim=(0, 1), figsize=(4, 2)
@@ -300,7 +300,7 @@ data_imputed.plot(
 
 For time-series data, we’ll need a specialized approach. Enter interpolation:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Print the dataset before interpolation
 print("Before interpolation:")
 print(data)
@@ -330,7 +330,7 @@ After interpolation:
 
 When dealing with categorical data, mode imputation comes to our rescue:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Dataset
 data_cat = pd.Series(["a", "b", None, "d"] * 2 + ["b"])
 

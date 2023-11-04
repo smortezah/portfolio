@@ -24,7 +24,7 @@ Feature selection is an art that blends domain knowledge with data exploration. 
 
 In Python, the `pandas` library is our trusty partner for handling data. Here, we have our time series data loaded into a DataFrame named `data`, and targeting a column named `close_USD`.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import pandas as pd
 from sklearn.datasets import fetch_openml
 
@@ -120,7 +120,7 @@ data.head()
 
 Now that we have our features and target separated, it’s time to identify the most influential features. Python’s `sklearn` library comes to the rescue with its `SelectKBest` class, which selects the top $k$ features based on a scoring function. For univariate time series regression tasks, we often use the `f_regression` scoring function, which measures the correlation between each feature and the target.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sklearn.feature_selection import SelectKBest, f_regression
 
 # Select top k features using f_regression
@@ -131,7 +131,7 @@ X_selected = selector.fit_transform(X, y)
 
 The `X_selected` now holds the top $k=5$ features that have shown the strongest correlation with your target variable. These features are the stars of the show, contributing meaningfully to your analysis while keeping the noise in check.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Indices of top k features
 top_indices = selector.get_support(indices=True)
 
@@ -173,7 +173,7 @@ Cross-validation is like having multiple dress rehearsals before the big show. I
 
 Python offers us a gem called `TimeSeriesSplit` from the `sklearn` library, custom-made for time series data.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sklearn.model_selection import TimeSeriesSplit, cross_validate
 from sklearn.linear_model import LinearRegression
 
@@ -242,7 +242,7 @@ Lasso and Ridge are like the yin and yang of regularization. Lasso, short for �
 
 Let’s take a spin with Python:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sklearn.linear_model import Lasso, Ridge
 
 # Create Lasso and Ridge models
@@ -285,7 +285,7 @@ The key to using regularization effectively lies in tuning the hyperparameter `a
 
 The following code finds the best alpha, using the Ridge estimator:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import math
 import numpy as np
 from sklearn.metrics import mean_squared_error

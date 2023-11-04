@@ -36,7 +36,7 @@ pip install keras-tuner
 
 Voila! Now, let's verify that everything is installed correctly. You can do this by trying to import KerasTuner in a Python script or notebook:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import keras_tuner
 ```
 
@@ -56,7 +56,7 @@ First, let's setup additional libraries we'll need for this example:
 pip install -q tensorflow pandas scikit-learn seaborn
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import pandas as pd
 import seaborn as sns
 
@@ -76,7 +76,7 @@ SEED = 42
 
 Then, let's load our data and do some basic preprocessing:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Load the data
 data = sns.load_dataset("titanic")
 
@@ -102,7 +102,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 Now, let's define our model-building function. This function will create a Keras model and is where we specify the hyperparameters we want to tune. For this example, we'll tune the number of units in the first hidden layer and the learning rate:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 def build_model(hp: keras_tuner.HyperParameters):
     model = keras.Sequential()
 
@@ -134,7 +134,7 @@ With our model-building function defined, we're now ready to start the hyperpara
 
 Let's see how to set it up:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 tuner = keras_tuner.BayesianOptimization(
     build_model,
     objective="val_accuracy",
@@ -165,7 +165,7 @@ learning_rate (Choice)
 
 The `search` method is then used to perform the hyperparameter search. We pass our training data and labels, specify the number of epochs to train for, and set aside 20% of the training data for validation. We also use the `TensorBoard` callback to log the results of the search.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 tuner.search(
     X_train,
     y_train,
@@ -187,7 +187,7 @@ Total elapsed time: 00h 00m 03s
 
 Once the search is complete, we can retrieve the best hyperparameters and use them to build our final model:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Get the best model
 best_model = tuner.get_best_models(num_models=1)[0]
 best_model.build(X_train.shape)
@@ -218,7 +218,7 @@ _________________________________________________________________
 
 Then, we can use the `results_summary` method to get a summary of the results from the hyperparameter search. Note that the results are sorted by the objective value, which in our case is validation accuracy.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 tuner.results_summary()
 ```
 
@@ -263,7 +263,7 @@ Score: 0.8620689511299133
 
 Finally, we can evaluate our best model on the test data:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Evaluate the model on the test data
 score = best_model.evaluate(X_test, y_test, verbose=0)
 

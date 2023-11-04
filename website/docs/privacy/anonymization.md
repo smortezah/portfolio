@@ -31,7 +31,7 @@ There are several types of data anonymization techniques that are commonly used.
 
 Randomization involves replacing sensitive data with random values. For example, a person's name might be replaced with a randomly generated string of characters. Here is an example of how to perform data anonymization in Python using the randomization technique:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import pandas as pd
 import numpy as np
 
@@ -82,7 +82,7 @@ In this example, we create a synthetic dataset with columns for name, age, salar
 
 Generalization involves replacing specific values with more general ones to reduce the risk of identification. For example, a person's age might be generalized into age groups such as 20-30, 30-40, and so on. Here is an example:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import pandas as pd
 
 # Create a synthetic dataset
@@ -132,7 +132,7 @@ In this example, we create a synthetic dataset with columns for name, age, salar
 
 Masking involves hiding parts of the original data to protect sensitive attributes. For example, a person's phone number might be masked by replacing the last four digits with asterisks. Here is an example:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import pandas as pd
 
 # Create a synthetic dataset
@@ -180,7 +180,7 @@ In this example, we create a synthetic dataset with columns for name, age, salar
 
 Perturbation involves adding noise to the original data to protect against inference attacks. For example, a person's age might be perturbed by adding or subtracting a random value between 0 and 5. Here is an example:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import pandas as pd
 import numpy as np
 
@@ -229,7 +229,7 @@ In this example, we create a synthetic dataset with columns for name, age, salar
 
 Encryption involves transforming the original data into an unreadable format using a secret key. Here is an example of how to perform data anonymization in Python using encryption:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import pandas as pd
 from cryptography.fernet import Fernet
 

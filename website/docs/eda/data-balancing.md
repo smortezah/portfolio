@@ -17,7 +17,7 @@ But fret not, dear reader, for Python comes to the rescue with its trusty compan
 pip install numpy pandas scikit-learn imbalanced-learn
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import numpy as np
 import pandas as pd
 
@@ -59,7 +59,7 @@ Remember, we’re on a mission to restore harmony to the universe of data, where
 
 Imagine you’re a party host with a disproportionately long guest list of party animals and a meager smattering of introverts. What do you do? You clone the introverts and suddenly your party is booming! That’s oversampling for you. In Python, our spellcaster of choice is the `RandomOverSampler` from the `imbalanced-learn` library. Let’s weave our magic:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from imblearn.over_sampling import RandomOverSampler
 
 # Craft the Oversampling Potion
@@ -84,7 +84,7 @@ target
 
 Now, imagine you’re a zookeeper trying to maintain balance in your animal kingdom. You’ve got a surplus of zebras and a lonely lion sulking in the corner. What do you do? Bid adieu to a few zebras and suddenly the lion’s reign begins! That’s the essence of undersampling. Our Python spellbook reveals the `RandomUnderSampler` from the same magical library. Behold:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from imblearn.under_sampling import RandomUnderSampler
 
 # Brew the Undersampling Elixir
@@ -113,7 +113,7 @@ You’ve successfully dipped your toes into the waters of resampling, but now it
 
 SMOTE is like a master potion maker that crafts synthetic samples, bridging the gap between the majority and minority classes. Think of it as an artist who adds brushstrokes to a canvas to bring balance and harmony. In Python, we summon the mighty `SMOTE` from the `imbalanced-learn` library to perform this act of data alchemy:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from imblearn.over_sampling import SMOTE
 
 # Prepare the Cauldron for SMOTE
@@ -144,7 +144,7 @@ As we tread further into the labyrinth of data balancing, a crucial pit stop awa
 
 Before we put our models to the test, we must partition our dataset into training and testing sets. Python has just the incantation we need, courtesy of the `train_test_split` function from the `sklearn.model_selection` module:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sklearn.model_selection import train_test_split
 
 # Split the dataset into train and test sets
@@ -159,7 +159,7 @@ With our trusty data division spell, we’ve created training and testing sets t
 
 Next up, we summon the art of cross-validation. Just as a wizard practices their spells to perfection, our models need rigorous testing to ensure they’re up to the task. Python provides an instrument called `cross_val_score` to help us wield the power of cross-validation:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sklearn.model_selection import cross_val_score
 from sklearn.neighbors import KNeighborsClassifier
 
@@ -191,7 +191,7 @@ The time has come for the grand finale of our data balancing odyssey! We’ve de
 
 Ensemble methods are like assembling a league of extraordinary heroes, each with their own unique powers, to tackle a formidable foe. In our case, that foe is the data imbalance monster! Python has bestowed upon us a treasure trove of ensemble algorithms, and we’ll summon the illustrious `RandomForestClassifier` to center stage:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report

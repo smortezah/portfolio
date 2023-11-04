@@ -21,7 +21,7 @@ On the other side of the field stands $\alpha$, the level of significance. It is
 
 ### Interplay between p-value & $\alpha$
 
-Now that you’re acquainted with both the p-value and $\alpha$, it’s important for you to understand their interplay. The core decision in hypothesis testing revolves around comparing the p-value with $\alpha$. If the p-value is less than or equal to $\alpha$ (typically p <= 0.05), then we reject the null hypothesis, stating that the result is statistically significant. On the other hand, if the p-value is more significant than the $\alpha$ value, we fail to reject the null hypothesis, implying our results may have arisen due to chance.
+Now that you’re acquainted with both the p-value and $\alpha$, it’s important for you to understand their interplay. The core decision in hypothesis testing revolves around comparing the p-value with $\alpha$. If the p-value is less than or equal to $\alpha$ (typically p \<= 0.05), then we reject the null hypothesis, stating that the result is statistically significant. On the other hand, if the p-value is more significant than the $\alpha$ value, we fail to reject the null hypothesis, implying our results may have arisen due to chance.
 
 In an ideal world, these decisions would be straightforward. But as data, we often find our p-values teasingly close to that 0.05 mark, creating an intriguing dilemma which we will explore in the next section.
 
@@ -67,7 +67,7 @@ pip install scipy numpy statsmodels
 
 Assuming we have drawn a sample and conducted a test, here is how we can calculate a p-value:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import scipy.stats as stats
 import numpy as np
 
@@ -75,7 +75,7 @@ import numpy as np
 np.random.seed(7)
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Hypothetical test scores
 test_scores = np.random.normal(100, 10, 1000)
 
@@ -92,11 +92,11 @@ In this hypothetical scenario, we’re analyzing test scores and checking for no
 
 This juncture is where our previous discussions come into play! Analyzing the p-value against $\alpha$ becomes increasingly relevant as these decisions are _rarely black and white_.
 
-While the standard rule is to reject the null hypothesis if the p-value <= 0.05, remember- this decision should not exclusively rely on this comparison. Considering the larger picture, the context, and the practical relevance of Type I or Type II errors can directly influence this decision potentially (as we discussed in previous sections).
+While the standard rule is to reject the null hypothesis if the p-value \<= 0.05, remember- this decision should not exclusively rely on this comparison. Considering the larger picture, the context, and the practical relevance of Type I or Type II errors can directly influence this decision potentially (as we discussed in previous sections).
 
 We could modify our rule of thumb slightly to adapt to this situation:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 alpha = 0.05
 
 if p_value_norm < alpha:
@@ -111,7 +111,7 @@ else:
 Fail to reject null hypothesis
 ```
 
-While this script follows the traditional p-value <= 0.05 rule to reject the null hypothesis, it also considers the situation if our p-value is at the brink, i.e., exactly 0.05, urging us to consider other factors before making our decision.
+While this script follows the traditional p-value \<= 0.05 rule to reject the null hypothesis, it also considers the situation if our p-value is at the brink, i.e., exactly 0.05, urging us to consider other factors before making our decision.
 
 ### Experiment 2
 
@@ -121,7 +121,7 @@ What if we’re looking to carry out a two-sample t-test, which is a statistical
 
 Firstly, we generate some random data for two groups. These groups have different means, so we expect that the null hypothesis (which states that the group means are equal) would be rejected. We carry out the two-sample t-test using `scipy` library:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 group1_scores = np.random.normal(100, 10, 100)
 group2_scores = np.random.normal(105, 10, 100)
 
@@ -135,7 +135,7 @@ p-value from the t-test: 0.0031876814729812518
 
 Let’s test the p-value result against our significance level (`alpha`):
 
-```python title="Python" showLineNumbers
+```python title="Python"
 alpha = 0.05
 
 if p_value_ttest < alpha:
@@ -164,7 +164,7 @@ The problem with multiple hypothesis testing is with the accumulation of Type I 
 
 One approach to remedy these effects is by adjusting your significance level (`alpha`) using techniques like the [Bonferroni correction](https://en.wikipedia.org/wiki/Bonferroni_correction). Let’s implement it:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Let's assume we are testing 20 hypotheses
 n_tests = 20
 
@@ -184,7 +184,7 @@ In our hypothetical situation, we’ve assumed we’re testing 20 hypotheses. Th
 
 Now, when comparing p-values to this new threshold, we have:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # List of dummy p-values for illustration
 p_values = [0.05, 0.03, 0.1, 0.01, 0.001, 0.0001]
 
@@ -217,7 +217,7 @@ Let’s explore another example invoking regression analysis. This will offer yo
 
 Let’s assume we have data on employee satisfaction and the duration they’ve been at the company. We want to see if there’s any significant relationship between “years at company” and “job satisfaction.”
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Synthetic dataset
 df = pd.DataFrame(
     {
@@ -286,7 +286,7 @@ If there’s one thing to take away, it is this: _Context is critical_. It’s e
 - **Alternative Statistical Approaches:** There’s often more than one way to statistically approach a problem. For example, Bayesian methods can complement traditional p-value based decision making.
 - **Transparency in Reporting:** If your p-value is around the 0.05 threshold, report it as it is, alongside other pertinent results (like confidence intervals or effect sizes), and provide an interpretation of the result in the context of your specific study.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Reporting example
 p_value = 0.051
 

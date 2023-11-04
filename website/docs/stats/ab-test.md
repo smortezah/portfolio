@@ -37,7 +37,7 @@ pip install numpy pandas scipy matplotlib
 
 Once you have the libraries installed, you can import them in your Python script as follows:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import numpy as np
 import pandas as pd
 from scipy.stats import ttest_ind
@@ -46,7 +46,7 @@ import matplotlib.pyplot as plt
 
 Next, we’ll load the data that we will be using for our A/B test. For the purpose of this tutorial, we’ll be using a simulated dataset that contains information about 10000 website visitors (5000 for the control group and 5000 for the treatment group) and whether they made a purchase or not. We’ll load this dataset using pandas, and then split it into our control and treatment groups:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Create a simulated dataset with 5000 observations in each of the control
 # and treatment groups
 control_size = treatment_size = 5000
@@ -69,7 +69,7 @@ Now that we have our data loaded and split into our groups, we can start analyzi
 
 The conversion rate is the percentage of users who completed the desired action, in this case, making a purchase. We can calculate the conversion rate by dividing the number of purchases by the total number of visitors in each group.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Calculate the conversion rate for the control group
 control_conversion_rate = control["purchased"].mean()
 
@@ -93,7 +93,7 @@ The null hypothesis for our test is that there is no difference in conversion ra
 
 We’ll use a [two-sample t-test](https://en.wikipedia.org/wiki/Student%27s_t-test) to compare the means of the control and treatment groups. The t-test will calculate a p-value, which represents the probability of observing the difference in conversion rates between the two groups if the null hypothesis is true. If the p-value is less than our significance level (usually 0.05), we can reject the null hypothesis and conclude that the difference in conversion rates is statistically significant.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Perform a two-sample t-test
 t_stat, p_val = ttest_ind(control["purchased"], treatment["purchased"])
 
@@ -112,7 +112,7 @@ In the next step, we’ll visualize the results of our A/B test using a histogra
 
 We’ll start by plotting histograms, using the matplotlib library, for the control and treatment groups to visualize the distribution of our data:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Plot histograms for the control and treatment groups
 plt.hist(control["purchased"], alpha=0.5, label="Control")
 plt.hist(treatment["purchased"], alpha=0.5, label="Treatment")
@@ -128,7 +128,7 @@ This code will create a histogram for each group and display them on the same pl
 
 Next, we’ll plot a confidence interval for the difference in means between the control and treatment groups. The confidence interval will give us a range of values that the true difference in means is likely to fall within.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Calculate the mean difference between the control and treatment groups
 mean_difference = treatment_conversion_rate - control_conversion_rate
 

@@ -311,7 +311,7 @@ touch etl.py
 
 Then, paste the following self-explanatory code into `etl.py`:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import pandas as pd
 import pendulum
 from airflow.decorators import dag, task

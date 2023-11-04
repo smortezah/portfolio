@@ -17,7 +17,7 @@ Now, let’s dive into exploring structure and characteristics of the dataset.
 pip install -q scipy pandas scikit-learn tensorflow keras
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import urllib.request
 from scipy.io import arff
 import pandas as pd
@@ -141,7 +141,7 @@ data.head(3)
   <p>3 rows × 31 columns</p>
 </div>
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from pprint import pprint
 
 # Display basic information about the dataset
@@ -199,7 +199,7 @@ max     25691.16       1.00
 Running the above code will load the dataset and provide you with some initial insights. You’ll see e.g., the distribution of classes (fraudulent vs. legitimate transactions).
 Additionally, it’s a good idea to visualize the class distribution to get a better sense of the data imbalance. You can create a bar plot to illustrate this:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import matplotlib.pyplot as plt
 
 # Plot the distribution of the target variable
@@ -237,7 +237,7 @@ Data preprocessing is a critical step in any machine learning project. It involv
 
 Dealing with missing values is crucial to ensure the quality of our dataset. Missing values can disrupt model training and lead to inaccurate predictions. Let’s take a look at how we can handle missing values:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Check for missing values in the dataset
 missing_values = data.isnull().sum()
 
@@ -257,7 +257,7 @@ As can be seen, there is no missing value in our dataset. However, if you find a
 
 To evaluate the performance of our model accurately, and also some preprocessing steps shown bellow, we need to split our dataset into training and testing sets. In the evaluation part, the training set is used to train the model, while the testing set is used to evaluate its performance on unseen data:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sklearn.model_selection import train_test_split
 
 # Separate features and target variable
@@ -276,7 +276,7 @@ In the code above, we’ve split the data into an 80–20 ratio, meaning 80% of 
 
 As mentioned earlier, our dataset is imbalanced, with fraudulent transactions being the minority class. To handle this, we’ll calculate class weights and pass them to our model during training. This way, the model will pay _more attention to the minority_ class:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sklearn.utils.class_weight import compute_class_weight
 import numpy as np
 
@@ -301,7 +301,7 @@ Class weights: {0.0: 0.5008661206149896, 1.0: 289.14340101522845}
 
 Standard scaling ensures that all features are on the same scale, which is essential for many machine learning algorithms. It prevents features with larger values from dominating the training process:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sklearn.preprocessing import StandardScaler
 
 # Initialize the scaler
@@ -320,7 +320,7 @@ With these preprocessing steps completed, our data is now cleaned, split, and re
 
 Now that our data is preprocessed and ready, it’s time to roll up our sleeves and construct a binary classification model using the Keras library. Keras provides a user-friendly interface to build and train neural networks, making it a great choice for this task.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from tensorflow.keras import Sequential, layers, activations, initializers
 
 dropout_rate = 0.3
@@ -374,7 +374,7 @@ In the above code, we designed an effective feedforward neural network architect
 
 Training the model involves providing it with our preprocessed data and letting it learn the patterns from the training set:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from tensorflow.keras import metrics, optimizers, losses, callbacks
 
 # Define the metrics to be used for model evaluation
@@ -435,7 +435,7 @@ Here, we’re using the `fit` method to train the model. We specify the training
 
 It’s helpful to visualize the training progress using plots. This allows us to observe how the model’s performance changes over epochs:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import matplotlib.pyplot as plt
 
 plt.plot(history.history["loss"], label="Training")
@@ -465,7 +465,7 @@ To evaluate a binary classification model like ours, we’ll use several key met
 
 Once the model is trained, we can use it to make predictions on the test data:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Predict on the test data
 y_pred = model.predict(X_test_scaled)
 
@@ -477,7 +477,7 @@ y_pred = np.where(y_pred >= 0.5, 1, 0)
 1781/1781 [==============================] - 1s 411us/step
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sklearn.metrics import recall_score, precision_score, confusion_matrix
 
 # Recall score

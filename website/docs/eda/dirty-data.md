@@ -63,7 +63,7 @@ Python offers numerous tools to successfully clean and process your dirty data. 
 
 - **Working with Missing Values using Pandas:** The [Pandas](https://pandas.pydata.org/) library in Python provides several methods for handling missing data. Functions like `isnull()` can be used to identify missing values, and `dropna()` and `fillna()` can be used to handle them.
 
-  ```python title="Python" showLineNumbers
+  ```python title="Python"
   import pandas as
 
   # Load a dataset
@@ -81,7 +81,7 @@ Python offers numerous tools to successfully clean and process your dirty data. 
 
 - **Handling Inaccurate Data:** Sometimes, it might be required to correct inaccuracies in the data, like typos or incorrect capitalization. The str accessor in Pandas can help in processing and correcting such inaccuracies.
 
-  ```python title="Python" showLineNumbers
+  ```python title="Python"
   # Convert to lowercase
   df['column_name'] = df['column_name'].str.lower()
 
@@ -104,7 +104,7 @@ You see, addressing dirty data is not a one-time event, but a continuous process
 - **Set a Standard:** Clearly define the structure, format, and quality standards for your data. Apply this standard uniformly across all of your future data collection and recording efforts.
 - **Implement Good Practices:** Train all team members on best practices for data entry and management. This will limit the chances of human error leading to dirty data.
 
-  ```python title="Python" showLineNumbers
+  ```python title="Python"
   # Periodical check for missing values
   if df.isnull().sum().any():
       print("There are missing values in the dataset.")

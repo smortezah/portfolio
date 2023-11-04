@@ -21,7 +21,7 @@ pip install lets-plot pandas
 
 Then, import them:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import pandas as pd
 
 from lets_plot import *
@@ -33,9 +33,9 @@ With lets-plot and pandas on board, we’re ready to work our magic on visualiza
 
 ## Data Preparation
 
-Before we dazzle our eyes with mesmerizing plots, we need some data to play with. In the first part of this tutorial, we’ll use a swashbuckling dataset of pirates and their treasure loots (available [here](https://github.com/smortezah/Portfolio/blob/main/data-visualization/lets-plot/data/pirate.csv)). To import the data, we’ll rely on the trusty pandas library:
+Before we dazzle our eyes with mesmerizing plots, we need some data to play with. In the first part of this tutorial, we’ll use a swashbuckling dataset of pirates and their treasure loots (available [here](https://github.com/smortezah/portfolio/tree/main/visualization/lets-plot/data/pirate.csv)). To import the data, we’ll rely on the trusty pandas library:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Load the dataset
 df = pd.read_csv("data/pirate.csv")
 
@@ -125,7 +125,7 @@ df
 
 Behold the simplicity of lets-plot! Creating stunning plots is a piece of cake. Let’s start with a scatter plot to visualize the relationship between the pirates’ plunder and their age:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # A basic scatter plot
 p = ggplot(df) + geom_point(aes(x="age", y="plunder"))
 
@@ -139,7 +139,7 @@ p.show()
 
 Our plot might be functional, but it needs some flair, a touch of customization to make it truly memorable. Let’s spice things up with a pirate-worthy title, axes labels, and some eye-catching aesthetics:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Customizing the plot with labels and colors
 p = (
     ggplot(df)
@@ -164,7 +164,7 @@ p.show()
 
 Want to create a series of plots for different ship types? _Faceting_ is the answer! Check out this neat trick:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Faceting the plot by ship type
 p = (
     ggplot(df)
@@ -190,7 +190,7 @@ p.show()
 
 Now, it’s time to delve into bar charts. Let’s visualize the average plunder by each ship type:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Data
 df_bar = df[["ship_type", "plunder"]].groupby("ship_type").mean().reset_index()
 
@@ -222,10 +222,10 @@ p.show()
 Now, check out some complicated plots!
 
 :::note
-The datasets are available [here](https://github.com/smortezah/Portfolio/tree/main/data-visualization/lets-plot/data).
+The datasets are available [here](https://github.com/smortezah/portfolio/tree/main/visualization/lets-plot/data).
 :::
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Data
 df = pd.read_csv("data/nobel_final.csv")
 
@@ -245,7 +245,7 @@ p.show()
 
 ![](img/letsplot-aggregate.jpg)
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Data
 df = pd.read_csv("data/nobel_final.csv")
 
@@ -267,7 +267,7 @@ p.show()
 
 ![](img/letsplot-distribution.jpg)
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Data
 df = pd.read_csv("data/nobel_final.csv")
 
@@ -290,7 +290,7 @@ p.show()
 
 ![](img/letsplot-categories.jpg)
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from lets_plot.bistro.corr import corr_plot
 
 # Data
@@ -340,7 +340,7 @@ First, install “geopandas”, then run the Python code.
 pip install geopandas
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Data
 import geopandas as gpd
 

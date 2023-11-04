@@ -30,11 +30,11 @@ In the realm of logistic regression, it all boils down to the problem at hand an
 
 It’s time to embrace the ROC (Receiver Operating Characteristic) curve, our trusty guide in the quest for the optimal threshold! This nifty visualization plots the true positive rate ($\rm{TPR} = \rm{TP}/(\rm{TP}+\rm{FN})$) against the false positive rate ($\rm{FPR} = \rm{FP}/(\rm{FP}+\rm{TN})$) for various threshold values.
 
-Imagine yourself on a roller coaster, where you control the threshold knob. As you adjust the threshold, the roller coaster glides along the ROC curve, and you get to observe the TPR and FPR changing in harmony. The point closest to the top-left corner represents the ideal threshold, where we maximize TPR while _minimizing_ FPR. The index of this point can be calculated as $\argmax(\rm{TPR}-\rm{FPR})$, based on Youden’s J statistic.
+Imagine yourself on a roller coaster, where you control the threshold knob. As you adjust the threshold, the roller coaster glides along the ROC curve, and you get to observe the TPR (True Positive Rate) and FPR (False Positive Rate) changing in harmony. The point closest to the top-left corner represents the ideal threshold, where we maximize TPR while _minimizing_ FPR. The index of this point can be calculated as $\argmax(\rm{TPR}-\rm{FPR})$, based on Youden’s J statistic.
 
 Let’s get our hands dirty with some Python code to visualize the ROC curve and the best threshold:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_breast_cancer
@@ -96,7 +96,7 @@ plt.show()
 
 Also, the following shows the true (`y_test`) and predicted (`y_prob`) values:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Sorted y_test and y_prob
 sorted_y_test = sorted(y_test)
 sorted_y_prob = sorted(y_prob)
@@ -129,7 +129,7 @@ You must decide the threshold that strikes the perfect balance between Precision
 
 Let’s calculate the Precision and Recall scores using Python:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import numpy as np
 from sklearn.metrics import precision_score
 
@@ -155,7 +155,7 @@ Best threshold: 0.90
 Best precision: 0.99
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import numpy as np
 from sklearn.metrics import recall_score
 
@@ -189,7 +189,7 @@ The F1 score is like the perfect duet of precision and recall, i.e., $2 * (\rm{p
 
 The F1 score reaches its highest value at the threshold that balances precision and recall. We can easily find this threshold using Python:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import numpy as np
 from sklearn.metrics import f1_score
 

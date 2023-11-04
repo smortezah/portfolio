@@ -29,7 +29,7 @@ These packages will allow us to send HTTP requests, parse HTML, and store the sc
 
 Now that we have our dependencies installed, let’s dive into the code.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -271,7 +271,7 @@ But what if there are multiple pages of job listings?
 
 We can handle pagination by modifying our code as follows:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import requests
 from bs4 import BeautifulSoup
 import re

@@ -75,7 +75,7 @@ Enter Faker, the library that specializes in conjuring realistic, yet fictional,
 pip install faker
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from faker import Faker
 
 faker = Faker()
@@ -102,7 +102,7 @@ Behold the grand finale&mdash;synthetic text generation through the prowess of G
 pip install openai
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import openai
 
 openai.api_key = "YOUR_API_KEY"
@@ -140,7 +140,7 @@ Just as a skilled painter blends colors to create harmony, your synthetic data s
 pip install numpy
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import numpy as np
 
 # Sample synthetic data with similar distribution as real data
@@ -161,7 +161,7 @@ print(synthetic_data)
 
 Reality is rarely static; it thrives on imperfections and unpredictability. Your synthetic data, too, should embrace this dynamic nature. Introduce controlled noise, perturbations, and variations to mimic the real-world anomalies that your models might encounter. Python empowers you to sprinkle a touch of randomness, injecting life into your synthetic creations.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import random
 
 # Introduce random noise to synthetic data points
@@ -185,7 +185,7 @@ As a skilled artisan, you don’t merely craft for the sake of creation; you ens
 pip install scipy
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from scipy.stats import ttest_ind
 
 real_data = [1, 2, 3, 4, 5]
@@ -222,7 +222,7 @@ While synthetic data can shield identities, it’s not an invincible cloak. Just
 pip install -q numpy scikit-learn
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
 

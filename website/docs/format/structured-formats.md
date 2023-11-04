@@ -35,7 +35,7 @@ Picture CSV files as treasure troves of data, where each line holds a precious g
 
 Now, it’s time to wield your Python wand and start working with CSV files. Fear not, for Python offers powerful spells in the form of built-in modules to handle CSVs effortlessly.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import csv
 
 # Writing to a CSV file
@@ -64,10 +64,10 @@ with open("data.csv", "r") as csv_file:
 
 ### CSV Magic Tips
 
-:::tip Dealing with Headers
+:::tip[Dealing with Headers]
 Headers can be magical blessings when they accompany your CSV files. They provide context and names to the columns, making your data quests much more enjoyable. When reading CSV files, you can access the headers separately using the `csv.DictReader` or `csv.reader` class.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import csv
 
 # Print the header of a CSV file
@@ -89,10 +89,10 @@ with open("data.csv", "r") as csv_file:
 ```
 :::
 
-:::tip Befriending pandas
+:::tip[Befriending pandas]
 Pandas, the chivalrous Python library, can effortlessly read and write CSV files, converting them into majestic DataFrames. DataFrames are like enchanted tables that empower you to perform extraordinary data manipulations with ease!
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import pandas as pd
 
 # Reading a CSV into a DataFrame
@@ -122,7 +122,7 @@ JSON is a data interchange format that’s not just limited to the realm of Java
 
 Now, let’s unleash the Python spells to work with JSON and tap into its powers!
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import json
 
 # Writing JSON to a file
@@ -147,10 +147,10 @@ with open("data.json", "r") as json_file:
 
 ### JSON Magic Tips
 
-:::tip Nested Magic
+:::tip[Nested Magic]
 JSON can store complex and nested data structures with ease. Imagine nesting magical creatures within magical creatures! Python lets you traverse the nested JSON using dictionaries and lists.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import json
 
 data = {
@@ -177,10 +177,10 @@ Harry
 ```
 :::
 
-:::tip Encoding & Decoding Potions
+:::tip[Encoding & Decoding Potions]
 Python can conjure JSON from dictionaries and lists (encoding) and reverse the spell to create Python objects from JSON (decoding).
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import json
 
 data = {"name": "Gandalf", "age": 2019, "occupation": "Wizard"}
@@ -218,7 +218,7 @@ Parquet is a columnar storage file format designed to optimize data storage and 
 
 Time to unleash the Python magic to work with Parquet files. But before we dive into the spellcasting, we need to summon the right familiar — the `pyarrow` library!
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq
@@ -251,14 +251,14 @@ print(df_read)
 
 ### Parquet Magic Tips
 
-:::tip Fast as a Firebolt
+:::tip[Fast as a Firebolt]
 Parquet’s columnar storage shines when it comes to analytical queries that involve specific columns. It’s like having a library of spells to quickly access the data you need without loading everything else. Leverage Parquet’s speed to fly through your data exploration tasks!
 :::
 
-:::tip Compatibility Charms
+:::tip[Compatibility Charms]
 Parquet plays well with many programming languages, including Python, R, Java, and more. It’s the ultimate cross-language translator, allowing you to share data files across different magical realms.
 
-```r title="R" showLineNumbers
+```r title="R"
 # Writing a Parquet file with pyarrow in R
 library(arrow)
 
@@ -267,7 +267,7 @@ table <- arrow_table(df)
 write_parquet(table, "data.parquet")
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Reading the same Parquet file in Python
 import pyarrow.parquet as pq
 
@@ -302,7 +302,7 @@ Feather is an efficient binary file format that lets you write and read data wit
 
 Feather’s simplicity and speed shine when working with large datasets, and Python provides us with a handy spellbook in the form of the `pandas` library for manipulating data with ease.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import pandas as pd
 
 # Create a DataFrame (our data)
@@ -330,11 +330,11 @@ print(df_read)
 
 ### Feather Magic Tips
 
-:::tip Swift as a Phoenix
+:::tip[Swift as a Phoenix]
 Feather’s binary storage and efficient design enable quick reading and writing of data, making it an excellent choice for handling large datasets with ease.
 :::
 
-:::tip Perfect Companion for pandas
+:::tip[Perfect Companion for pandas]
 Feather plays wonderfully well with `pandas`, one of Python’s most versatile data manipulation libraries. This synergy allows you to seamlessly store and share dataframes with other data sorcerers in your Python realm.
 :::
 
@@ -356,7 +356,7 @@ SQL is a declarative language designed for managing, querying, and manipulating 
 
 To embark on your SQL adventures, Python offers a magical ally in the form of the `sqlite3` library. Together, they’ll help you cast SQL spells on a lightweight database known as SQLite.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import sqlite3
 
 # Connect to a database (implicitly creates it if it doesn't exist)
@@ -401,14 +401,14 @@ conn.close()
 
 ### SQL Magic Tips
 
-:::tip Readability and Simplicity
+:::tip[Readability and Simplicity]
 SQL’s power lies in its simplicity and readability. Its human-readable syntax allows you to express complex data operations in just a few lines of code.
 :::
 
-:::tip Parameterized Queries for Security
+:::tip[Parameterized Queries for Security]
 When crafting SQL spells, be mindful of SQL injection attacks. Always use parameterized queries to shield yourself from malicious entities attempting to tamper with your data.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Dangerous (don't use!):
 name = "Gandalf'; DROP TABLE wizards;--"
 evil_query = f"SELECT * FROM wizards WHERE name = '{name}';"

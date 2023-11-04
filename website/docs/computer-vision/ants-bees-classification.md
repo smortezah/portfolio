@@ -15,7 +15,7 @@ In this tutorial, we deploy a deep learning model for image classification using
 
 ## Setup
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -38,7 +38,7 @@ We will download 120 training images&mdash;a subset of [ImageNet](https://www.im
 The dataset requires 45.2 MB of disk space.
 :::
 
-```python title="Python" showLineNumbers
+```python title="Python"
 def download(url, path: pathlib.Path, unzip=False, remove_zipped=False):
     """Download a file from url to path and potentially unzip it.
 
@@ -86,7 +86,7 @@ def download(url, path: pathlib.Path, unzip=False, remove_zipped=False):
 
 Download the dataset and extract it to the current directory:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 url = "https://download.pytorch.org/tutorial/hymenoptera_data.zip"
 data_dir = pathlib.Path("hymenoptera_data")
 
@@ -98,7 +98,7 @@ if not data_dir.is_dir():
 
 Data augmentation and normalisation is done for training, and only data normalisation is performed for validation.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 prep_img_mean = [0.485, 0.456, 0.406]
 prep_img_std = [0.229, 0.224, 0.225]
 
@@ -149,7 +149,7 @@ device = torch.device(
 
 Here we show some sample training images for ants and bees.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 def imshow(inp, title=None):
     """Imshow for Tensor.
 
@@ -183,7 +183,7 @@ imshow(out, title=[class_names[x] for x in classes])
 
 The following is a generic function to train a model.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
     """Train a model.
 
@@ -276,7 +276,7 @@ Here, we freeze all the convolutional neural network (ConvNet) except the final 
 the regnet_x_3_2gf model weights need 15.3 MB of disk space.
 :::
 
-```python title="Python" showLineNumbers
+```python title="Python"
 model_conv = torchvision.models.regnet_x_3_2gf(
     weights=torchvision.models.RegNet_X_3_2GF_Weights.IMAGENET1K_V2
 )
@@ -305,7 +305,7 @@ exp_lr_scheduler = optim.lr_scheduler.StepLR(
 
 In this mode, gradients aren’t computed for most of the network, but forward is computed.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 model_conv = train_model(
     model=model_conv,
     criterion=criterion,
@@ -356,7 +356,7 @@ As can be seen, the best validation accuracy is 96% 👍.
 
 Save the model for later deployment in Streamlit. It requires 57.6 MB of disk space on my MacBook M1 machine.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 saved_model_name = "model_img_class.pt"
 
 torch.save(model_conv, saved_model_name)
@@ -370,7 +370,7 @@ We make an app, using Streamlit, to interact with the model we just trained.
 
 You can create a file named `app.py` and insert the following code into it, or if you’re using Jupyter Notebook, insert `%%writefile app.py` right before the first line and press Enter.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import streamlit as st
 import torch
 from torchvision import transforms

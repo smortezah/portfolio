@@ -21,7 +21,7 @@ pip install sktime matplotlib pandas
 
 With sktime at our disposal, we're ready to dive into the dataset. For this tutorial, let's use a classic time-series dataset: the good ol' AirPassengers. You can load it up with just a few lines of Python:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sktime.datasets import load_airline
 
 y = load_airline()
@@ -52,7 +52,7 @@ Before we plunge headfirst into the realm of forecasting, it’s vital to unders
 
 A picture is worth a thousand words, and in the world of data analysis, a good plot can reveal insights that words alone might miss. Let’s dive in and visualize our AirPassengers dataset to understand its journey through time.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import matplotlib.pyplot as plt
 from sktime.utils.plotting import plot_series
 
@@ -69,7 +69,7 @@ This nifty piece of code harnesses the might of matplotlib and sktime’s plotti
 
 Seasonality is like the rhythm in a song&mdash;a repeating pattern that gives a time series its unique flavor. To detect it, we can use the [statsmodels](https://github.com/statsmodels/statsmodels) library:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import pandas as pd
 from statsmodels.tsa.seasonal import seasonal_decompose
 
@@ -91,7 +91,7 @@ This code snippet dissects the time series into its components: trend, seasonali
 
 Just as detectives gather clues to solve a mystery, we can leverage the Auto Correlation Function (ACF) and Partial Auto Correlation Function (PACF) plots to unravel hidden patterns within our time series. These plots provide valuable insights into potential lag relationships and inform the choice of parameters for our forecasting models.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sktime.utils.plotting import plot_correlations
 
 plot_correlations(y);
@@ -105,7 +105,7 @@ This code crafts the ACF and PACF plots, letting us identify lag correlations an
 
 A stationary time series has stable statistical properties over time, which makes forecasting more feasible. We can employ the Augmented Dickey-Fuller (ADF) test to determine stationarity:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sktime.param_est.stationarity import StationarityADF
 
 sty_est = StationarityADF()
@@ -136,7 +136,7 @@ In this section, we’ll dive into the world of classical time-series forecastin
 
 Before we unleash our forecasting magic, it’s crucial to split our data into training and testing sets. The horizon, which represents the number of steps into the future we want to predict, should match the size of our test set. This ensures a fair evaluation of our forecasts.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sktime.forecasting.model_selection import temporal_train_test_split
 
 # Horizon size = 36
@@ -149,7 +149,7 @@ With our data neatly partitioned, we can move on to the world of forecasting.
 
 Let’s start with a gentle introduction&mdash;meet the Naive Forecaster. Like a crystal ball that sees the future as an extension of the present, the Naive Forecaster predicts the last observed value for the forecast horizon.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sktime.forecasting.naive import NaiveForecaster
 
 # Fit the forecaster
@@ -176,7 +176,7 @@ Freq: M, Name: Number of airline passengers, dtype: float64
 
 Next on our journey is Exponential Smoothing, a method that captures trends and seasonality with an air of elegance. Let’s summon its power to predict the future.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sktime.forecasting.exp_smoothing import ExponentialSmoothing
 
 # Fit the forecaster
@@ -207,7 +207,7 @@ Freq: M, Name: Number of airline passengers, dtype: float64
 
 No discussion of classical forecasting methods would be complete without mentioning ARIMA (AutoRegressive Integrated Moving Average). Like a wizard conjuring spells, ARIMA weaves together _auto-regressive_, _differencing_, and _moving average_ components to predict the future.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sktime.forecasting.arima import ARIMA
 
 # Fit the forecaster
@@ -242,7 +242,7 @@ In this section, we’ll put on our data detective hats once more and dive deep 
 
 Before we unravel the forecasting magic, let’s talk metrics. A trustworthy metric helps us gauge the performance of our models. For time-series forecasting, one of the go-to metrics is the Mean Absolute Percentage Error (MAPE). It tells us how much our predictions deviate from the actual values, in percentage terms.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sktime.performance_metrics.forecasting import (
     mean_absolute_percentage_error
 )
@@ -266,7 +266,7 @@ MAPE ARIMA: 0.04
 
 Numbers have their charm, but nothing beats a well-crafted plot to visualize the forecasting journey. Behold the code that creates a visual symphony of training, test, and predicted values:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sktime.utils.plotting import plot_series
 
 plot_series(
@@ -294,7 +294,7 @@ Greetings, data explorers, as we journey into the heart of modern forecasting! I
 
 A machine learning pipeline is like a symphony&mdash;each instrument (or step) plays a crucial role in creating harmonious predictions. Let’s summon the pipeline wizardry and craft our own using `make_reduction()`.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sktime.forecasting.compose import make_reduction
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LinearRegression
@@ -311,7 +311,7 @@ The code above creates a pipeline that encompasses a Linear Regression model. Th
 
 Machine learning is versatile, so let’s swap our model for something different. How about the mighty `RandomForestRegressor`? It’s like having an ensemble of experts predicting together.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from sklearn.ensemble import RandomForestRegressor
 
 rf_regressor = make_reduction(
@@ -330,7 +330,7 @@ The code snippet introduces the Random Forest Regressor into our pipeline. Now w
 
 With our machine learning pipelines at the ready, it’s time to summon their predictive power.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Fit the models
 l_regressor.fit(y_train)
 rf_regressor.fit(y_train)

@@ -23,7 +23,7 @@ Picture this: you’ve spent hours crafting that perfect piece of code, and now 
 
 Imagine you have a piece of code that you’re excited to showcase. A mundane printout might leave your audience unimpressed, but fret not&mdash;the rich library is here to save the day:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from rich.syntax import Syntax
 from rich.console import Console
 
@@ -63,7 +63,7 @@ With just a few lines of code, your plain snippet of code has transformed into a
 
 The rich library offers a plethora of colors to choose from. Experiment with different styles to find the perfect one for your context:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from rich.syntax import Syntax
 from rich.console import Console
 
@@ -116,7 +116,7 @@ stata, tango, trac, vim, vs, xcode, zenburn
 
 The rich library isn’t limited to Python; it supports syntax highlighting for various languages:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from rich.syntax import Syntax
 from rich.console import Console
 
@@ -172,7 +172,7 @@ Tables are more than just rows and columns; they’re visual representations of 
 
 Imagine you have data that you want to present in a table. Gone are the days of struggling with manual formatting. The rich library comes to your rescue:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from rich.console import Console
 from rich.table import Table
 
@@ -206,7 +206,7 @@ The rich library doesn’t stop at the basics; it offers a spectrum of styling o
 
 Ensure your data lines up perfectly by specifying column alignments:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from rich.console import Console
 from rich.table import Table
 
@@ -238,7 +238,7 @@ In this example, we’ve centered the “ID” column, used italics for the “N
 
 Catch your audience’s attention by highlighting specific rows:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from rich.console import Console
 from rich.table import Table
 
@@ -278,7 +278,7 @@ Picture this scenario: you have a function that takes time to complete, and you 
 pip install -q ipywidgets
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import time
 from rich.progress import track
 
@@ -299,7 +299,7 @@ This will output the following:
 
 Why limit yourself to progress percentages? Display additional information that enriches the user’s experience:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import time
 from rich.progress import (
     Progress,
@@ -338,7 +338,7 @@ With a few lines of code, you’ve transformed a routine task into an interactiv
 
 Communication goes beyond words; it’s about expressing emotions and conveying subtleties. Emojis, those tiny characters that speak volumes, are the perfect companions for adding a touch of humanity to your code outputs. With the rich library, your code gains the power to emote and connect on a whole new level.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import rich
 
 rich.print(":smiley: Hello, world! :thumbs_up::sparkles:")
@@ -352,7 +352,7 @@ This will output the following:
 
 As another example, you can use a warning emoji to draw attention to critical messages.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import rich
 
 warning_message = ":warning: Warning: Unauthorized access detected!"
@@ -365,7 +365,7 @@ rich.print(warning_message)
 
 The list of available emojis can be found by the following snippet:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from rich.emoji import EMOJI
 
 # Uncomment to print all available emojis
@@ -395,7 +395,7 @@ american_samoa 🇦🇸
 
 Ever found yourself lost in a labyrinth of files or nested structures? The tree visualization is your guiding light, providing clarity and insight into complex hierarchies. With the rich library, your code outputs can transform into elegant trees that reveal the beauty of your data structures.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from rich.console import Console
 from rich.tree import Tree
 
@@ -425,7 +425,7 @@ Breaking down your tree into subtrees enhances readability and maintains the str
 
 Here is another example:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 from rich.console import Console
 from rich.tree import Tree
 
@@ -457,7 +457,7 @@ By adding custom icons and applying styles, your tree takes on a distinctive and
 
 In the realm of code documentation and narrative, plain text can only take you so far. Enter Markdown&mdash;a lightweight and versatile markup language that allows you to add rich formatting, links, headings, and more to your text. With the rich library, your code outputs can effortlessly become expressive narratives that captivate and inform.
 
-````python title="Python" showLineNumbers
+````python title="Python"
 from rich.console import Console
 from rich.markdown import Markdown
 

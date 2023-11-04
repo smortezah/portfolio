@@ -27,7 +27,7 @@ pip install polars
 
 To verify whether the installation was successful, execute the following:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import polars as pl
 
 print(pl.__version__)
@@ -43,7 +43,7 @@ The full setup for this tutorial is as the following:
 pip install polars matplotlib
 ```
 
-```python title="Python" showLineNumbers
+```python title="Python"
 import random
 import string
 
@@ -68,7 +68,7 @@ Polars flexes its muscles when dealing with sizable data. For the purposes of th
 
 Creating synthetic dataset helps us simulate real-world scenarios in a manageable and controlled manner. Here’s how you can create a synthetic dataset of 1,000,000 records using Polars:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Defining the size of our dataset
 size = 1000000
 
@@ -100,7 +100,7 @@ Once our dataset is ready, it’s time to take a glimpse at our data. Polars sup
 
 - **Head of the DataFrame:** View the first few records of DataFrame:
 
-  ```python title="Python" showLineNumbers
+  ```python title="Python"
   df.head()
   ```
 
@@ -121,7 +121,7 @@ Once our dataset is ready, it’s time to take a glimpse at our data. Polars sup
 
 - **Summary Statistics:** Get a quick statistical overview of your data:
 
-  ```python title="Python" showLineNumbers
+  ```python title="Python"
   df.describe()
   ```
 
@@ -158,7 +158,7 @@ Missing data is a common problem in real-world data sets, let’s create some mi
 
 First, include some null records:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Create some missing data
 df = df.with_columns(
     pl.when(pl.col("age") > 68)
@@ -185,7 +185,7 @@ With the code above, we’ve created a situation where whenever `age` is over 68
 
 - **Imputing Missing Values:** For imputing missing values in the `bmi` column, we can use the following command. It replaces any occurrence of null with the _median_ of the column `bmi`.
 
-  ```python title="Python" showLineNumbers
+  ```python title="Python"
   df = df.with_columns(pl.col("bmi").fill_null(pl.median("bmi")))
   ```
 
@@ -195,7 +195,7 @@ With the code above, we’ve created a situation where whenever `age` is over 68
 
 Converting data types is a common necessity in preprocessing. Polars provides an easy way to change the data type of a column:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 df.select(pl.col("bmi").cast(pl.Int32)).head()
 ```
 
@@ -220,7 +220,7 @@ The code above will convert `bmi` column to integer data type.
 
 Creating new features or columns based on existing ones could improve our analysis. With Polars, you can add a new column like so:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 df.with_columns((pl.col("age") * 12).alias("age_in_months")).head()
 ```
 
@@ -245,7 +245,7 @@ This code generates a new column called `age_in_months` which is `age` column mu
 
 Removing duplicate entries is crucial for maintaining accuracy. It’s as simple as calling `df.unique()`.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 df = df.unique()
 ```
 
@@ -257,7 +257,7 @@ While Polars does not have its own library for data visualization, it’s fully 
 
 Now, let’s create some visualizations for a sample of our synthetic dataset:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 sample_df = df.sample(1000, seed=SEED)
 ```
 
@@ -265,7 +265,7 @@ sample_df = df.sample(1000, seed=SEED)
 
 To view the distribution of `age` in our dataset, we would use a Histogram.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Create a figure
 plt.figure(figsize=(5, 4), layout="tight")
 
@@ -287,7 +287,7 @@ plt.show()
 
 Box plots are great for visualizing the measure of dispersion and skewness in a dataset.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Create a figure
 plt.figure(figsize=(5, 2.2), layout="tight")
 
@@ -321,7 +321,7 @@ plt.show()
 
 Let’s create a scatter plot to visualize the relationship between `age` and `bmi` in our dataset.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Create a figure
 plt.figure(figsize=(4, 4), layout="tight")
 
@@ -345,7 +345,7 @@ plt.show()
 
 To understand the distribution of `age` data by `city`, we can create a bar chart:
 
-```python title="Python" showLineNumbers
+```python title="Python"
 # Create a figure
 plt.figure(figsize=(6, 4), layout="tight")
 
@@ -398,7 +398,7 @@ Descriptive statistics reduce lots of data into simpler summaries, providing us 
 
 Let’s start by calculating the mean of `age`. The mean gives us the average value and is a good measure of the dataset’s center.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 df["age"].mean()
 ```
 
@@ -410,7 +410,7 @@ df["age"].mean()
 
 The median is the “middle value” or midpoint in your data and can be more informative than the mean when your data is _skewed_.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 df["age"].median()
 ```
 
@@ -422,7 +422,7 @@ df["age"].median()
 
 The standard deviation tells us the spread of our data from the center, i.e., how much, on average, each value differs from the mean.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 df["age"].std()
 ```
 
@@ -434,7 +434,7 @@ df["age"].std()
 
 Finally, one important aspect of data that we often look at in our exploratory data analysis is the correlation coefficient between variables.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 df.select(pl.corr("age", "bmi").alias("correlation"))
 ```
 
@@ -461,7 +461,7 @@ Polars enables us to go beyond basic descriptive statistics to implement a varie
 
 Group by operation helps to segment the data into groups, making it easier to analyze patterns across different categories.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 df.group_by("city").agg(
     [
         pl.col("age").mean().alias("average_age"),
@@ -490,7 +490,7 @@ Here we’re examining the average age and median BMI for every city in our data
 
 With Polars you can apply your own custom functions to each value in the DataFrame’s column.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 def age_group(age):
     if age < 30:
         return "Young"
@@ -526,7 +526,7 @@ Here, we have built a new categorical variable indicating the age group of each 
 
 Pivot tables can be used to restructure the data, which can provide us with a different perspective of our data.
 
-```python title="Python" showLineNumbers
+```python title="Python"
 df.pivot(
     index="is_married",
     columns="city",
