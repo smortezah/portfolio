@@ -1,5 +1,5 @@
 ---
-title: "From Chaos to Order: A Guide to Sorting"
+title: A Guide to Sorting
 tags: [Sorting, Data Structures, Algorithms, Tutorial, Python]
 ---
 
