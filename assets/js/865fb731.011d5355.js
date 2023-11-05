@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5080],{33740:t=>{t.exports=JSON.parse('{"label":"ShAP","permalink":"/portfolio/docs/tags/sh-ap","allTagsPath":"/portfolio/docs/tags","count":1,"items":[{"id":"xai/intro","title":"Introduction to XAI","description":"What is Explainable AI?","permalink":"/portfolio/docs/xai/intro"}]}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5434],{71787:l=>{l.exports=JSON.parse('{"label":"Pitfalls","permalink":"/portfolio/blog/tags/pitfalls","allTagsPath":"/portfolio/blog/tags","count":1,"unlisted":false}')}}]);

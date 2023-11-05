@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[8747],{73406:e=>{e.exports=JSON.parse('{"label":"Misinterpretations","permalink":"/portfolio/blog/tags/misinterpretations","allTagsPath":"/portfolio/blog/tags","count":1,"unlisted":false}')}}]);
