@@ -16,6 +16,10 @@ Also, my articles on the Medium platform can be found [here](https://medium.com/
 
 - [Ants vs bees image classification](computer-vision/ants-bees-classification/image-classification.ipynb): an app for classification of images, employing deep learning models
 
+## 🧩 Data Structures
+
+- [Sorting](data-structure/sorting-popular.ipynb): a guide to popular sorting algorithms in Python
+
 ## :mag: EDA (Exploratory Data Analysis)
 
 - [Data balancing](eda/data-balancing.ipynb): balancing imbalanced datasets using different methods
