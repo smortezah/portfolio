@@ -12,6 +12,8 @@ jobs:
     defaults:
       run:
         working-directory: website
+    env:
+      ALGOLIA_APPID: ${{ secrets.ALGOLIA_APPID }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
