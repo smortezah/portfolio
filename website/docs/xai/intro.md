@@ -1,5 +1,6 @@
 ---
 title: Introduction to XAI
+description: An introduction to Explainable AI
 tags: [XAI, Explainable AI, Machine Learning, ShAP, Data Science]
 ---
 

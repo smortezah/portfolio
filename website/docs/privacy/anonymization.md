@@ -1,7 +1,9 @@
 ---
-title: Anonymization
+description: Learn about data anonymization and implementing it
 tags: [data anonymization, data privacy, encryption, perturbation, data science]
 ---
+
+# Anonymization
 
 ## Introduction
 

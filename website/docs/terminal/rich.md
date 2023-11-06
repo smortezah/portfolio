@@ -1,5 +1,6 @@
 ---
 title: Rich Terminal
+description: Learn how to use the rich Python library
 tags: [Python, Hands On Tutorials, Rich, Terminal, CLI]
 ---
 

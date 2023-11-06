@@ -1,5 +1,6 @@
 ---
 title: Automatic Git Commit
+description: Automate your GitHub commits using GitHub Actions
 tags: [Github, Automation, Data Science, Python]
 ---
 

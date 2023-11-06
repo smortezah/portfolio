@@ -1,5 +1,6 @@
 ---
 title: p-Value ~ 0.05
+description: Navigate p-values near 0.05 in hypothesis testing
 tags: [p-Value, Statistics, Machine Learning, Data Science, Null Hypotheses]
 ---
 

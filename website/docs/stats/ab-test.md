@@ -1,5 +1,6 @@
 ---
 title: A/B Test
+description: Introduction and implementation of A/B testing
 tags: [A/B Testing, Data Science, Statistics, Python]
 ---
 

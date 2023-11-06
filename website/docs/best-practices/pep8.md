@@ -1,5 +1,6 @@
 ---
 title: PEP 8
+description: The official style guide for Python code
 tags: [Python, PEP8, Coding, Programming, Coding Style]
 ---
 

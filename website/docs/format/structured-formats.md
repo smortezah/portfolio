@@ -1,5 +1,6 @@
 ---
-title: Structured Formats for Data Science
+title: Structured Formats for DS
+description: The top 5 structured data formats for data science
 tags: [Format, JSON, CSV, SQL, Parquet, Feather]
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Polars
+description: A fast library in Python designed for large datasets
 tags: [Polars, Data Science, Dataframes, Fast, Python]
 ---
 

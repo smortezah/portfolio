@@ -1,5 +1,6 @@
 ---
 title: lets-plot
+description: Learn how to plot with lets-plot Python package
 tags: [Data Visualization, Python, GGPlot2, Charts, Visualization]
 ---
 

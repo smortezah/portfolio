@@ -1,5 +1,6 @@
 ---
 title: Data Balancing
+description: Learn how to balance your data with Python
 tags: [Data Science, Data Imbalance, Resampling, Machine Learning, SMOTE]
 ---
 

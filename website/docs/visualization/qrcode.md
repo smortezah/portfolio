@@ -1,5 +1,6 @@
 ---
 title: QR Code
+description: Learn how to generate QR codes with python-qrcode
 tags: [Qr Code, Data Visualization, Data Science, Tutorial, Python]
 ---
 

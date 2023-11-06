@@ -1,5 +1,6 @@
 ---
 title: Fraud Detection
+description: Build a credit card fraud detection model using Keras
 tags: [Machine Learning, Fraud Detection, Classification, Keras, Deep Learning]
 ---
 

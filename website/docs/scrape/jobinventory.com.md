@@ -1,5 +1,6 @@
 ---
 title: Scraping Job Listings
+description: Scraping job listings using Python
 tags: [Scraping, Python, GitHub, Automation, Data Science]
 ---
 

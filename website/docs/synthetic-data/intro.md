@@ -1,5 +1,6 @@
 ---
 title: Introduction
+description: An introduction to possibilites of synthetic data
 tags: [Synthetic Data, Data Science, Machine Learning, GPT-4, Privacy]
 ---
 

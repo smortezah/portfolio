@@ -1,5 +1,6 @@
 ---
 title: Forecasting with sktime
+description: Learn how to use sktime to forecast time-series data
 tags: [Timeseries, Data Science, Machine Learning, Sktime, Forecasting]
 ---
 

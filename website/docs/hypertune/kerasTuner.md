@@ -1,5 +1,5 @@
 ---
-title: KerasTuner
+description: How to use KerasTuner to tune hyperparameters
 tags:
   [
     Keras Tuner,

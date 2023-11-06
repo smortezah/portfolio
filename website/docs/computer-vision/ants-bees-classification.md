@@ -1,5 +1,6 @@
 ---
 title: Image Classification App
+description: A deep learning model for image classification
 tags: [Data Science, Machine Learning, Image Classification, PyTorch, Streamlit]
 ---
 

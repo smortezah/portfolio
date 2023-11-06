@@ -1,5 +1,6 @@
 ---
 title: Logistic Regression Thresholds
+description: Find the optimal threshold for logistic regression
 tags:
   [
     Logistic Regression,

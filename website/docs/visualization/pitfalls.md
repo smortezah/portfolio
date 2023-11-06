@@ -1,5 +1,6 @@
 ---
 title: Pitfalls in Data Visualization
+description: How to avoid common pitfalls in data visualization
 tags: [Data Visualization, Data Science, Pitfalls, Python, Charts]
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: ETL Pipeline
+description: Learn how to implement an ETL pipeline
 tags: [AirFlow, Docker, ETL, PostgreSQL, Data Engineering]
 ---
 
