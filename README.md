@@ -43,6 +43,10 @@ Also, my articles on the Medium platform can be found [here](https://medium.com/
 
 - [Anonymization](privacy/anonymization.ipynb): an introduction to data anonymization and its applications
 
+## :snake: Python
+
+- [Lambda](python/lambda.ipynb): an introduction to lambda functions in Python
+
 ## :chart_with_upwards_trend: Statistical analysis
 
 - [A/B testing](stats/ab-test.ipynb): testing the effectiveness of a new feature in a web application by A/B testing
