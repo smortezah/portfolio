@@ -1,6 +1,6 @@
 # :rocket: Portfolio
 
-This repository includes my side projects on various applications of data science and machine learning.
+This repository includes my side projects on various applications of Data Science and Machine Learning.
 
 Check the documentaion [here](https://smortezah.github.io/portfolio/docs).
 
