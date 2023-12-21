@@ -67,8 +67,8 @@ Also, my articles on the Medium platform can be found [here](https://medium.com/
 
 ## :art: Visualization
 
-- [lets-plot](visualization/lets-plot): plotting with [lets-plot](https://lets-plot.org/index.html), a Python port of the R's [ggplot2](https://ggplot2.tidyverse.org/) library
-- [Pitfalls](visualization/pitfalls.ipynb): common pitfalls in data visualization and how to avoid them
+- [lets-plot](visualization/lets-plot/codebook.ipynb): plotting with [lets-plot](https://lets-plot.org/index.html), a Python port of the R's [ggplot2](https://ggplot2.tidyverse.org/) library
+- [Pitfalls](visualization/pitfalls/pitfalls.ipynb): common pitfalls in data visualization and how to avoid them
 - [QR code](visualization/qrcode.ipynb): generating QR codes
 
 ## :spider_web: Web scraping
