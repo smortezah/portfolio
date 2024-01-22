@@ -42,6 +42,7 @@ Also, my articles on the Medium platform can be found [here](https://medium.com/
 ## :lock: Privacy
 
 - [Anonymization](privacy/anonymization.ipynb): an introduction to data anonymization and its applications
+- [Encryption](privacy/encryption.ipynb): a beginner's guide to Python encryption
 
 ## :snake: Python
 
