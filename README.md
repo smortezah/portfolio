@@ -33,6 +33,7 @@ Also, my articles on the Medium platform can be found [here](https://medium.com/
 ## :gear: Hyperparameter tuning
 
 - [KerasTuner](hypertune/kerasTuner.ipynb): hyperparameter tuning using [KerasTuner](https://keras.io/keras_tuner/) library
+- [Optuna](hypertune/optuna.ipynb): hyperparameter tuning with [Optuna](https://optuna.org/) library
 
 ## :package: Miscellaneous
 
