@@ -457,17 +457,7 @@ echo '{"name": "Alice", "age": 30}' | jq '.city'
 null
 ```
 
-No tantrums, no crashes—just a polite `null`.
-
-### Performance optimization
-
-If you're processing large JSON files, efficiency matters. jq is lightning-fast, but you can squeeze out even more speed by using the `-c` flag to produce compact output. Less fluff, more zoom!
-
-```bash
-$ cat big_data.json | jq -c '.[] | select(.category == "Science Fiction")'
-```
-
-Stay tuned for the grand finale in the next section! 🎉🚀
+No tantrums, no crashes-just a polite `null`.
 
 ## Putting It All Together
 
@@ -485,14 +475,13 @@ Now that you've mastered the art of jq, let's explore some practical scenarios w
 
 - **Keep It Simple**: jq is powerful, but don't overcomplicate things. Start with basic queries, understand the syntax, and gradually explore advanced features. Simplicity wins over complexity.
 
-- **Test Incrementally**: When crafting complex jq expressions, build them incrementally. Test each step to ensure it behaves as expected. Think of it as assembling a LEGO castle—one brick at a time.
+- **Test Incrementally**: When crafting complex jq expressions, build them incrementally. Test each step to ensure it behaves as expected. Think of it as assembling a LEGO castle-one brick at a time.
 
 - **Read the Manual**: jq has a comprehensive manual (yes, wizards have manuals too). Type `man jq` in your terminal, and behold the wisdom. It's like Dumbledore's Pensieve, minus the memories.
 
 ### Resources for further exploration
 
 1. [Official jq Documentation](https://stedolan.github.io/jq/manual/)
-2. [jq Tutorial by Stephen Brennan](https://programminghistorian.org/en/lessons/json-and-jq)
-3. [jq Playground](https://jqplay.org/)
+2. [jq Playground](https://jqplay.org/)
 
 Remember, JSON is your canvas, and jq is your brush. Go forth, manipulate, and conquer!
