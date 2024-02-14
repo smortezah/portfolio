@@ -61,6 +61,7 @@ Also, my articles on the Medium platform can be found [here](https://medium.com/
 ## :desktop_computer: Terminal
 
 - [Rich](terminal/rich/rich.ipynb): formatting text in the terminal using [Rich](https://github.com/Textualize/rich) library
+- [jq](terminal/jq.ipynb): JSON manipulating with [jq](https://jqlang.github.io/jq/)
 
 ## :hourglass_flowing_sand: Time-series
 
