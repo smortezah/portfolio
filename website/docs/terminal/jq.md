@@ -1,6 +1,6 @@
 ---
 description: JSON Manipulation with jq
-tags: [jq, Terminal, CLI] #TODO
+tags: [jq, JSON, Terminal, CLI]
 ---
 
 # jq
