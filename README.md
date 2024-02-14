@@ -48,6 +48,7 @@ Also, my articles on the Medium platform can be found [here](https://medium.com/
 ## :snake: Python
 
 - [Lambda](python/lambda.ipynb): an introduction to lambda functions in Python
+- [Generators](python/generator.ipynb): a hands-on guide to Python generators
 
 ## :chart_with_upwards_trend: Statistical analysis
 
