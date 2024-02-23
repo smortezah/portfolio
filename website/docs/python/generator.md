@@ -5,7 +5,7 @@ tags: [generator, python, coding tips, data science]
 
 # Generators
 
-Welcome, fellow Pythonistas! 🐍 In this tutorial, we'll dive deep into the fascinating world of **generators**. These unsung heroes of Python allow us to create memory-efficient, lazy-evaluated sequences. Whether you're a seasoned developer or just starting out, buckle up as we explore generators step by step. So grab your favorite cup of ☕️, fire up your code editor, and let's embark on this generator adventure together!
+In this tutorial, we'll dive deep into the fascinating world of **generators**. These unsung heroes of Python allow us to create memory-efficient, lazy-evaluated sequences. Whether you're a seasoned developer or just starting out, buckle up as we explore generators step by step. So grab your favorite cup of ☕️, fire up your code editor, and let's embark on this generator adventure together!
 
 ## Introduction
 
