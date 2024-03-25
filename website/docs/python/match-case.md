@@ -59,7 +59,7 @@ Cold-blooded and scaly
 
 In this snippet, we're categorizing animals based on their characteristics. If the animal matches any of the specified cases, the corresponding message dances its way to the console. And that _? It's our wildcard, catching any unanticipated guests.
 
-### Patterns and Guards
+### Patterns and Guards
 
 Patterns define how we recognize our masked guests. You can use literals, variables, or even nested patterns. And guess what? Guards allow you to add conditions to your patterns.
 
@@ -81,7 +81,7 @@ describe_temperature(21)
 Ah, the warmth of Pythonic sunbeams.
 ```
 
-### Wildcard and Variable Bindings
+### Wildcard and Variable Bindings
 
 Our wildcard `_` is the mysterious masked stranger who fits any role. It's perfect for catching unexpected input. But sometimes, we want to unmask and remember a specific value. Enter variable bindings!
 
@@ -107,7 +107,7 @@ And there you have it! The basic steps of `match case`.
 
 Let's dive into the shallow end of our Pythonic pool and explore simple examples of pattern matching. 🏊‍♂️
 
-### Matching Integers, Strings, and Other Literals
+### Matching Integers, Strings, and Other Literals
 
 Imagine you're hosting a tea party, and your guests arrive with different preferences. Some like their tea hot, others prefer it iced, and a few even want it with a twist of lemon. Let's use `match case` to cater to their tastes:
 
@@ -209,7 +209,7 @@ First: 1, Second: 2, Rest: [3, 4, 5]
 
 In this snippet, we're unboxing a list. The `*rest` captures all remaining elements.
 
-### Nested Patterns: The Russian Dolls of Code
+### Nested Patterns: The Russian Dolls of Code
 
 Picture a set of Russian nesting dolls--each doll containing another. Nested patterns work similarly. They let us peek inside structures within structures. Behold:
 
@@ -233,7 +233,7 @@ User: Alice, Age: 30, Location: Wonderland
 
 Here, we're unmasking a dictionary within a dictionary. If it fits the pattern, we reveal the user's name, age, and location. Otherwise, we keep our detective hats on.
 
-### Extracting Values from Dictionaries
+### Extracting Values from Dictionaries
 
 Dictionaries are like enchanted scrolls--you whisper a key, and they reveal their secrets. Let's chant the incantation:
 
@@ -295,7 +295,7 @@ Odette glides gracefully in ballet attire.
 
 Here, our `Dancer` class wears different masks--ballet or comedy. If the dancer matches a known style, we introduce them accordingly. Otherwise, they remain intriguing.
 
-### Combining Patterns with Logical Operators
+### Combining Patterns with Logical Operators
 
 Imagine a waltz where dancers swirl in intricate patterns. Logical operators allow us to choreograph complex moves. Let's blend patterns like a master conductor:
 
@@ -349,7 +349,7 @@ Here, we're handling café orders. If it's a simple coffee-croissant combo, we f
 
 ## Best Practices and Tips
 
-### Readability and Maintainability
+### Readability and Maintainability
 
 In the waltz of pattern matching, readability and maintainability are your partners. Here's how to keep them in step:
 
@@ -357,7 +357,7 @@ In the waltz of pattern matching, readability and maintainability are your partn
 - **Comments and Documentation:** Add comments and docstrings. Explain the purpose of each pattern, especially if it's a unique move. Future coders (including your future self) will appreciate the guidance.
 - **Consistent Style:** Imagine a ballroom where some dancers waltz, others breakdance, and a few moonwalk. Consistency matters! Stick to a consistent style — whether it's indentation, naming conventions, or spacing. Your code will flow harmoniously.
 
-### Performance Considerations
+### Performance Considerations
 
 As you pirouette through patterns, keep an eye on performance. Here's your backstage checklist:
 
@@ -365,7 +365,7 @@ As you pirouette through patterns, keep an eye on performance. Here's your backs
 - **Avoid Excessive Nesting:** Nested patterns are like intricate lifts. Use them judiciously. Deeply nested structures can slow down your dance. Opt for elegance over complexity.
 - **Benchmark and Optimize:** Profile your code. Use tools like `timeit` or `cProfile`. Optimize where needed—trim excess frills without losing grace.
 
-### Debugging and Troubleshooting
+### Debugging and Troubleshooting
 
 Even the most seasoned dancers trip occasionally. When your pattern matching routine falters, here's your emergency kit:
 
