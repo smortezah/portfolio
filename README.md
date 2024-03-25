@@ -49,6 +49,7 @@ Also, my articles on the Medium platform can be found [here](https://medium.com/
 
 - [Lambda](python/lambda.ipynb): an introduction to lambda functions in Python
 - [Generators](python/generator.ipynb): a hands-on guide to Python generators
+- [Pattern matching](python/match-case.ipynb): a guide to pattern matching in Python with `match-case` statement
 
 ## :chart_with_upwards_trend: Statistical analysis
 
