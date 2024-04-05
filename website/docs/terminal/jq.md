@@ -459,6 +459,124 @@ null
 
 No tantrums, no crashes-just a polite `null`.
 
+## FAQs
+
+**Q: How can I extract specific elements from a deeply nested JSON structure using jq?**
+
+**A:** You can efficiently handle complex JSON path queries with jq. For instance, to retrieve all addresses with the city "New York" from a nested JSON data, you can use the following command:
+
+```json title="file.json"
+{
+  "person": [
+    {
+      "name": "Alice",
+      "address": { "city": "New York", "street": "123 Main St" }
+    },
+    {
+      "name": "Bob",
+      "address": { "city": "Los Angeles", "street": "456 Elm St" }
+    }
+  ]
+}
+```
+
+```bash title="Shell"
+cat file.json | jq '.person[].address | select(.city == "New York")'
+```
+
+```
+{
+  "city": "New York",
+  "street": "123 Main St"
+}
+```
+
+This command filters and extracts the relevant address elements.
+
+**Q: How do I modify and update values within a JSON object using jq?**
+
+**A:** Beyond querying, jq allows you to modify and update JSON data. Suppose you need to update the "price" field in a JSON object to 29.99. You can achieve this with the following command:
+
+```json title="file.json"
+{
+  "product": {
+    "name": "Widget",
+    "price": 25.99,
+    "category": "Electronics"
+  }
+}
+```
+
+```bash title="Shell"
+cat file.json | jq '.product.price = 29.99' > output.json
+```
+
+```json title="output.json"
+{
+  "product": {
+    "name": "Widget",
+    "price": 29.99,
+    "category": "Electronics"
+  }
+}
+```
+
+This command updates the price value and saves it as "output.json".
+
+**Q: Can jq aggregate data within JSON arrays?**
+
+**A:** Absolutely! jq excels at aggregating and summarizing data within JSON arrays. To calculate the total price of products in an array, you can use:
+
+```json title="file.json"
+{
+  "product": [
+    { "name": "Widget", "price": 20, "category": "Electronics" },
+    { "name": "Gadget", "price": 50, "category": "Electronics" }
+  ]
+}
+```
+
+```bash title="Shell"
+cat file.json | jq 'map(.[].price) | add'
+```
+
+```
+70
+```
+
+This command sums up the prices of all products in the JSON array.
+
+**Q: How can I filter and extract specific elements from JSON arrays using jq?**
+
+**A:** Suppose you want to filter products with prices above $50. jq can efficiently achieve this:
+
+```json title="file.json"
+[
+  { "name": "Product A", "price": 49.99 },
+  { "name": "Product B", "price": 69.99 },
+  { "name": "Product C", "price": 89.99 }
+]
+```
+
+```bash title="Shell"
+cat file.json | jq 'map(select(.price > 50))'
+```
+
+```
+[
+  {
+    "name": "Product B",
+    "price": 69.99
+  },
+  {
+    "name": "Product C",
+    "price": 89.99
+  }
+]
+```
+
+This command filters the JSON array to include only products with prices above $50.
+
 ## Putting It All Together
 
 ### Real-world use cases
