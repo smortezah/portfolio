@@ -3,7 +3,7 @@ description: Implementing popular sorting algorithms in Python
 tags: [Sorting, Data Structures, Algorithms, Tutorial, Python]
 ---
 
-# A Guide to Sorting
+# Sorting
 
 ## 1. Introduction
 
