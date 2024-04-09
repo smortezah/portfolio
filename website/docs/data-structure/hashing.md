@@ -1,8 +1,9 @@
 ---
+description: An introduction to hashing, and its implementation in Python
 tags: [Hash, Data Structures, Algorithms, Tutorial, Python]
 ---
 
-# A Guide to Hashing
+# Hashing
 
 ## Introduction
 

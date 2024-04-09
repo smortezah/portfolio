@@ -19,6 +19,7 @@ Also, my articles on the Medium platform can be found [here](https://medium.com/
 ## 🧩 Data Structures
 
 - [Sorting](data-structure/sorting-popular.ipynb): a guide to popular sorting algorithms in Python
+- [Hashing](data-structure/hashing.ipynb): an introduction to hashing, its applications, and Python implementation
 
 ## :mag: EDA (Exploratory Data Analysis)
 
