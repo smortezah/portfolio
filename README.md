@@ -12,14 +12,18 @@ Also, my articles on the Medium platform can be found [here](https://medium.com/
 
 - [Credit card fraud detection](anomaly-detection/fraud-detection.ipynb): detecting fraudulent transactions in a dataset using neural networks
 
+## :factory: Automation
+
+- [Auto commit to GitHub](automation/auto-commit): automating the process of committing and pushing changes to GitHub
+
 ## :camera: Computer Vision
 
 - [Ants vs bees image classification](computer-vision/ants-bees-classification/image-classification.ipynb): an app for classification of images, employing deep learning models
 
 ## 🧩 Data Structures
 
-- [Sorting](data-structure/sorting-popular.ipynb): a guide to popular sorting algorithms in Python
 - [Hashing](data-structure/hashing.ipynb): an introduction to hashing, its applications, and Python implementation
+- [Sorting](data-structure/sorting-popular.ipynb): a guide to popular sorting algorithms in Python
 
 ## :mag: EDA (Exploratory Data Analysis)
 
@@ -36,10 +40,9 @@ Also, my articles on the Medium platform can be found [here](https://medium.com/
 - [KerasTuner](hypertune/kerasTuner.ipynb): hyperparameter tuning using [KerasTuner](https://keras.io/keras_tuner/) library
 - [Optuna](hypertune/optuna.ipynb): hyperparameter tuning with [Optuna](https://optuna.org/) library
 
-## :package: Miscellaneous
+## :robot: Machine Learning
 
-- [Auto commit](misc/auto-commit): automating the process of committing and pushing changes to GitHub
-- [Finding best threshold for logistic regression](misc/threshold-logistic-regression.ipynb): different methods to find the optimal threshold for logistic regression
+- [Best threshold for logistic regression](machine-learning/threshold-logistic-regression.ipynb): different methods to find the optimal threshold for logistic regression
 
 ## :lock: Privacy
 
@@ -48,9 +51,10 @@ Also, my articles on the Medium platform can be found [here](https://medium.com/
 
 ## :snake: Python
 
-- [Lambda](python/lambda.ipynb): an introduction to lambda functions in Python
-- [Generators](python/generator.ipynb): a hands-on guide to Python generators
-- [Pattern matching](python/match-case.ipynb): a guide to pattern matching in Python with `match-case` statement
+- [Argument parsing](python/argparse.ipynb): a guide to argument parsing using `argparse` module
+- [Generators](python/generator.ipynb): a hands-on guide to generators
+- [Lambda](python/lambda.ipynb): an introduction to lambda functions
+- [Pattern matching](python/match-case.ipynb): a guide to pattern matching with `match-case` statement
 
 ## :chart_with_upwards_trend: Statistical analysis
 
@@ -63,13 +67,13 @@ Also, my articles on the Medium platform can be found [here](https://medium.com/
 
 ## :desktop_computer: Terminal
 
-- [Rich](terminal/rich/rich.ipynb): formatting text in the terminal using [Rich](https://github.com/Textualize/rich) library
 - [jq](terminal/jq.ipynb): JSON manipulating with [jq](https://jqlang.github.io/jq/)
+- [Rich](terminal/rich/rich.ipynb): formatting text in the terminal using [Rich](https://github.com/Textualize/rich) library
 
 ## :hourglass_flowing_sand: Time-series
 
-- [Prevent overfitting](time-series/prevent-overfitting.ipynb): preventing overfitting in time series forecasting using different techniques
 - [Forecasting with sktime](time-series/sktime.ipynb): time-series forecasting using [sktime](https://github.com/sktime/sktime) library
+- [Prevent overfitting](time-series/prevent-overfitting.ipynb): preventing overfitting in time series forecasting using different techniques
 
 ## :art: Visualization
 
