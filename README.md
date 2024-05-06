@@ -1,90 +1,90 @@
 # :rocket: Portfolio
 
-This repository includes my side projects on various applications of Data Science and Machine Learning.
+Welcome to my repository, a collection of my exploratory projects in the diverse fields of Data Science and Machine Learning.
 
-Check the documentaion [here](https://smortezah.github.io/portfolio/docs).
+For a detailed understanding of these projects, you can refer to the comprehensive documentation available [here](https://smortezah.github.io/portfolio/docs).
 
-Also, my articles on the Medium platform can be found [here](https://medium.com/@morihosseini/).
+In addition to these projects, I regularly share my insights and learnings on the Medium platform. You can access my articles [here](https://medium.com/@morihosseini/).
 
-**Note:** The following list is sorted alphabetically.
+**Please note:** The projects listed below are organized alphabetically for your convenience.
 
-## :rotating_light: Anomaly detection
+## :rotating_light: Anomaly Detection
 
-- [Credit card fraud detection](anomaly-detection/fraud-detection.ipynb): detecting fraudulent transactions in a dataset using neural networks
+- [Credit Card Fraud Detection](anomaly-detection/fraud-detection.ipynb): Unveil fraudulent transactions using a neural network-based approach.
 
 ## :factory: Automation
 
-- [Auto commit to GitHub](automation/auto-commit): automating the process of committing and pushing changes to GitHub
+- [Automated GitHub Commits](automation/auto-commit): Simplify your workflow with an automated solution for committing and pushing changes to GitHub.
 
 ## :camera: Computer Vision
 
-- [Ants vs bees image classification](computer-vision/ants-bees-classification/image-classification.ipynb): an app for classification of images, employing deep learning models
+- [Ants vs Bees Image Classification](computer-vision/ants-bees-classification/image-classification.ipynb): Harness the power of deep learning models to classify images.
 
 ## 🧩 Data Structures
 
-- [Hashing](data-structure/hashing.ipynb): an introduction to hashing, its applications, and Python implementation
-- [Sorting](data-structure/sorting-popular.ipynb): a guide to popular sorting algorithms in Python
+- [Understanding Hashing](data-structure/hashing.ipynb): Dive into the world of hashing, its applications, and Python implementation.
+- [Sorting Algorithms](data-structure/sorting-popular.ipynb): A comprehensive guide to understanding and implementing popular sorting algorithms in Python.
 
 ## :mag: EDA (Exploratory Data Analysis)
 
-- [Data balancing](eda/data-balancing.ipynb): balancing imbalanced datasets using different methods
-- [Handling missing data](eda/missing-data.ipynb): handling missing data in a dataset using various methods
-- [Polars](eda/polars.ipynb): using [polars](https://www.pola.rs) library for data manipulation and analysis
+- [Data Balancing](eda/data-balancing.ipynb): Learn techniques to balance imbalanced datasets.
+- [Handling Missing Data](eda/missing-data.ipynb): Discover various methods for handling missing data in datasets.
+- [Polars](eda/polars.ipynb): Leverage the [Polars](https://www.pola.rs) library for efficient data manipulation and analysis.
 
 ## :hammer_and_wrench: ETL (Extract, Transform, Load)
 
-- [ETL pipeline with Airflow and Docker](etl/airflow-docker): automatization of extracting data from various sources, transforming them, and loading the transformed data into a database
+- [ETL Pipeline with Airflow and Docker](etl/airflow-docker): A project showcasing the automation of data extraction, transformation, and loading into a database.
 
-## :gear: Hyperparameter tuning
+## :gear: Hyperparameter Tuning
 
-- [KerasTuner](hypertune/kerasTuner.ipynb): hyperparameter tuning using [KerasTuner](https://keras.io/keras_tuner/) library
-- [Optuna](hypertune/optuna.ipynb): hyperparameter tuning with [Optuna](https://optuna.org/) library
+- [KerasTuner](hypertune/kerasTuner.ipynb): Optimize your models with hyperparameter tuning using the [KerasTuner](https://keras.io/keras_tuner/) library.
+- [Optuna](hypertune/optuna.ipynb): Enhance your models with hyperparameter tuning using the [Optuna](https://optuna.org/) library.
 
 ## :robot: Machine Learning
 
-- [Best threshold for logistic regression](machine-learning/threshold-logistic-regression.ipynb): different methods to find the optimal threshold for logistic regression
+- [Best Threshold for Logistic Regression](machine-learning/threshold-logistic-regression.ipynb): Explore different methods to find the optimal threshold for logistic regression.
 
 ## :lock: Privacy
 
-- [Anonymization](privacy/anonymization.ipynb): an introduction to data anonymization and its applications
-- [Encryption](privacy/encryption.ipynb): a beginner's guide to Python encryption
+- [Anonymization](privacy/anonymization.ipynb): Learn about data anonymization and its applications.
+- [Encryption](privacy/encryption.ipynb): A guide to understanding and implementing Python encryption.
 
 ## :snake: Python
 
-- [Argument parsing](python/argparse.ipynb): a guide to argument parsing using `argparse` module
-- [Generators](python/generator.ipynb): a hands-on guide to generators
-- [Lambda](python/lambda.ipynb): an introduction to lambda functions
-- [Pattern matching](python/match-case.ipynb): a guide to pattern matching with `match-case` statement
+- [Argument Parsing](python/argparse.ipynb): Master argument parsing using the `argparse` module.
+- [Generators](python/generator.ipynb): A hands-on guide to understanding and using generators.
+- [Lambda](python/lambda.ipynb): Get introduced to lambda functions.
+- [Pattern Matching](python/match-case.ipynb): Learn pattern matching with the `match-case` statement.
 
-## :chart_with_upwards_trend: Statistical analysis
+## :chart_with_upwards_trend: Statistical Analysis
 
-- [A/B testing](stats/ab-test.ipynb): testing the effectiveness of a new feature in a web application by A/B testing
-- [Hypothesis testing: p-values around 0.05](stats/pvalue-around-0.05.ipynb): should we reject the null hypothesis if the p-value is around 0.05?
+- [A/B Testing](stats/ab-test.ipynb): Test the effectiveness of a new feature in a web application using A/B testing.
+- [Hypothesis Testing: p-values Around 0.05](stats/pvalue-around-0.05.ipynb): Understand when to reject the null hypothesis if the p-value is around 0.05.
 
-## :bulb: Synthetic data generation
+## :bulb: Synthetic Data Generation
 
-- [Introduction](synthetic-data/intro.ipynb): generating synthetic data using Python and also, considerations for using synthetic data
+- [Introduction](synthetic-data/intro.ipynb): Learn to generate synthetic data using Python and understand the considerations for using synthetic data.
 
 ## :desktop_computer: Terminal
 
-- [jq](terminal/jq.ipynb): JSON manipulating with [jq](https://jqlang.github.io/jq/)
-- [Rich](terminal/rich/rich.ipynb): formatting text in the terminal using [Rich](https://github.com/Textualize/rich) library
+- [jq](terminal/jq.ipynb): Manipulate JSON with [jq](https://jqlang.github.io/jq/).
+- [Rich](terminal/rich/rich.ipynb): Format text in the terminal using the [Rich](https://github.com/Textualize/rich) library.
 
-## :hourglass_flowing_sand: Time-series
+## :hourglass_flowing_sand: Time-series Analysis
 
-- [Forecasting with sktime](time-series/sktime.ipynb): time-series forecasting using [sktime](https://github.com/sktime/sktime) library
-- [Prevent overfitting](time-series/prevent-overfitting.ipynb): preventing overfitting in time series forecasting using different techniques
+- [Forecasting with sktime](time-series/sktime.ipynb): Forecast time-series data using the [sktime](https://github.com/sktime/sktime) library.
+- [Prevent Overfitting](time-series/prevent-overfitting.ipynb): Learn techniques to prevent overfitting in time series forecasting.
 
-## :art: Visualization
+## :art: Data Visualization
 
-- [lets-plot](visualization/lets-plot/codebook.ipynb): plotting with [lets-plot](https://lets-plot.org/index.html), a Python port of the R's [ggplot2](https://ggplot2.tidyverse.org/) library
-- [Pitfalls](visualization/pitfalls/pitfalls.ipynb): common pitfalls in data visualization and how to avoid them
-- [QR code](visualization/qrcode.ipynb): generating QR codes
+- [lets-plot](visualization/lets-plot/codebook.ipynb): Create stunning plots with [lets-plot](https://lets-plot.org/index.html), a Python port of the R's [ggplot2](https://ggplot2.tidyverse.org/) library.
+- [Pitfalls](visualization/pitfalls/pitfalls.ipynb): Avoid common pitfalls in data visualization.
+- [QR Code](visualization/qrcode.ipynb): Generate QR codes with ease.
 
-## :spider_web: Web scraping
+## :spider_web: Web Scraping
 
-- [jobinventory](scrape/jobinventory.com/tutorial.ipynb): scraping job listings from jobinventory.com using Python
+- [jobinventory](scrape/jobinventory.com/tutorial.ipynb): Scrape job listings from jobinventory.com using Python.
 
 ## :memo: XAI (Explainable AI)
 
-- [Introduction](xai/intro.ipynb): an introduction to explainable AI and its importance
+- [Introduction](xai/intro.ipynb): Understand the importance of explainable AI and its applications.
