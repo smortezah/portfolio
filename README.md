@@ -25,6 +25,12 @@ In addition to these projects, I regularly share my insights and learnings on th
 - [Understanding Hashing](data-structure/hashing.ipynb): Dive into the world of hashing, its applications, and Python implementation.
 - [Sorting Algorithms](data-structure/sorting-popular.ipynb): A comprehensive guide to understanding and implementing popular sorting algorithms in Python.
 
+## :art: Data Visualization
+
+- [lets-plot](visualization/lets-plot/codebook.ipynb): Create stunning plots with [lets-plot](https://lets-plot.org/index.html), a Python port of the R's [ggplot2](https://ggplot2.tidyverse.org/) library.
+- [Pitfalls](visualization/pitfalls/pitfalls.ipynb): Avoid common pitfalls in data visualization.
+- [QR Code](visualization/qrcode.ipynb): Generate QR codes with ease.
+
 ## :mag: EDA (Exploratory Data Analysis)
 
 - [Data Balancing](eda/data-balancing.ipynb): Learn techniques to balance imbalanced datasets.
@@ -39,6 +45,10 @@ In addition to these projects, I regularly share my insights and learnings on th
 
 - [KerasTuner](hypertune/kerasTuner.ipynb): Optimize your models with hyperparameter tuning using the [KerasTuner](https://keras.io/keras_tuner/) library.
 - [Optuna](hypertune/optuna.ipynb): Enhance your models with hyperparameter tuning using the [Optuna](https://optuna.org/) library.
+
+## :brain: LLM (Large Language Model)
+
+- [Tokenization](llm/tokenization.ipynb): Explore the tokenization of text data.
 
 ## :robot: Machine Learning
 
@@ -75,12 +85,6 @@ In addition to these projects, I regularly share my insights and learnings on th
 
 - [Forecasting with sktime](time-series/sktime.ipynb): Forecast time-series data using the [sktime](https://github.com/sktime/sktime) library.
 - [Prevent Overfitting](time-series/prevent-overfitting.ipynb): Learn techniques to prevent overfitting in time series forecasting.
-
-## :art: Data Visualization
-
-- [lets-plot](visualization/lets-plot/codebook.ipynb): Create stunning plots with [lets-plot](https://lets-plot.org/index.html), a Python port of the R's [ggplot2](https://ggplot2.tidyverse.org/) library.
-- [Pitfalls](visualization/pitfalls/pitfalls.ipynb): Avoid common pitfalls in data visualization.
-- [QR Code](visualization/qrcode.ipynb): Generate QR codes with ease.
 
 ## :spider_web: Web Scraping
 
