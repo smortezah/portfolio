@@ -66,6 +66,7 @@ In addition to these projects, I regularly share my insights and learnings on th
 - [Generators](python/generator.ipynb): A hands-on guide to understanding and using generators.
 - [Lambda](python/lambda.ipynb): Get introduced to lambda functions.
 - [Pattern Matching](python/match-case.ipynb): Learn pattern matching with the `match-case` statement.
+ - [Serialization](python/serialization.ipynb): Understand serialization and deserialization in Python.
 
 ## :chart_with_upwards_trend: Statistical Analysis
 
