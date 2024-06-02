@@ -7,7 +7,7 @@ tags: [pivot tables, pandas, data analysis, data science, python]
 
 As data scientists, we are constantly sifting through vast amounts of data, searching for insights that can drive decisions. One of the most powerful tools in our arsenal is the pivot table. If you’re familiar with Excel, you might have already used pivot tables to summarize data. However, the true magic happens when you bring pivot tables into the realm of Python using the pandas library. In this article, we’ll dive into the basics of pivot tables in pandas and explore how they can help us manipulate and analyze our data with ease.
 
-## Understanding Pivot Tables
+## 1. Understanding Pivot Tables
 
 At its core, a pivot table allows us to transform and summarize data by aggregating it in meaningful ways. Think of it as a multi-dimensional spreadsheet where you can slice and dice your data to uncover trends and patterns. With pandas, creating pivot tables is both straightforward and incredibly powerful, allowing us to handle large datasets efficiently.
 
@@ -144,7 +144,7 @@ By understanding and leveraging these tips, you can create powerful pivot tables
 
 In the next sections, we will dive deeper into advanced techniques, such as dealing with hierarchical indexes and customizing pivot tables further to meet specific analytical needs.
 
-## Advanced Pivot Table Techniques
+## 2. Advanced Pivot Table Techniques
 
 Now that we’ve covered the basics, let’s delve into some advanced techniques that can make pivot tables even more powerful and flexible. These techniques will help you tackle more complex data analysis tasks and gain deeper insights from your data.
 
@@ -331,7 +331,7 @@ By mastering these advanced techniques, you can create highly customized pivot t
 
 In the next section, we will explore real-world examples and case studies to demonstrate how pivot tables can be applied to solve complex data analysis problems.
 
-## Real-World Examples and Case Studies
+## 3. Real-World Examples and Case Studies
 
 Now that we have covered both the basics and some advanced techniques of pivot tables in pandas, let’s dive into real-world examples and case studies. These examples will illustrate how pivot tables can be applied to solve practical data analysis problems, helping you to harness the full power of your data.
 
@@ -591,7 +591,7 @@ This bar chart highlights the spending patterns of different customers across va
 
 By applying pivot tables to real-world datasets, you can uncover valuable insights and trends that drive decision-making. In the final section, we will summarize the key takeaways and provide additional resources for mastering pivot tables in pandas.
 
-## Key Takeaways and Conclusion
+## 4. Key Takeaways and Conclusion
 
 We've covered a lot of ground in this article, from the basics of pivot tables to advanced techniques and real-world applications. By now, you should have a solid understanding of how to use pivot tables in pandas to summarize, analyze, and visualize your data effectively. Let's summarize the key takeaways to further enhance your skills.
 
