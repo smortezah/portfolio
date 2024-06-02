@@ -47,7 +47,7 @@ print(loaded_data)
 
 In this example, we create a dictionary object and serialize it to a file named `data.pkl`. We then deserialize it back into a Python object and print it out. The output will be:
 
-```title="Output"
+```text title="Output"
 {'name': 'Alice', 'age': 30, 'is_student': False, 'courses': ['Math', 'Science']}
 ```
 
@@ -69,7 +69,7 @@ with open('data_protocol2.pkl', 'rb') as file:
 print(loaded_data_protocol2)
 ```
 
-```title="Output"
+```text title="Output"
 {'name': 'Alice', 'age': 30, 'is_student': False, 'courses': ['Math', 'Science']}
 ```
 
@@ -103,7 +103,7 @@ time_protocol5 = timeit.timeit(
 print(f"Protocol 5: {time_protocol5:.5f} seconds")
 ```
 
-```title="Output"
+```text title="Output"
 Protocol 2: 0.45007 seconds
 Protocol 5: 0.37886 seconds
 ```
@@ -154,7 +154,7 @@ loaded_data = json.loads(json_string)
 print(loaded_data)
 ```
 
-```title="Output"
+```text title="Output"
 {
     "name": "Alice",
     "age": 30,
@@ -185,7 +185,7 @@ with open('data.json', 'r') as file:
 print(loaded_data)
 ```
 
-```title="Output"
+```text title="Output"
 {'name': 'Alice', 'age': 30, 'is_student': False, 'courses': ['Math', 'Science']}
 ```
 
@@ -225,7 +225,7 @@ loaded_student = json.loads(json_string, object_hook=dict_to_student)
 print(loaded_student.__dict__)
 ```
 
-```title="Output"
+```text title="Output"
 {
     "name": "Alice",
     "age": 30,
@@ -263,7 +263,7 @@ time_ujson = timeit.timeit(lambda: ujson.dumps(data), number=100000)
 print(f"UltraJSON:\t{time_ujson:.5f} seconds")
 ```
 
-```title="Output"
+```text title="Output"
 Standard JSON:	0.17757 seconds
 UltraJSON:	    0.04344 seconds
 ```
@@ -320,7 +320,7 @@ loaded_data = msgpack.unpackb(binary_data)
 print(loaded_data)
 ```
 
-```title="Output"
+```text title="Output"
 b'\x84\xa4name\xa5Alice\xa3age\x1e\xaais_student\xc2\xa7courses\x92\xa4Math\xa7Science'
 {'name': 'Alice', 'age': 30, 'is_student': False, 'courses': ['Math', 'Science']}
 ```
@@ -343,7 +343,7 @@ with open('data.msgpack', 'rb') as file:
 print(loaded_data)
 ```
 
-```title="Output"
+```text title="Output"
 {'name': 'Alice', 'age': 30, 'is_student': False, 'courses': ['Math', 'Science']}
 ```
 
@@ -383,7 +383,7 @@ loaded_data = msgpack.unpackb(binary_data, object_hook=dict_to_student)
 print(loaded_data.__dict__)
 ```
 
-```title="Output"
+```text title="Output"
 b'\x84\xa4name\xa5Alice\xa3age\x1e\xaais_student\xc2\xa7courses\x92\xa4Math\xa7Science'
 {'name': 'Alice', 'age': 30, 'is_student': False, 'courses': ['Math', 'Science']}
 ```
@@ -415,7 +415,7 @@ time_msgpack = timeit.timeit(lambda: msgpack.packb(data), number=10000)
 print(f"{'MessagePack:':13}{time_msgpack:.5f} seconds")
 ```
 
-```title="Output"
+```text title="Output"
 JSON:        0.02905 seconds
 MessagePack: 0.00810 seconds
 ```
