@@ -35,7 +35,7 @@ In addition to these projects, I regularly share my insights and learnings on th
 
 - [Data Balancing](eda/data-balancing.ipynb): Learn techniques to balance imbalanced datasets.
 - [Handling Missing Data](eda/missing-data.ipynb): Discover various methods for handling missing data in datasets.
-- [Pivot Tables with Pandas](eda/pivot-pandas.ipynb): Create pivot tables using the `pandas` library.
+- [Pivot Tables with pandas](eda/pivot-pandas.ipynb): Create pivot tables using the [pandas](https://pandas.pydata.org/) library.
 - [Polars](eda/polars.ipynb): Leverage the [Polars](https://www.pola.rs) library for efficient data manipulation and analysis.
 
 ## :hammer_and_wrench: ETL (Extract, Transform, Load)
