@@ -22,8 +22,9 @@ In addition to these projects, I regularly share my insights and learnings on th
 
 ## 🧩 Data Structures
 
-- [Understanding Hashing](data-structure/hashing.ipynb): Dive into the world of hashing, its applications, and Python implementation.
 - [Sorting Algorithms](data-structure/sorting-popular.ipynb): A comprehensive guide to understanding and implementing popular sorting algorithms in Python.
+- [Understanding Hashing](data-structure/hashing.ipynb): Dive into the world of hashing, its applications, and Python implementation.
+- [Bloom Filter](data-structure/bloom.ipynb): Learn about the Bloom filter data structure and its applications.
 
 ## :art: Data Visualization
 
@@ -67,7 +68,7 @@ In addition to these projects, I regularly share my insights and learnings on th
 - [Generators](python/generator.ipynb): A hands-on guide to understanding and using generators.
 - [Lambda](python/lambda.ipynb): Get introduced to lambda functions.
 - [Pattern Matching](python/match-case.ipynb): Learn pattern matching with the `match-case` statement.
- - [Serialization](python/serialization.ipynb): Understand serialization and deserialization in Python.
+- [Serialization](python/serialization.ipynb): Understand serialization and deserialization in Python.
 
 ## :chart_with_upwards_trend: Statistical Analysis
 
