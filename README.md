@@ -1,6 +1,6 @@
 # :rocket: Portfolio
 
-Welcome to my repository, a collection of my exploratory projects in the diverse fields of Data Science and Machine Learning.
+Welcome to my repository, a collection of my exploratory projects in the diverse fields of AI, Data Science and Machine Learning.
 
 For a detailed understanding of these projects, you can refer to the comprehensive documentation available [here](https://smortezah.github.io/portfolio/docs).
 
