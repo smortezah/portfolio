@@ -10,6 +10,7 @@ In addition to these projects, I regularly share my insights and learnings on th
 
 <details>
 <summary>Table of contents</summary>
+
 - [Anomaly Detection](#rotating_light-anomaly-detection)
 - [Automation](#factory-automation)
 - [Computer Vision](#camera-computer-vision)
