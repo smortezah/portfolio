@@ -8,6 +8,28 @@ In addition to these projects, I regularly share my insights and learnings on th
 
 **Please note:** The projects listed below are organized alphabetically for your convenience.
 
+<details>
+<summary>Table of contents</summary>
+- [Anomaly Detection](#rotating_light-anomaly-detection)
+- [Automation](#factory-automation)
+- [Computer Vision](#camera-computer-vision)
+- [Data Structures](#-data-structures)
+- [Data Visualization](#art-data-visualization)
+- [EDA (Exploratory Data Analysis)](#mag-eda-exploratory-data-analysis)
+- [ETL (Extract, Transform, Load)](#hammer_and_wrench-etl-extract-transform-load)
+- [Hyperparameter Tuning](#gear-hyperparameter-tuning)
+- [LLM (Large Language Model)](#brain-llm-large-language-model)
+- [Machine Learning](#robot-machine-learning)
+- [Privacy](#lock-privacy)
+- [Python](#snake-python)
+- [Statistical Analysis](#chart_with_upwards_trend-statistical-analysis)
+- [Synthetic Data Generation](#bulb-synthetic-data-generation)
+- [Terminal](#desktop_computer-terminal)
+- [Time-series Analysis](#hourglass_flowing_sand-time-series-analysis)
+- [Web Scraping](#spider_web-web-scraping)
+- [XAI (Explainable AI)](#memo-xai-explainable-ai)
+</details>
+
 ## :rotating_light: Anomaly Detection
 
 - [Credit Card Fraud Detection](anomaly-detection/fraud-detection.ipynb): Unveil fraudulent transactions using a neural network-based approach.
