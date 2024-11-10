@@ -51,6 +51,7 @@ In addition to these projects, I regularly share my insights and learnings on th
 
 ## :art: Data Visualization
 
+- ggplot2: Create visually appealing plots with the R's [ggplot2](https://ggplot2.tidyverse.org/) library.
 - [lets-plot](visualization/lets-plot/codebook.ipynb): Create stunning plots with [lets-plot](https://lets-plot.org/index.html), a Python port of the R's [ggplot2](https://ggplot2.tidyverse.org/) library.
 - [Pitfalls](visualization/pitfalls/pitfalls.ipynb): Avoid common pitfalls in data visualization.
 - [QR Code](visualization/qrcode.ipynb): Generate QR codes with ease.
