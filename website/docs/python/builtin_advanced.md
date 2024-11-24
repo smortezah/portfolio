@@ -110,7 +110,7 @@ data = dict(zip(keys, values))
 print(data)
 ```
 
-    {'name': 'Alice', 'age': 30, 'city': 'New York'}
+    \{'name': 'Alice', 'age': 30, 'city': 'New York'\}
 
 This is a common pattern when working with data transformations.
 
@@ -223,7 +223,7 @@ fruit_dict = {index: fruit for index, fruit in enumerate(fruits)}
 print(fruit_dict)
 ```
 
-    {0: 'Apple', 1: 'Banana', 2: 'Cherry'}
+    \{0: 'Apple', 1: 'Banana', 2: 'Cherry'\}
 
 This pattern is useful for transforming lists into indexed data structures.
 
@@ -647,7 +647,7 @@ adults = filter(lambda person: person["age"] > 18, people)
 print(list(adults))
 ```
 
-    [{'name': 'Alice', 'age': 25}, {'name': 'Charlie', 'age': 30}]
+    [\{'name': 'Alice', 'age': 25\}, \{'name': 'Charlie', 'age': 30\}]
 
 ### Example 6: Using `filter` with Generators
 
@@ -777,7 +777,7 @@ transformed = map(lambda person: {**person, "name": person["name"].capitalize()}
 print(list(transformed))
 ```
 
-    [{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 30}]
+    [\{'name': 'Alice', 'age': 25\}, \{'name': 'Bob', 'age': 30\}]
 
 This is particularly useful for preprocessing data in pipelines.
 
@@ -1847,7 +1847,7 @@ person = Person("Alice", 30)
 print(vars(person))
 ```
 
-    {'name': 'Alice', 'age': 30}
+    \{'name': 'Alice', 'age': 30\}
 
 This is especially helpful for debugging or logging purposes.
 
@@ -1863,7 +1863,7 @@ vars(person)["city"] = "New York"
 print(vars(person))
 ```
 
-    {'name': 'Alice', 'age': 31, 'city': 'New York'}
+    {'name': 'Alice', 'age': 31, 'city': 'New York'\}
 
 ### Restrictions and Best Practices
 
@@ -2021,7 +2021,7 @@ evaluated_config = {key: eval(value) for key, value in config.items()}
 print(evaluated_config)
 ```
 
-    {'threshold': 15, 'scale_factor': 6.28}
+    \{'threshold': 15, 'scale_factor': 6.28\}
 
 ### Tips for Using `eval` Safely
 
