@@ -1863,7 +1863,7 @@ vars(person)["city"] = "New York"
 print(vars(person))
 ```
 
-    {'name': 'Alice', 'age': 31, 'city': 'New York'\}
+    \{'name': 'Alice', 'age': 31, 'city': 'New York'\}
 
 ### Restrictions and Best Practices
 
