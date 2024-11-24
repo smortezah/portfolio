@@ -88,6 +88,7 @@ In addition to these projects, I regularly share my insights and learnings on th
 ## :snake: Python
 
 - [Argument Parsing](python/argparse.ipynb): Master argument parsing using the `argparse` module.
+- [Built-ins: Advanced](python/builtin_advanced.ipynb): Master advanced built-in functions to write cleaner, more efficient code.
 - [Calendars](python/calendar.ipynb): Explore the `calendar` module in Python.
 - [Generators](python/generator.ipynb): A hands-on guide to understanding and using generators.
 - [Lambda](python/lambda.ipynb): Get introduced to lambda functions.
