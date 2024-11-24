@@ -2076,7 +2076,7 @@ print(view[1:3])
 ```
 
     1
-    <memory at 0x1307841c0>
+    `<memory at 0x1307841c0>`
 
 **Explanation**:
 
