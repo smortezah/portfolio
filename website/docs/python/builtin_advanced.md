@@ -1,9 +1,9 @@
 ---
-description: Advanced Python built-ins to write cleaner, more efficient code
+description: Advanced built-ins for cleaner, more efficient code
 tags: [Python, Software Development, Data Science, Built-ins, Coding Tips]
 ---
 
-# Advanced Python Built-in Functions
+# Advanced Built-in Functions
 
 Python’s charm lies in its simplicity, but hidden within its vast arsenal are built-in functions that even seasoned developers often overlook. These powerful tools can make your code more elegant, efficient, and expressive. From managing iterables with `zip` and `enumerate` to simplifying logic with `all`, `any`, and functional programming tools like `map`, `filter`, and `reduce`, Python offers a world of possibilities for those willing to explore.
 
@@ -33,7 +33,9 @@ paired = zip(names, scores)
 print(list(paired))
 ```
 
-    [('Alice', 85), ('Bob', 92), ('Charlie', 78)]
+```
+[('Alice', 85), ('Bob', 92), ('Charlie', 78)]
+```
 
 The output is a list of tuples, where each tuple contains elements from the corresponding positions in the input iterables.
 
@@ -51,8 +53,10 @@ print(names)
 print(scores)
 ```
 
-    ('Alice', 'Bob', 'Charlie')
-    (85, 92, 78)
+```
+('Alice', 'Bob', 'Charlie')
+(85, 92, 78)
+```
 
 This is particularly useful when working with structured data like rows in a table.
 
@@ -68,7 +72,9 @@ b = ["x", "y"]
 print(list(zip(a, b)))
 ```
 
-    [(1, 'x'), (2, 'y')]
+```
+[(1, 'x'), (2, 'y')]
+```
 
 If you want to handle uneven lengths more gracefully, use `itertools.zip_longest`:
 
@@ -78,7 +84,9 @@ from itertools import zip_longest
 print(list(zip_longest(a, b, fillvalue="z")))
 ```
 
-    [(1, 'x'), (2, 'y'), (3, 'z')]
+```
+[(1, 'x'), (2, 'y'), (3, 'z')]
+```
 
 ### Example 4: Iterating Over Multiple Lists Simultaneously
 
@@ -92,9 +100,11 @@ for item, quantity in zip(items, quantities):
     print(f"{quantity} {item}")
 ```
 
-    2 Apples
-    3 Bananas
-    5 Cherries
+```
+2 Apples
+3 Bananas
+5 Cherries
+```
 
 This eliminates the need for manually tracking indices and improves readability.
 
@@ -110,7 +120,9 @@ data = dict(zip(keys, values))
 print(data)
 ```
 
-    \{'name': 'Alice', 'age': 30, 'city': 'New York'\}
+```
+\{'name': 'Alice', 'age': 30, 'city': 'New York'\}
+```
 
 This is a common pattern when working with data transformations.
 
@@ -129,7 +141,9 @@ transposed = list(zip(*matrix))
 print(transposed)
 ```
 
-    [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
+```
+[(1, 4, 7), (2, 5, 8), (3, 6, 9)]
+```
 
 This is particularly useful in numerical and data science workflows.
 
@@ -150,7 +164,9 @@ formatted = [f"{name}: {score}" for name, score in zip(names, scores)]
 print(formatted)
 ```
 
-    ['Alice: 85', 'Bob: 92', 'Charlie: 78']
+```
+['Alice: 85', 'Bob: 92', 'Charlie: 78']
+```
 
 The versatility of `zip` makes it an essential function in every Python programmer’s toolkit. It simplifies pairing, aligning, and transforming iterables, all while keeping your code clean and Pythonic.
 
@@ -175,9 +191,11 @@ for index, fruit in enumerate(fruits):
     print(f"{index}: {fruit}")
 ```
 
-    0: Apple
-    1: Banana
-    2: Cherry
+```
+0: Apple
+1: Banana
+2: Cherry
+```
 
 This avoids the need for a separate counter variable or manually updating it inside the loop.
 
@@ -190,9 +208,11 @@ for index, fruit in enumerate(fruits, start=1):
     print(f"{index}: {fruit}")
 ```
 
-    1: Apple
-    2: Banana
-    3: Cherry
+```
+1: Apple
+2: Banana
+3: Cherry
+```
 
 This is especially handy when working with contexts like row numbers (starting at 1) in spreadsheets.
 
@@ -207,12 +227,14 @@ for index, char in enumerate(word):
     print(f"Character at index {index}: {char}")
 ```
 
-    Character at index 0: P
-    Character at index 1: y
-    Character at index 2: t
-    Character at index 3: h
-    Character at index 4: o
-    Character at index 5: n
+```
+Character at index 0: P
+Character at index 1: y
+Character at index 2: t
+Character at index 3: h
+Character at index 4: o
+Character at index 5: n
+```
 
 ### Example 4: Building Dictionaries with Indices
 
@@ -223,7 +245,9 @@ fruit_dict = {index: fruit for index, fruit in enumerate(fruits)}
 print(fruit_dict)
 ```
 
-    \{0: 'Apple', 1: 'Banana', 2: 'Cherry'\}
+```
+\{0: 'Apple', 1: 'Banana', 2: 'Cherry'\}
+```
 
 This pattern is useful for transforming lists into indexed data structures.
 
@@ -238,9 +262,11 @@ for index, (fruit, quantity) in enumerate(zip(fruits, quantities)):
     print(f"{index}: {fruit} - {quantity}")
 ```
 
-    0: Apple - 10
-    1: Banana - 5
-    2: Cherry - 8
+```
+0: Apple - 10
+1: Banana - 5
+2: Cherry - 8
+```
 
 ### Example 6: Enumerating with Conditionals
 
@@ -253,8 +279,10 @@ for index, fruit in enumerate(fruits):
         print(f"Even index {index}: {fruit}")
 ```
 
-    Even index 0: Apple
-    Even index 2: Cherry
+```
+Even index 0: Apple
+Even index 2: Cherry
+```
 
 This is great for scenarios where indices determine the logic, such as alternating styles in UI.
 
@@ -279,15 +307,17 @@ for row_idx, row in enumerate(matrix):
         print(f"Matrix[{row_idx}][{col_idx}] = {value}")
 ```
 
-    Matrix[0][0] = 1
-    Matrix[0][1] = 2
-    Matrix[0][2] = 3
-    Matrix[1][0] = 4
-    Matrix[1][1] = 5
-    Matrix[1][2] = 6
-    Matrix[2][0] = 7
-    Matrix[2][1] = 8
-    Matrix[2][2] = 9
+```
+Matrix[0][0] = 1
+Matrix[0][1] = 2
+Matrix[0][2] = 3
+Matrix[1][0] = 4
+Matrix[1][1] = 5
+Matrix[1][2] = 6
+Matrix[2][0] = 7
+Matrix[2][1] = 8
+Matrix[2][2] = 9
+```
 
 The power of `enumerate` lies in its ability to streamline indexed iteration, enhancing both readability and functionality. Whether you’re working with flat lists, strings, or complex nested structures, `enumerate` is a must-have in your Python toolbox.
 
@@ -320,8 +350,10 @@ print(binary_to_int("1010"))
 print(binary_to_int("1111"))
 ```
 
-    10
-    15
+```
+10
+15
+```
 
 **Explanation**:
 
@@ -346,8 +378,10 @@ say_hello("Alice")
 say_goodbye("Bob")
 ```
 
-    Hello, Alice!
-    Goodbye, Bob!
+```
+Hello, Alice!
+Goodbye, Bob!
+```
 
 **Explanation**:
 
@@ -370,8 +404,10 @@ print(square(4))
 print(cube(2))
 ```
 
-    16.0
-    9.0
+```
+16.0
+9.0
+```
 
 **Explanation**:
 
@@ -397,7 +433,9 @@ result = map(multiply_by_10, numbers)
 print(list(result))
 ```
 
-    [10, 20, 30, 40]
+```
+[10, 20, 30, 40]
+```
 
 **Explanation**:
 
@@ -423,8 +461,10 @@ thin_crust(size="medium", toppings=["pepperoni", "mushrooms"])
 large_pizza(crust="stuffed", toppings=["cheese", "ham"])
 ```
 
-    Ordering a medium pizza with thin crust and toppings: pepperoni, mushrooms.
-    Ordering a large pizza with stuffed crust and toppings: cheese, ham.
+```
+Ordering a medium pizza with thin crust and toppings: pepperoni, mushrooms.
+Ordering a large pizza with stuffed crust and toppings: cheese, ham.
+```
 
 **Explanation**:
 
@@ -478,7 +518,9 @@ else:
     print("Some passwords are too short.")
 ```
 
-    All passwords meet the length requirement.
+```
+All passwords meet the length requirement.
+```
 
 By using `all`, we avoid writing a loop to check each password manually.
 
@@ -494,7 +536,9 @@ else:
     print("No passwords contain spaces.")
 ```
 
-    No passwords contain spaces.
+```
+No passwords contain spaces.
+```
 
 This approach is concise and focuses only on the logic of the condition.
 
@@ -516,7 +560,9 @@ else:
     print("Some users have no subscriptions.")
 ```
 
-    Some users have no subscriptions.
+```
+Some users have no subscriptions.
+```
 
 This avoids deeply nested loops and clarifies the intent of the logic.
 
@@ -532,8 +578,10 @@ print(all([]))
 print(any([]))
 ```
 
-    True
-    False
+```
+True
+False
+```
 
 ### When to Use `all` and `any`
 
@@ -551,7 +599,9 @@ large_dataset = (x % 2 == 0 for x in range(1_000_000))
 print(all(large_dataset))  # Stops at the first odd number
 ```
 
-    False
+```
+False
+```
 
 In summary, `all` and `any` are essential tools for simplifying logical checks in Python. Their readability and efficiency make them a staple for writing clean, Pythonic code.
 
@@ -579,7 +629,9 @@ evens = filter(lambda x: x % 2 == 0, numbers)
 print(list(evens))
 ```
 
-    [2, 4, 6]
+```
+[2, 4, 6]
+```
 
 Here, the lambda function `x: x % 2 == 0` checks if each number is divisible by 2.
 
@@ -595,7 +647,9 @@ long_words = filter(lambda x: len(x) > 4, words)
 print(list(long_words))
 ```
 
-    ['apple', 'banana']
+```
+['apple', 'banana']
+```
 
 ### Example 3: Removing Falsy Values with `filter(None, iterable)`
 
@@ -609,7 +663,9 @@ filtered_data = filter(None, data)
 print(list(filtered_data))
 ```
 
-    [1, 'hello', [1, 2]]
+```
+[1, 'hello', [1, 2]]
+```
 
 This is an elegant way to "clean" a list in Python.
 
@@ -629,7 +685,9 @@ positives = filter(is_positive, numbers)
 print(list(positives))
 ```
 
-    [5, 10]
+```
+[5, 10]
+```
 
 ### Example 5: Filtering with Complex Conditions
 
@@ -647,7 +705,9 @@ adults = filter(lambda person: person["age"] > 18, people)
 print(list(adults))
 ```
 
-    [\{'name': 'Alice', 'age': 25\}, \{'name': 'Charlie', 'age': 30\}]
+```
+[\{'name': 'Alice', 'age': 25\}, \{'name': 'Charlie', 'age': 30\}]
+```
 
 ### Example 6: Using `filter` with Generators
 
@@ -664,7 +724,9 @@ evens = filter(lambda x: x % 2 == 0, numbers)
 print([next(evens) for _ in range(5)])
 ```
 
-    [2, 4, 6, 8, 10]
+```
+[2, 4, 6, 8, 10]
+```
 
 This avoids memory overhead and is perfect for processing streams or massive datasets.
 
@@ -680,7 +742,9 @@ squared_evens = map(lambda x: x ** 2, filter(lambda x: x % 2 == 0, numbers))
 print(list(squared_evens))
 ```
 
-    [4, 16, 36]
+```
+[4, 16, 36]
+```
 
 ### When to Use `filter`
 
@@ -700,7 +764,9 @@ data = [0, 1, "", "hello", None, []]
 print(list(filter(None, data)))  # Inspect results directly
 ```
 
-    [1, 'hello']
+```
+[1, 'hello']
+```
 
 `filter` is a cornerstone of functional programming in Python. Its ability to refine data streams on-the-fly makes it indispensable for creating clean, concise, and memory-efficient workflows.
 
@@ -728,7 +794,9 @@ squared = map(lambda x: x ** 2, numbers)
 print(list(squared))
 ```
 
-    [1, 4, 9, 16, 25]
+```
+[1, 4, 9, 16, 25]
+```
 
 This one-liner avoids the need for explicit loops, keeping your code concise.
 
@@ -744,7 +812,9 @@ capitalized = map(str.capitalize, words)
 print(list(capitalized))
 ```
 
-    ['Python', 'Java', 'C++']
+```
+['Python', 'Java', 'C++']
+```
 
 Using built-in functions like `str.capitalize` with `map` is often cleaner than lambdas.
 
@@ -761,7 +831,9 @@ summed = map(lambda x, y: x + y, a, b)
 print(list(summed))
 ```
 
-    [5, 7, 9]
+```
+[5, 7, 9]
+```
 
 This is a great way to combine data from multiple sources.
 
@@ -777,7 +849,9 @@ transformed = map(lambda person: {**person, "name": person["name"].capitalize()}
 print(list(transformed))
 ```
 
-    [\{'name': 'Alice', 'age': 25\}, \{'name': 'Bob', 'age': 30\}]
+```
+[\{'name': 'Alice', 'age': 25\}, \{'name': 'Bob', 'age': 30\}]
+```
 
 This is particularly useful for preprocessing data in pipelines.
 
@@ -793,7 +867,9 @@ squared_evens = map(lambda x: x ** 2, filter(lambda x: x % 2 == 0, numbers))
 print(list(squared_evens))
 ```
 
-    [4, 16, 36]
+```
+[4, 16, 36]
+```
 
 The combination provides both filtering and transformation in one pipeline.
 
@@ -812,7 +888,9 @@ squared = map(lambda x: x ** 2, numbers)
 print([next(squared) for _ in range(5)])
 ```
 
-    [1, 4, 9, 16, 25]
+```
+[1, 4, 9, 16, 25]
+```
 
 This approach avoids loading all results into memory.
 
@@ -828,7 +906,9 @@ flattened_and_doubled = map(lambda x: x * 2, map(lambda row: sum(row), matrix))
 print(list(flattened_and_doubled))
 ```
 
-    [12, 30, 48]
+```
+[12, 30, 48]
+```
 
 Although readable for small cases, this can become complex; in such cases, consider alternatives like list comprehensions.
 
@@ -850,7 +930,9 @@ numbers = [1, 2, 3]
 print(list(map(lambda x: x ** 2, numbers)))
 ```
 
-    [1, 4, 9]
+```
+[1, 4, 9]
+```
 
 `map` is a functional programming gem in Python. Its ability to apply transformations cleanly and efficiently makes it a must-know for data manipulation.
 
@@ -887,8 +969,10 @@ print(getattr(product, attr_name))  # Output: 1200
 print(getattr(product, "discount", "Not available"))
 ```
 
-    1200
-    Not available
+```
+1200
+Not available
+```
 
 With `getattr`, you avoid hardcoding attribute names and make your code more flexible.
 
@@ -906,8 +990,10 @@ setattr(product, "discount", 10)
 print(product.discount)
 ```
 
-    25
-    10
+```
+25
+10
+```
 
 This is useful for scenarios like dynamically applying settings or configurations.
 
@@ -927,9 +1013,11 @@ for attr in ["price", "stock", "discount"]:
     print(f"{attr}: {getattr(product, attr)}")
 ```
 
-    price: 1100
-    stock: 20
-    discount: 15
+```
+price: 1100
+stock: 20
+discount: 15
+```
 
 ### Example 4: Reflection and Introspection
 
@@ -951,7 +1039,9 @@ result = getattr(calc, operation)(10, 5)
 print(result)
 ```
 
-    50
+```
+50
+```
 
 ### When to Use (and Not Use) `getattr` and `setattr`
 
@@ -969,7 +1059,9 @@ else:
     print("No discount available.")
 ```
 
-    Discount available: 15
+```
+Discount available: 15
+```
 
 `getattr` and `setattr` empower you to interact with objects dynamically and elegantly, turning your code into a flexible, data-driven machine.
 
@@ -1008,8 +1100,10 @@ print(isinstance(my_pet, Dog))
 print(isinstance(my_pet, Animal))
 ```
 
-    True
-    True
+```
+True
+True
+```
 
 **Explanation**: Since `Dog` is a subclass of `Animal`, `isinstance` correctly returns `True` when checking both `Dog` and its superclass `Animal`.
 
@@ -1034,8 +1128,10 @@ print(isinstance(my_pet, (Cat, Rabbit)))
 print(isinstance(my_pet, (Dog, Animal)))
 ```
 
-    True
-    False
+```
+True
+False
+```
 
 **Use Case**: This is useful when you want to check for multiple possible types and simplify the code by reducing multiple `isinstance` checks.
 
@@ -1057,9 +1153,11 @@ print(isinstance(y, str))
 print(isinstance(y, list))
 ```
 
-    True
-    True
-    False
+```
+True
+True
+False
+```
 
 **Use Case**: You can use `isinstance` to ensure that variables have the correct type before performing operations on them, adding an extra layer of safety to your code.
 
@@ -1086,8 +1184,10 @@ print(isinstance(my_car, Car))
 print(isinstance(my_car, Vehicle))
 ```
 
-    True
-    True
+```
+True
+True
+```
 
 This shows that `isinstance` works both for instances of custom classes and subclasses.
 
@@ -1119,8 +1219,10 @@ print(issubclass(Dog, Animal))
 print(issubclass(Animal, Dog))
 ```
 
-    True
-    False
+```
+True
+False
+```
 
 **Explanation**: Since `Dog` is a subclass of `Animal`, `issubclass(Dog, Animal)` returns `True`. The reverse (`issubclass(Animal, Dog)`) returns `False` because `Animal` is not a subclass of `Dog`.
 
@@ -1145,8 +1247,10 @@ print(issubclass(Tiger, (Cat, Rabbit)))
 print(issubclass(Tiger, Dog))
 ```
 
-    True
-    False
+```
+True
+False
+```
 
 ### Example 7: Using `issubclass` with Built-in Types
 
@@ -1160,8 +1264,10 @@ print(issubclass(list, object))
 print(issubclass(dict, list))
 ```
 
-    True
-    False
+```
+True
+False
+```
 
 ### When to Use `isinstance` and `issubclass`
 
@@ -1209,7 +1315,9 @@ else:
     print("Invalid object.")
 ```
 
-    Valid animal object.
+```
+Valid animal object.
+```
 
 ### Summary
 
@@ -1243,7 +1351,9 @@ total = reduce(lambda x, y: x + y, numbers)
 print(total)
 ```
 
-    15
+```
+15
+```
 
 Here’s how it works:
 
@@ -1261,7 +1371,9 @@ total = reduce(lambda x, y: x + y, numbers, 10)
 print(total)
 ```
 
-    25
+```
+25
+```
 
 The computation becomes: `10 + 1 + 2 + 3 + 4 + 5`.
 
@@ -1277,7 +1389,9 @@ maximum = reduce(lambda x, y: x if x > y else y, numbers)
 print(maximum)
 ```
 
-    8
+```
+8
+```
 
 This approach is functionally equivalent to `max(numbers)`.
 
@@ -1291,7 +1405,9 @@ product = reduce(lambda x, y: x * y, numbers)
 print(product)
 ```
 
-    1680
+```
+1680
+```
 
 This calculates `3 * 7 * 2 * 8 * 5`.
 
@@ -1307,7 +1423,9 @@ sentence = reduce(lambda x, y: f"{x} {y}", words)
 print(sentence)
 ```
 
-    Python is awesome
+```
+Python is awesome
+```
 
 ### Example 6: Using `reduce` on Nested Data
 
@@ -1321,7 +1439,9 @@ flattened = reduce(lambda x, y: x + y, nested)
 print(flattened)
 ```
 
-    [1, 2, 3, 4, 5, 6]
+```
+[1, 2, 3, 4, 5, 6]
+```
 
 ### When to Use `reduce`
 
@@ -1350,11 +1470,13 @@ total = reduce(debug_reduce, numbers)
 print("Total:", total)
 ```
 
-    Reducing: 3 and 7
-    Reducing: 10 and 2
-    Reducing: 12 and 8
-    Reducing: 20 and 5
-    Total: 25
+```
+Reducing: 3 and 7
+Reducing: 10 and 2
+Reducing: 12 and 8
+Reducing: 20 and 5
+Total: 25
+```
 
 ### Advanced Example: Factorial Calculation
 
@@ -1370,7 +1492,9 @@ fact = reduce(lambda x, y: x * y, range(1, n + 1))
 print(f"Factorial of {n}:", fact)
 ```
 
-    Factorial of 5: 120
+```
+Factorial of 5: 120
+```
 
 `reduce` brings immense power for cumulative transformations, but with great power comes the responsibility of balancing readability. Use it when it adds clarity or functional elegance, and lean on simpler constructs for basic tasks.
 
@@ -1408,9 +1532,11 @@ print(next(iterator))
 # print(next(iterator))  # Uncommenting this will raise StopIteration
 ```
 
-    1
-    2
-    3
+```
+1
+2
+3
+```
 
 **Explanation**:
 
@@ -1432,10 +1558,12 @@ print(next(iterator, 'No more items'))
 print(next(iterator, 'No more items'))
 ```
 
-    1
-    2
-    3
-    No more items
+```
+1
+2
+3
+No more items
+```
 
 **Explanation**:
 
@@ -1460,10 +1588,12 @@ print(next(gen))
 print(next(gen, 'No more items'))
 ```
 
-    1
-    2
-    3
-    No more items
+```
+1
+2
+3
+No more items
+```
 
 **Explanation**:
 
@@ -1491,11 +1621,13 @@ while True:
         break
 ```
 
-    Odd number: 1
-    Even number: 2
-    Odd number: 3
-    Even number: 4
-    Odd number: 5
+```
+Odd number: 1
+Even number: 2
+Odd number: 3
+Even number: 4
+Odd number: 5
+```
 
 **Explanation**:
 
@@ -1521,9 +1653,11 @@ while True:
         break
 ```
 
-    Pair: (1, a)
-    Pair: (2, b)
-    Pair: (3, c)
+```
+Pair: (1, a)
+Pair: (2, b)
+Pair: (3, c)
+```
 
 **Explanation**:
 
@@ -1563,9 +1697,11 @@ while True:
         break
 ```
 
-    1
-    2
-    3
+```
+1
+2
+3
+```
 
 Alternatively, use the default value feature of `next` to prevent exceptions:
 
@@ -1608,27 +1744,27 @@ print(next(countdown))
 ```
 
 ```
-    4
-    3
-    2
-    1
-    0
+4
+3
+2
+1
+0
 
-    ---------------------------------------------------------------------------
-    StopIteration                             Traceback (most recent call last)
-    Cell In[89], line 23
-         21 print(next(countdown))
-         22 print(next(countdown))
-    ---> 23 print(next(countdown))
+---------------------------------------------------------------------------
+StopIteration                             Traceback (most recent call last)
+Cell In[89], line 23
+     21 print(next(countdown))
+     22 print(next(countdown))
+---> 23 print(next(countdown))
 
-    Cell In[89], line 10, in Countdown.__next__(self)
-          8 def __next__(self):
-          9     if self.current <= 0:
-    ---> 10         raise StopIteration
-         11     self.current -= 1
-         12     return self.current
+Cell In[89], line 10, in Countdown.__next__(self)
+      8 def __next__(self):
+      9     if self.current <= 0:
+---> 10         raise StopIteration
+     11     self.current -= 1
+     12     return self.current
 
-    StopIteration:
+StopIteration:
 ```
 
 **Explanation**:
@@ -1671,9 +1807,11 @@ print(next(fruit_iterator))
 # next(fruit_iterator)      # Raises StopIteration
 ```
 
-    Apple
-    Banana
-    Cherry
+```
+Apple
+Banana
+Cherry
+```
 
 **Use Case**: Useful when you need to control the iteration process manually, such as implementing custom loop logic or handling exceptions gracefully.
 
@@ -1710,11 +1848,13 @@ for _ in range(5):
     print(next(random_iterator))
 ```
 
-    51
-    99
-    74
-    66
-    82
+```
+51
+99
+74
+66
+82
+```
 
 **Note**: Be cautious with infinite iterators to prevent unintentional infinite loops. Always ensure there's a breaking condition or limit on iterations.
 
@@ -1744,11 +1884,13 @@ for number in countdown_iterator:
     print(number)
 ```
 
-    5
-    4
-    3
-    2
-    1
+```
+5
+4
+3
+2
+1
+```
 
 **Use Case**: Ideal for creating iterators with custom logic, such as countdowns, generators, or stateful iterations.
 
@@ -1790,10 +1932,12 @@ print(next(iterator, "No more elements"))
 print(next(iterator, "No more elements"))
 ```
 
-    10
-    20
-    30
-    No more elements
+```
+10
+20
+30
+No more elements
+```
 
 **Benefit**: This approach allows graceful handling of the end of an iterator without needing to catch exceptions.
 
@@ -1847,7 +1991,9 @@ person = Person("Alice", 30)
 print(vars(person))
 ```
 
-    \{'name': 'Alice', 'age': 30\}
+```
+\{'name': 'Alice', 'age': 30\}
+```
 
 This is especially helpful for debugging or logging purposes.
 
@@ -1863,7 +2009,9 @@ vars(person)["city"] = "New York"
 print(vars(person))
 ```
 
-    \{'name': 'Alice', 'age': 31, 'city': 'New York'\}
+```
+\{'name': 'Alice', 'age': 31, 'city': 'New York'\}
+```
 
 ### Restrictions and Best Practices
 
@@ -1919,7 +2067,9 @@ exec(func_code)
 print(add_numbers(5, 10))
 ```
 
-    15
+```
+15
+```
 
 This approach is especially useful in applications like scripting engines or DSL (domain-specific language) interpreters.
 
@@ -1945,7 +2095,9 @@ instance = DynamicClass(42)
 instance.display()
 ```
 
-    DynamicClass instance with value: 42
+```
+DynamicClass instance with value: 42
+```
 
 ### Tips for Using `exec` Safely
 
@@ -1989,7 +2141,9 @@ except Exception as e:
     print(f"Invalid expression: {e}")
 ```
 
-    The result is: 21
+```
+The result is: 21
+```
 
 In this example, `eval` directly evaluates the user-provided mathematical expression. Be mindful of input validation to avoid security risks.
 
@@ -2005,7 +2159,9 @@ result = eval(expression)
 print(f"The result of '{expression}' is: {result}")
 ```
 
-    The result of 'x * y + 5' is: 205
+```
+The result of 'x * y + 5' is: 205
+```
 
 This use case is particularly handy in situations like configuring workflows or running experiments where the logic is externally defined.
 
@@ -2021,7 +2177,9 @@ evaluated_config = {key: eval(value) for key, value in config.items()}
 print(evaluated_config)
 ```
 
-    \{'threshold': 15, 'scale_factor': 6.28\}
+```
+\{'threshold': 15, 'scale_factor': 6.28\}
+```
 
 ### Tips for Using `eval` Safely
 
@@ -2075,8 +2233,10 @@ print(view[0])
 print(view[1:3])
 ```
 
-    1
-    `<memory at 0x1307841c0>`
+```
+1
+`<memory at 0x1307841c0>`
+```
 
 **Explanation**:
 
@@ -2099,7 +2259,9 @@ view[1:3] = bytearray([20, 30])
 print(list(data))
 ```
 
-    [10, 20, 30, 4, 5]
+```
+[10, 20, 30, 4, 5]
+```
 
 **Explanation**:
 
@@ -2125,7 +2287,9 @@ sub_view = view[100:105]
 print(sub_view.tolist())  # Efficient slice access without copying the original data
 ```
 
-    [100, 101, 102, 103, 104]
+```
+[100, 101, 102, 103, 104]
+```
 
 **Explanation**:
 
@@ -2150,8 +2314,10 @@ print(view1[0])
 print(view2[0])
 ```
 
-    1
-    5
+```
+1
+5
+```
 
 **Explanation**:
 
@@ -2177,7 +2343,9 @@ sub_view = view[0, 1:]
 print(sub_view.tolist())
 ```
 
-    [2, 3]
+```
+[2, 3]
+```
 
 **Explanation**:
 
