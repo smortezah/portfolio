@@ -9,12 +9,13 @@ In addition to these projects, I regularly share my insights and learnings on th
 **Please note:** The projects listed below are organized alphabetically for your convenience.
 
 <details>
-<summary>Table of contents</summary>
+<summary><strong>Table of contents</strong></summary>
 
 - [Anomaly Detection](#rotating_light-anomaly-detection)
 - [Automation](#factory-automation)
 - [Computer Vision](#camera-computer-vision)
-- [Data Structures](#-data-structures)
+- [Configuration](#configuration)
+- [Data Structures](#data-structures)
 - [Data Visualization](#art-data-visualization)
 - [EDA (Exploratory Data Analysis)](#mag-eda-exploratory-data-analysis)
 - [ETL (Extract, Transform, Load)](#hammer_and_wrench-etl-extract-transform-load)
@@ -42,6 +43,10 @@ In addition to these projects, I regularly share my insights and learnings on th
 ## :camera: Computer Vision
 
 - [Ants vs Bees Image Classification](computer-vision/ants-bees-classification/image-classification.ipynb): Harness the power of deep learning models to classify images.
+
+## :wrench: Configuration
+
+- [TOML vs. YAML](configuration/yaml-vs-toml.ipynb): Choosing the right configuration format for your projects.
 
 ## 🧩 Data Structures
 
@@ -88,7 +93,7 @@ In addition to these projects, I regularly share my insights and learnings on th
 ## :snake: Python
 
 - [Argument Parsing](python/argparse.ipynb): Master argument parsing using the `argparse` module.
-- [Built-ins: Advanced 1](python/builtin-advanced-1.ipynb), [2](python/builtin-advanced-2.ipynb), [3](python/builtin-advanced-3.ipynb): Master advanced built-in functions to write cleaner, more efficient code.
+- [Built-ins &mdash; Advanced 1](python/builtin-advanced-1.ipynb), [2](python/builtin-advanced-2.ipynb), [3](python/builtin-advanced-3.ipynb): Master advanced built-in functions to write cleaner, more efficient code.
 - [Calendars](python/calendar.ipynb): Explore the `calendar` module in Python.
 - [Generators](python/generator.ipynb): A hands-on guide to understanding and using generators.
 - [Lambda](python/lambda.ipynb): Get introduced to lambda functions.
