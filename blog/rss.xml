@@ -4,7 +4,7 @@
         <title>Portfolio Blog</title>
         <link>https://smortezah.github.io/portfolio/blog</link>
         <description>Portfolio Blog</description>
-        <lastBuildDate>Mon, 25 Nov 2024 11:39:15 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 30 Nov 2024 15:40:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Anonymization vs. Pseudonymization]]></title>
             <link>https://smortezah.github.io/portfolio/blog/anonym-pseudonym</link>
             <guid>https://smortezah.github.io/portfolio/blog/anonym-pseudonym</guid>
-            <pubDate>Mon, 25 Nov 2024 11:39:15 GMT</pubDate>
+            <pubDate>Sat, 30 Nov 2024 15:40:44 GMT</pubDate>
             <description><![CDATA[The Yin and Yang of Data Privacy]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-yin-and-yang-of-data-privacy">The Yin and Yang of Data Privacy<a href="https://smortezah.github.io/portfolio/blog/anonym-pseudonym#the-yin-and-yang-of-data-privacy" class="hash-link" aria-label="Direct link to The Yin and Yang of Data Privacy" title="Direct link to The Yin and Yang of Data Privacy">​</a></h2>
 <p>In the digital era, data is the new oil. It fuels innovation, drives decision-making, and propels businesses towards success. But with great power comes great responsibility. As data scientists, we must ensure that the data we handle is not misused or exploited, causing harm to the individuals it represents. Enter the twin superheroes of data protection: Anonymization and Pseudonymization.</p>
@@ -79,7 +79,7 @@
             <title><![CDATA[Exploring AI Ethics: 15 Key Q&As]]></title>
             <link>https://smortezah.github.io/portfolio/blog/ethics</link>
             <guid>https://smortezah.github.io/portfolio/blog/ethics</guid>
-            <pubDate>Mon, 25 Nov 2024 11:39:15 GMT</pubDate>
+            <pubDate>Sat, 30 Nov 2024 15:40:44 GMT</pubDate>
             <description><![CDATA[Bias and Fairness in AI]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bias-and-fairness-in-ai">Bias and Fairness in AI<a href="https://smortezah.github.io/portfolio/blog/ethics#bias-and-fairness-in-ai" class="hash-link" aria-label="Direct link to Bias and Fairness in AI" title="Direct link to Bias and Fairness in AI">​</a></h2>
 <p>In the realm of artificial intelligence, addressing the issue of bias and ensuring fairness in algorithms is paramount. AI systems have the potential to perpetuate and even amplify societal biases if not carefully designed and monitored. Exploring this topic delves into the ethical responsibility of AI researchers and practitioners to mitigate biases and promote equity in AI applications.</p>
@@ -135,7 +135,7 @@ Furthermore, compliance with data protection regulations should be a priority. D
             <title><![CDATA[Get-Rich-Quick Schemes are a Bad Idea]]></title>
             <link>https://smortezah.github.io/portfolio/blog/get-rich-quick</link>
             <guid>https://smortezah.github.io/portfolio/blog/get-rich-quick</guid>
-            <pubDate>Mon, 25 Nov 2024 11:39:15 GMT</pubDate>
+            <pubDate>Sat, 30 Nov 2024 15:40:44 GMT</pubDate>
             <description><![CDATA[Are you tired of your 9-to-5 job and looking for a quick way to become a millionaire? Do you believe that you can get rich overnight by learning a few machine learning algorithms? Well, hold on to your hats because I have some news for you: there’s no shortcut to success in data science.]]></description>
             <content:encoded><![CDATA[<p>Are you tired of your 9-to-5 job and looking for a quick way to become a millionaire? Do you believe that you can get rich overnight by learning a few machine learning algorithms? Well, hold on to your hats because I have some news for you: there’s no shortcut to success in data science.</p>
 <p>Let’s face it, we all want to be successful and financially stable. And with the booming field of data science and machine learning, it’s tempting to believe that we can achieve our financial dreams by simply learning a few skills and jumping on the bandwagon. Unfortunately, the reality is far from that.</p>
@@ -181,7 +181,7 @@ Furthermore, compliance with data protection regulations should be a priority. D
             <title><![CDATA[Advanced Guidelines for ML Model Training]]></title>
             <link>https://smortezah.github.io/portfolio/blog/guideline-ml</link>
             <guid>https://smortezah.github.io/portfolio/blog/guideline-ml</guid>
-            <pubDate>Mon, 25 Nov 2024 11:39:15 GMT</pubDate>
+            <pubDate>Sat, 30 Nov 2024 15:40:44 GMT</pubDate>
             <description><![CDATA[Understanding Model Training]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-model-training">Understanding Model Training<a href="https://smortezah.github.io/portfolio/blog/guideline-ml#understanding-model-training" class="hash-link" aria-label="Direct link to Understanding Model Training" title="Direct link to Understanding Model Training">​</a></h2>
 <p>Welcome to the captivating realm of machine learning, where algorithms breathe life into data and unveil patterns that were once hidden in the shadows. Before we dive into the intricate dance of code and data, let’s take a moment to understand the essence of model training.</p>
@@ -296,7 +296,7 @@ Furthermore, compliance with data protection regulations should be a priority. D
             <title><![CDATA[Introducing Keras Core]]></title>
             <link>https://smortezah.github.io/portfolio/blog/keras-core</link>
             <guid>https://smortezah.github.io/portfolio/blog/keras-core</guid>
-            <pubDate>Mon, 25 Nov 2024 11:39:15 GMT</pubDate>
+            <pubDate>Sat, 30 Nov 2024 15:40:44 GMT</pubDate>
             <description><![CDATA[Hey there, data enthusiasts! Get ready to witness the revolution in the world of deep learning frameworks with the arrival of Keras Core, a preview version of the future of Keras. By Fall 2023, Keras Core will evolve into Keras 3.0, bringing remarkable advancements to the table. This groundbreaking library is a complete rewrite of the Keras codebase, establishing a modular backend architecture. What does this mean for you? Well, it enables running Keras workflows on various frameworks, starting with TensorFlow, PyTorch, and JAX.]]></description>
             <content:encoded><![CDATA[<p>Hey there, data enthusiasts! Get ready to witness the revolution in the world of deep learning frameworks with the arrival of Keras Core, a preview version of the future of Keras. By Fall 2023, Keras Core will evolve into Keras 3.0, bringing remarkable advancements to the table. This groundbreaking library is a complete rewrite of the Keras codebase, establishing a modular backend architecture. What does this mean for you? Well, it enables running Keras workflows on various frameworks, starting with TensorFlow, PyTorch, and JAX.</p>
 <p>Exciting times lie ahead!</p>
@@ -327,7 +327,7 @@ Furthermore, compliance with data protection regulations should be a priority. D
             <title><![CDATA[Why is Parquet format so popular?]]></title>
             <link>https://smortezah.github.io/portfolio/blog/parquet</link>
             <guid>https://smortezah.github.io/portfolio/blog/parquet</guid>
-            <pubDate>Mon, 25 Nov 2024 11:39:15 GMT</pubDate>
+            <pubDate>Sat, 30 Nov 2024 15:40:44 GMT</pubDate>
             <description><![CDATA[Introduction]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://smortezah.github.io/portfolio/blog/parquet#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction">​</a></h2>
 <p><a href="https://parquet.apache.org/" target="_blank" rel="noopener noreferrer">Parquet</a> is a popular columnar storage format for big data processing. It’s widely used in the Hadoop ecosystem and provides several benefits over traditional row-based storage formats like CSV and JSON. In this article, we’ll take a closer look at why Parquet is so popular and how it can help improve the performance and efficiency of big data processing tasks. Also, we’ll compare it to the popular pandas DataFrame.</p>
@@ -358,7 +358,7 @@ Furthermore, compliance with data protection regulations should be a priority. D
             <title><![CDATA[Venn Diagrams: Art & Pitfalls]]></title>
             <link>https://smortezah.github.io/portfolio/blog/venn</link>
             <guid>https://smortezah.github.io/portfolio/blog/venn</guid>
-            <pubDate>Mon, 25 Nov 2024 11:39:15 GMT</pubDate>
+            <pubDate>Sat, 30 Nov 2024 15:40:44 GMT</pubDate>
             <description><![CDATA[In the world of data visualization, few tools have gained as much recognition as Venn diagrams. These overlapping circles have become synonymous with illustrating set relationships, making complex data more accessible at a glance. Yet, while Venn diagrams are undeniably valuable, they also have a propensity to mislead. As a data scientist, I’ve encountered their allure and their limitations. In this article, we’ll delve into why Venn diagrams, despite their apparent simplicity, can be misleading if not used with caution. We’ll explore the intricacies that lie beneath those overlapping circles, shedding light on when and how to employ them effectively, and when to turn to alternative visualization methods for a more accurate representation of data.]]></description>
             <content:encoded><![CDATA[<p>In the world of data visualization, few tools have gained as much recognition as Venn diagrams. These overlapping circles have become synonymous with illustrating set relationships, making complex data more accessible at a glance. Yet, while Venn diagrams are undeniably valuable, they also have a propensity to mislead. As a data scientist, I’ve encountered their allure and their limitations. In this article, we’ll delve into why Venn diagrams, despite their apparent simplicity, can be misleading if not used with caution. We’ll explore the intricacies that lie beneath those overlapping circles, shedding light on when and how to employ them effectively, and when to turn to alternative visualization methods for a more accurate representation of data.</p>
 <p>The followings are some reasons why Venn diagrams can sometimes be considered misleading.</p>
