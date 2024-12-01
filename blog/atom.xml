@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://smortezah.github.io/portfolio/blog</id>
     <title>Portfolio Blog</title>
-    <updated>2024-11-30T15:59:04.000Z</updated>
+    <updated>2024-12-01T16:05:22.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://smortezah.github.io/portfolio/blog"/>
     <subtitle>Portfolio Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Anonymization vs. Pseudonymization]]></title>
         <id>https://smortezah.github.io/portfolio/blog/anonym-pseudonym</id>
         <link href="https://smortezah.github.io/portfolio/blog/anonym-pseudonym"/>
-        <updated>2024-11-30T15:59:04.000Z</updated>
+        <updated>2024-12-01T16:05:22.000Z</updated>
         <summary type="html"><![CDATA[The Yin and Yang of Data Privacy]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-yin-and-yang-of-data-privacy">The Yin and Yang of Data Privacy<a href="https://smortezah.github.io/portfolio/blog/anonym-pseudonym#the-yin-and-yang-of-data-privacy" class="hash-link" aria-label="Direct link to The Yin and Yang of Data Privacy" title="Direct link to The Yin and Yang of Data Privacy">​</a></h2>
 <p>In the digital era, data is the new oil. It fuels innovation, drives decision-making, and propels businesses towards success. But with great power comes great responsibility. As data scientists, we must ensure that the data we handle is not misused or exploited, causing harm to the individuals it represents. Enter the twin superheroes of data protection: Anonymization and Pseudonymization.</p>
@@ -81,7 +81,7 @@
         <title type="html"><![CDATA[Exploring AI Ethics: 15 Key Q&As]]></title>
         <id>https://smortezah.github.io/portfolio/blog/ethics</id>
         <link href="https://smortezah.github.io/portfolio/blog/ethics"/>
-        <updated>2024-11-30T15:59:04.000Z</updated>
+        <updated>2024-12-01T16:05:22.000Z</updated>
         <summary type="html"><![CDATA[Bias and Fairness in AI]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bias-and-fairness-in-ai">Bias and Fairness in AI<a href="https://smortezah.github.io/portfolio/blog/ethics#bias-and-fairness-in-ai" class="hash-link" aria-label="Direct link to Bias and Fairness in AI" title="Direct link to Bias and Fairness in AI">​</a></h2>
 <p>In the realm of artificial intelligence, addressing the issue of bias and ensuring fairness in algorithms is paramount. AI systems have the potential to perpetuate and even amplify societal biases if not carefully designed and monitored. Exploring this topic delves into the ethical responsibility of AI researchers and practitioners to mitigate biases and promote equity in AI applications.</p>
@@ -140,7 +140,7 @@ Furthermore, compliance with data protection regulations should be a priority. D
         <title type="html"><![CDATA[Get-Rich-Quick Schemes are a Bad Idea]]></title>
         <id>https://smortezah.github.io/portfolio/blog/get-rich-quick</id>
         <link href="https://smortezah.github.io/portfolio/blog/get-rich-quick"/>
-        <updated>2024-11-30T15:59:04.000Z</updated>
+        <updated>2024-12-01T16:05:22.000Z</updated>
         <summary type="html"><![CDATA[Are you tired of your 9-to-5 job and looking for a quick way to become a millionaire? Do you believe that you can get rich overnight by learning a few machine learning algorithms? Well, hold on to your hats because I have some news for you: there’s no shortcut to success in data science.]]></summary>
         <content type="html"><![CDATA[<p>Are you tired of your 9-to-5 job and looking for a quick way to become a millionaire? Do you believe that you can get rich overnight by learning a few machine learning algorithms? Well, hold on to your hats because I have some news for you: there’s no shortcut to success in data science.</p>
 <p>Let’s face it, we all want to be successful and financially stable. And with the booming field of data science and machine learning, it’s tempting to believe that we can achieve our financial dreams by simply learning a few skills and jumping on the bandwagon. Unfortunately, the reality is far from that.</p>
@@ -189,7 +189,7 @@ Furthermore, compliance with data protection regulations should be a priority. D
         <title type="html"><![CDATA[Advanced Guidelines for ML Model Training]]></title>
         <id>https://smortezah.github.io/portfolio/blog/guideline-ml</id>
         <link href="https://smortezah.github.io/portfolio/blog/guideline-ml"/>
-        <updated>2024-11-30T15:59:04.000Z</updated>
+        <updated>2024-12-01T16:05:22.000Z</updated>
         <summary type="html"><![CDATA[Understanding Model Training]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-model-training">Understanding Model Training<a href="https://smortezah.github.io/portfolio/blog/guideline-ml#understanding-model-training" class="hash-link" aria-label="Direct link to Understanding Model Training" title="Direct link to Understanding Model Training">​</a></h2>
 <p>Welcome to the captivating realm of machine learning, where algorithms breathe life into data and unveil patterns that were once hidden in the shadows. Before we dive into the intricate dance of code and data, let’s take a moment to understand the essence of model training.</p>
@@ -307,7 +307,7 @@ Furthermore, compliance with data protection regulations should be a priority. D
         <title type="html"><![CDATA[Introducing Keras Core]]></title>
         <id>https://smortezah.github.io/portfolio/blog/keras-core</id>
         <link href="https://smortezah.github.io/portfolio/blog/keras-core"/>
-        <updated>2024-11-30T15:59:04.000Z</updated>
+        <updated>2024-12-01T16:05:22.000Z</updated>
         <summary type="html"><![CDATA[Hey there, data enthusiasts! Get ready to witness the revolution in the world of deep learning frameworks with the arrival of Keras Core, a preview version of the future of Keras. By Fall 2023, Keras Core will evolve into Keras 3.0, bringing remarkable advancements to the table. This groundbreaking library is a complete rewrite of the Keras codebase, establishing a modular backend architecture. What does this mean for you? Well, it enables running Keras workflows on various frameworks, starting with TensorFlow, PyTorch, and JAX.]]></summary>
         <content type="html"><![CDATA[<p>Hey there, data enthusiasts! Get ready to witness the revolution in the world of deep learning frameworks with the arrival of Keras Core, a preview version of the future of Keras. By Fall 2023, Keras Core will evolve into Keras 3.0, bringing remarkable advancements to the table. This groundbreaking library is a complete rewrite of the Keras codebase, establishing a modular backend architecture. What does this mean for you? Well, it enables running Keras workflows on various frameworks, starting with TensorFlow, PyTorch, and JAX.</p>
 <p>Exciting times lie ahead!</p>
@@ -341,7 +341,7 @@ Furthermore, compliance with data protection regulations should be a priority. D
         <title type="html"><![CDATA[Why is Parquet format so popular?]]></title>
         <id>https://smortezah.github.io/portfolio/blog/parquet</id>
         <link href="https://smortezah.github.io/portfolio/blog/parquet"/>
-        <updated>2024-11-30T15:59:04.000Z</updated>
+        <updated>2024-12-01T16:05:22.000Z</updated>
         <summary type="html"><![CDATA[Introduction]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://smortezah.github.io/portfolio/blog/parquet#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction">​</a></h2>
 <p><a href="https://parquet.apache.org/" target="_blank" rel="noopener noreferrer">Parquet</a> is a popular columnar storage format for big data processing. It’s widely used in the Hadoop ecosystem and provides several benefits over traditional row-based storage formats like CSV and JSON. In this article, we’ll take a closer look at why Parquet is so popular and how it can help improve the performance and efficiency of big data processing tasks. Also, we’ll compare it to the popular pandas DataFrame.</p>
@@ -375,7 +375,7 @@ Furthermore, compliance with data protection regulations should be a priority. D
         <title type="html"><![CDATA[Venn Diagrams: Art & Pitfalls]]></title>
         <id>https://smortezah.github.io/portfolio/blog/venn</id>
         <link href="https://smortezah.github.io/portfolio/blog/venn"/>
-        <updated>2024-11-30T15:59:04.000Z</updated>
+        <updated>2024-12-01T16:05:22.000Z</updated>
         <summary type="html"><![CDATA[In the world of data visualization, few tools have gained as much recognition as Venn diagrams. These overlapping circles have become synonymous with illustrating set relationships, making complex data more accessible at a glance. Yet, while Venn diagrams are undeniably valuable, they also have a propensity to mislead. As a data scientist, I’ve encountered their allure and their limitations. In this article, we’ll delve into why Venn diagrams, despite their apparent simplicity, can be misleading if not used with caution. We’ll explore the intricacies that lie beneath those overlapping circles, shedding light on when and how to employ them effectively, and when to turn to alternative visualization methods for a more accurate representation of data.]]></summary>
         <content type="html"><![CDATA[<p>In the world of data visualization, few tools have gained as much recognition as Venn diagrams. These overlapping circles have become synonymous with illustrating set relationships, making complex data more accessible at a glance. Yet, while Venn diagrams are undeniably valuable, they also have a propensity to mislead. As a data scientist, I’ve encountered their allure and their limitations. In this article, we’ll delve into why Venn diagrams, despite their apparent simplicity, can be misleading if not used with caution. We’ll explore the intricacies that lie beneath those overlapping circles, shedding light on when and how to employ them effectively, and when to turn to alternative visualization methods for a more accurate representation of data.</p>
 <p>The followings are some reasons why Venn diagrams can sometimes be considered misleading.</p>
