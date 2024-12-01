@@ -21,6 +21,7 @@ In addition to these projects, I regularly share my insights and learnings on th
 - [ETL (Extract, Transform, Load)](#hammer_and_wrench-etl-extract-transform-load)
 - [Hyperparameter Tuning](#gear-hyperparameter-tuning)
 - [LLM (Large Language Model)](#brain-llm-large-language-model)
+- [Logging](#page_facing_up-logging)
 - [Machine Learning](#robot-machine-learning)
 - [Privacy](#lock-privacy)
 - [Python](#snake-python)
@@ -80,6 +81,10 @@ In addition to these projects, I regularly share my insights and learnings on th
 ## :brain: LLM (Large Language Model)
 
 - [Tokenization](llm/tokenization.ipynb): Explore the tokenization of text data.
+
+## :page_facing_up: Logging
+
+- [Loguru](logging/loguru.ipynb): Simplify logging with [Loguru](https://github.com/Delgan/loguru).
 
 ## :robot: Machine Learning
 
