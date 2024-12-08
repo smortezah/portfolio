@@ -25,6 +25,7 @@ In addition to these projects, I regularly share my insights and learnings on th
 - [Machine Learning](#robot-machine-learning)
 - [Privacy](#lock-privacy)
 - [Python](#snake-python)
+- [Software Design](#construction-software-design)
 - [Statistical Analysis](#chart_with_upwards_trend-statistical-analysis)
 - [Synthetic Data Generation](#bulb-synthetic-data-generation)
 - [Terminal](#desktop_computer-terminal)
@@ -104,6 +105,10 @@ In addition to these projects, I regularly share my insights and learnings on th
 - [Lambda](python/lambda.ipynb): Get introduced to lambda functions.
 - [Pattern Matching](python/match-case.ipynb): Learn pattern matching with the `match-case` statement.
 - [Serialization](python/serialization.ipynb): Understand serialization and deserialization in Python.
+
+## :construction: Software design
+
+- [Design Patterns](software-design/design-pattern.ipynb): Learn about design patterns and their applications.
 
 ## :chart_with_upwards_trend: Statistical Analysis
 
