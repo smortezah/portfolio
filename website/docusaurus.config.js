@@ -1,11 +1,11 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 const { themes } = require("prism-react-renderer");
 const lightTheme = themes.github;
 const darkTheme = themes.dracula;
-const math = require("remark-math");
-const katex = require("rehype-katex");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -36,14 +36,14 @@ const config = {
 
   presets: [
     [
-      "classic",
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
           // routeBasePath: '/', // Serve the docs at the site's root
-          // path: 'docs',
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
+          path: 'docs',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           sidebarPath: require.resolve("./sidebars.js"),
         },
         blog: {
@@ -76,7 +76,7 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
@@ -202,7 +202,7 @@ const config = {
 
         //... other Algolia params
       },
-    }),
+    },
 };
 
 module.exports = config;
