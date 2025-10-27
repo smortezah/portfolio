@@ -1,7 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const {themes} = require('prism-react-renderer');
+const { themes } = require("prism-react-renderer");
 const lightTheme = themes.github;
 const darkTheme = themes.dracula;
 const math = require("remark-math");
@@ -10,8 +10,7 @@ const katex = require("rehype-katex");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Portfolio",
-  tagline:
-    "Various projects on applications of Data Science and Machine Learning",
+  tagline: "Various projects on applications of Data Science and Machine Learning",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -26,7 +25,6 @@ const config = {
   projectName: "portfolio", // Usually your repo name.
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -40,7 +38,7 @@ const config = {
     [
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           // routeBasePath: '/', // Serve the docs at the site's root
           // path: 'docs',
@@ -54,7 +52,7 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-      }),
+      },
     ],
   ],
 
@@ -62,13 +60,15 @@ const config = {
     {
       href: "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",
       type: "text/css",
-      integrity:
-        "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+      integrity: "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
       crossorigin: "anonymous",
     },
   ],
 
   markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    },
     mermaid: true,
   },
 
@@ -171,37 +171,37 @@ const config = {
       algolia: {
         // The application ID provided by Algolia
         appId: "MZL4UESJDY",
-  
+
         // Public API key: it is safe to commit it
-        apiKey: 'bfaea2ddcc75781fc2ba26ec3aedc985',
-  
-        indexName: 'portfolio',
-  
+        apiKey: "bfaea2ddcc75781fc2ba26ec3aedc985",
+
+        indexName: "portfolio",
+
         contextualSearch: true,
-  
+
         // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        externalUrlRegex: 'external\\.com|domain\\.com',
-  
+        externalUrlRegex: "external\\.com|domain\\.com",
+
         // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
         replaceSearchResultPathname: {
-          from: '/docs/', // or as RegExp: /\/docs\//
-          to: '/',
+          from: "/docs/", // or as RegExp: /\/docs\//
+          to: "/",
         },
-  
+
         // Optional: Algolia search parameters
         searchParameters: {},
-  
+
         // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'search',
-  
+        searchPagePath: "search",
+
         // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
         insights: false,
-  
+
         // Optional: whether you want to use the new Ask AI feature (undefined by default)
         // askAi: 'YOUR_ALGOLIA_ASK_AI_ASSISTANT_ID',
-  
+
         //... other Algolia params
-      },  
+      },
     }),
 };
 
