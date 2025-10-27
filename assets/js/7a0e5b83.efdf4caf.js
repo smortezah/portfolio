@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkwebsite=globalThis.webpackChunkwebsite||[]).push([[4080],{79094:e=>{e.exports=JSON.parse('{"authors":[{"name":"Morteza Hosseini","title":"Data scientist / ML engineer","key":"mori","page":null,"count":7}]}')}}]);

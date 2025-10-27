@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[3970],{6980:e=>{e.exports=JSON.parse('{"label":"jq","permalink":"/portfolio/docs/tags/jq","allTagsPath":"/portfolio/docs/tags","count":1,"items":[{"id":"terminal/jq","title":"jq","description":"JSON Manipulation with jq","permalink":"/portfolio/docs/terminal/jq"}],"unlisted":false}')}}]);

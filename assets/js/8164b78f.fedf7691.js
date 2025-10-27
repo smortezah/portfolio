@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[4647],{50827:e=>{e.exports=JSON.parse('{"label":"Get Rich Quick","permalink":"/portfolio/blog/tags/get-rich-quick","allTagsPath":"/portfolio/blog/tags","count":1,"unlisted":false}')}}]);
