@@ -42,14 +42,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
-          routeBasePath: '/docs', // Serve the docs at the site's root
-          // routeBasePath: '/', // Serve the docs at the site's root
-          // path: "docs",
+          routeBasePath: '/docs',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
           sidebarPath: require.resolve("./sidebars.js"),
         },
         blog: {
+          routeBasePath: '/blog',
           showReadingTime: true,
         },
         theme: {
