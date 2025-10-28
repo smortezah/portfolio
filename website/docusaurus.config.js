@@ -19,6 +19,8 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/portfolio/",
 
+  trailingSlash: true,
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "smortezah", // Usually your GitHub org/user name.
@@ -51,9 +53,6 @@ const config = {
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
-        },
-        sitemap: {
-          trailingSlash: true,
         },
       },
     ],
