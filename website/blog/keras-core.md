@@ -1,6 +1,7 @@
 ---
 title: Introducing Keras Core
 authors: [mori]
+date: 2023/10/12
 tags: [Keras, PyTorch, Jax, Deep Learning, Machine Learning]
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Get-Rich-Quick Schemes are a Bad Idea
 authors: [mori]
+date: 2023/10/12
 tags: [Data Science, Machine Learning, Get Rich Quick, Mythology, AI]
 ---
 

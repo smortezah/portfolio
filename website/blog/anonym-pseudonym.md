@@ -1,7 +1,7 @@
 ---
 title: "Anonymization vs. Pseudonymization"
 authors: [mori]
-date: 2023/10/23
+date: 2023/10/28
 tags: [Data Privacy, Anonymization, Pseudonymization, Data Science, Python]
 ---
 

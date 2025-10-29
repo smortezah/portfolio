@@ -1,8 +1,8 @@
 ---
 title: Advanced Guidelines for ML Model Training
 authors: [mori]
-tags:
-  [Machine Learning, Model Training, Guidelines, Data Science, Neural Networks]
+date: 2023/10/12
+tags: [Machine Learning, Model Training, Guidelines, Data Science, Neural Networks]
 ---
 
 ## Understanding Model Training

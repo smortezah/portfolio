@@ -1,6 +1,7 @@
 ---
 title: Why is Parquet format so popular?
 authors: [mori]
+date: 2023/10/12
 tags: [Data Science, Parquet, Data Storage, Spark, Pandas Dataframe]
 ---
 
