@@ -1,6 +1,8 @@
 ---
 title: "Exploring AI Ethics: 15 Key Q&As"
 authors: [mori]
+date: 2023/10/7
+last_update: 2023/10/12
 tags: [AI, Ethics, Bias, Transparency, Privacy]
 ---
 
