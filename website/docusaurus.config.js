@@ -42,13 +42,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
-          routeBasePath: '/docs',
+          routeBasePath: "/docs",
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
           sidebarPath: require.resolve("./sidebars.js"),
         },
         blog: {
-          routeBasePath: '/blog',
+          routeBasePath: "/blog",
           showReadingTime: true,
         },
         theme: {
@@ -81,6 +81,9 @@ const config = {
     {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
+      colorMode: {
+        respectPrefersColorScheme: true,
+      },
       navbar: {
         title: "Home",
         items: [
