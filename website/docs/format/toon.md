@@ -1,6 +1,6 @@
 ---
 title: TOON
-description: Token-efficient, human-readable format for LLMs
+description: Token-efficient format for LLMs
 tags: [Format, TOON, JSON, CSV, YAML, LLM, Serialization]
 ---
 
