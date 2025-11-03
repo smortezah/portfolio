@@ -50,6 +50,11 @@ In addition to these projects, I regularly share my insights and learnings on th
 
 - [TOML vs. YAML](configuration/yaml-vs-toml.ipynb): Choosing the right configuration format for your projects.
 
+## Data Formats
+
+- Top 5 Formats: The top 5 structured data formats for data science.
+- TOON: Token-efficient, human-readable serialization format optimized for LLM contexts.
+
 ## 🧩 Data Structures
 
 - [Sorting Algorithms](data-structure/sorting-popular.ipynb): A comprehensive guide to understanding and implementing popular sorting algorithms in Python.
