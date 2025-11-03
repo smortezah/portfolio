@@ -7,10 +7,9 @@ const { themes } = require("prism-react-renderer");
 const lightTheme = themes.github;
 const darkTheme = themes.dracula;
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+export default {
   title: "Portfolio",
-  tagline: "Various projects on applications of Data Science and Machine Learning",
+  tagline: "Applications of AI, Machine Learning and Data Science",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -31,29 +30,37 @@ const config = {
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
-  },
+  i18n: { defaultLocale: "en", locales: ["en"] },
 
   presets: [
     [
       "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
+        pages: {
+          path: "src/pages",
+          routeBasePath: "",
+          include: ["**/*.{js,jsx,ts,tsx,md,mdx}"],
+          exclude: [
+            "**/_*.{js,jsx,ts,tsx,md,mdx}",
+            "**/_*/**",
+            "**/*.test.{js,jsx,ts,tsx}",
+            "**/__tests__/**",
+          ],
+          mdxPageComponent: "@theme/MDXPage",
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
+          beforeDefaultRemarkPlugins: [],
+          beforeDefaultRehypePlugins: [],
+        },
         docs: {
           routeBasePath: "/docs",
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
           sidebarPath: require.resolve("./sidebars.js"),
         },
-        blog: {
-          routeBasePath: "/blog",
-          showReadingTime: true,
-        },
-        theme: {
-          customCss: require.resolve("./src/css/custom.css"),
-        },
+        blog: { routeBasePath: "/blog", showReadingTime: true },
+        theme: { customCss: require.resolve("./src/css/custom.css") },
       },
     ],
   ],
@@ -68,9 +75,7 @@ const config = {
   ],
 
   markdown: {
-    hooks: {
-      onBrokenMarkdownLinks: "warn",
-    },
+    hooks: { onBrokenMarkdownLinks: "warn" },
     mermaid: true,
   },
 
@@ -81,9 +86,7 @@ const config = {
     {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
-      colorMode: {
-        respectPrefersColorScheme: true,
-      },
+      colorMode: { respectPrefersColorScheme: true },
       navbar: {
         title: "Home",
         items: [
@@ -157,5 +160,3 @@ const config = {
       },
     },
 };
-
-module.exports = config;

@@ -4,8 +4,8 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
-
 import styles from "./index.module.css";
+import { title } from "process";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -25,14 +25,16 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
+  const {
+    siteConfig: { customFields, tagline },
+  } = useDocusaurusContext();
+  const { description } = customFields as { description: string };
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
-      <HomepageHeader />
-      <main>{/* <HomepageFeatures /> */}</main>
+    <Layout title={tagline} description={description}>
+      <main>
+        <HomepageHeader />
+        <HomepageFeatures />
+      </main>
     </Layout>
   );
 }
